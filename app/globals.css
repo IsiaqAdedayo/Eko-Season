@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff7ec;
+  --color-sand: #f7e6d2;
+  --color-ember: #d94f24;
+  --color-gold: #f2a03d;
+  --color-ink: #17100b;
+  --color-muted: #7a6557;
+}
+
+/* `inline` matters: next/font defines --font-inter/--font-playfair on <body>,
+   so these must resolve where the utility is used, not at :root. */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Soft golden-hour cloud shapes used in the hero transition. */
+.cloud {
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 241, 224, 0.75) 55%,
+    rgba(255, 241, 224, 0)
+  );
+  filter: blur(28px);
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(23, 16, 11, 0) 35%,
+    rgba(23, 16, 11, 0.55) 72%,
+    rgba(23, 16, 11, 0.85) 100%
+  );
+}
+
+.headline-fill {
+  background: linear-gradient(180deg, #ffffff 25%, rgba(255, 255, 255, 0.55) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hide the native arrow on the hero selects, keep them keyboard accessible. */
+.plan-select {
+  appearance: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Keyboard focus stays visible on cream, ink and photography alike. */
+:where(a, button, input, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-ember);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* The header is fixed, so an in-page anchor needs room to land below it. */
+:where(section, main, div)[id] {
+  scroll-margin-top: 96px;
+}
+
+/* Page shell: short pages keep the footer on the bottom edge rather than
+   leaving it floating halfway up with bare background beneath it. */
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+#main > main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+/* Perforated edges for artwork bands that are built from data, not photos. */
+.perforation {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 247, 236, 0.22) 0 10px,
+    transparent 10px 22px
+  );
+  border-radius: 2px;
+}

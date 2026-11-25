@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-24T12:01:34.012Z",
+  "sources": [
+    {
+      "name": "Silverbird Cinemas",
+      "ok": true,
+      "films": 0,
+      "error": null
+    },
+    {
+      "name": "African Movie Database - December 2026",
+      "ok": true,
+      "films": 0,
+      "error": null
+    },
+    {
+      "name": "NaijaSabi - Nollywood Christmas Movies December 2026",
+      "ok": true,
+      "films": 4,
+      "error": null
+    },
+    {
+      "name": "Nollywood Reporter - Detty December 2026",
+      "ok": true,
+      "films": 0,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$comment": "Sources the movies scraper watches. Add an entry here and it is picked up on the next run, no code change needed.",
+  "sources": [
+    {
+      "name": "African Movie Database - December 2026",
+      "url": "https://africanmoviedb.com/news/upcoming-nigerian-movies-releasing-in-december-2026"
+    },
+    {
+      "name": "NaijaSabi - Nollywood Christmas Movies December 2026",
+      "url": "https://naijasabi.com.ng/nollywood-christmas-movies-december-2026-cinema-release-dates/"
+    },
+    {
+      "name": "Nollywood Reporter - Detty December 2026",
+      "url": "https://thenollywoodreporter.com/lifestyle/detty-december-2026-nollywood-films-concerts-events-lagos"
+    }
+  ]
+}

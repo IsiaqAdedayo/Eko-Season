@@ -1,0 +1,86 @@
+[32m✔[0m [33mConsole Ninja[0m extension is connected to [33mNext.js[0m, see [36mhttps://tinyurl.com/2vt8jxzw[0m
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/adedayo/yarn.lock as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /Users/adedayo/Eko-season/package-lock.json
+
+   ▲ Next.js 15.5.29
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.100:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+[?25h
+[32m✔[0m [33mConsole Ninja[0m extension is connected to [33mNext.js[0m, see [36mhttps://tinyurl.com/2vt8jxzw[0m
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/adedayo/yarn.lock as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /Users/adedayo/Eko-season/package-lock.json
+
+   ▲ Next.js 15.5.29
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.100:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 1745ms (1504 modules)
+ ✓ Compiled in 813ms (660 modules)
+ GET / 200 in 3328ms
+ GET / 200 in 511ms
+ GET / 200 in 809ms
+ ○ Compiling /weather ...
+ ✓ Compiled /weather in 544ms (1495 modules)
+Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
+ GET /weather 200 in 949ms
+ ✓ Compiled /movies in 232ms (1499 modules)
+ GET /movies 200 in 383ms
+ ✓ Compiled /places/[id] in 342ms (1512 modules)
+ GET /places/landmark-beach 200 in 1154ms
+ GET /places/tarkwa-bay 200 in 50ms
+ ✓ Compiled /sitemap.xml in 261ms (1534 modules)
+ GET /sitemap.xml 200 in 379ms
+Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
+ GET /weather 200 in 859ms
+ GET /places/tarkwa-bay 200 in 66ms
+ GET /movies 200 in 80ms
+ GET / 200 in 854ms
+ ✓ Compiled in 186ms (663 modules)
+ ✓ Compiled in 456ms (1548 modules)
+ ✓ Compiled in 203ms (1507 modules)
+ ✓ Compiled in 96ms (663 modules)
+ ✓ Compiled in 117ms (663 modules)
+ ✓ Compiled in 90ms (663 modules)
+ ✓ Compiled in 76ms (663 modules)
+ ✓ Compiled in 148ms (663 modules)
+ ✓ Compiled in 74ms (663 modules)
+ ✓ Compiled in 113ms (663 modules)
+ ✓ Compiled / in 235ms (844 modules)
+ GET / 200 in 1372ms
+ ✓ Compiled /weather in 168ms (848 modules)
+Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
+ GET /weather 200 in 480ms
+ ✓ Compiled /movies in 167ms (852 modules)
+ GET /movies 200 in 301ms
+ ✓ Compiled /places in 442ms (1511 modules)
+ GET /places 200 in 570ms
+ GET /places?category=landmarks 200 in 39ms
+ ✓ Compiled /places/[id] in 220ms (871 modules)
+ GET /places/landmark-beach 200 in 489ms
+ GET /places/tarkwa-bay 200 in 45ms
+ GET /places/ebonylife-cinemas 200 in 44ms
+ GET /places/silverbird-galleria 200 in 42ms
+ GET /places/ozone-cinemas 200 in 43ms
+ ✓ Compiled /shows in 393ms (1529 modules)
+ GET /shows 200 in 532ms
+[?25h

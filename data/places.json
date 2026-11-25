@@ -1,0 +1,853 @@
+[
+  {
+    "id": "quilox",
+    "name": "Quilox",
+    "category": "clubs",
+    "area": "Victoria Island",
+    "tagline": "The bottle-service institution",
+    "note": "873 Ozumba Mbadiwe Ave. Big-room club, celebrity crowd, tables from ₦150k minimum. Goes late — 3am is early.",
+    "price": "₦₦₦₦",
+    "address": "873 Ozumba Mbadiwe Ave, Victoria Island, Lagos",
+    "gallery": [
+      "photo-1569924995012-c4c706bfcd51",
+      "photo-1578736641330-3155e606cd40",
+      "photo-1682944856348-0665d4b8d81c"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "Google Maps hours",
+      "url": "https://www.google.com/maps/place?q=place_id:ChIJA7NiStSKOxARyXXN39fxvHk"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "vaniti",
+    "name": "Vaniti",
+    "category": "clubs",
+    "area": "Victoria Island",
+    "tagline": "The current it-club",
+    "note": "17 Adeola Odeku St. Ranked the city's top club in 2026 listings; hip-hop and Afrobeats, dancers, birthday trains.",
+    "price": "₦₦₦₦",
+    "address": "17 Adeola Odeku St, Victoria Island, Lagos",
+    "gallery": [
+      "/images/locations/clubs/vaniti/experience.jpg",
+      "photo-1687511844598-165c1fc387cc",
+      "photo-1764510377513-1e8c847fb7f8"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "Vaniti Lagos hours",
+      "url": "https://vanitilagos.com/"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "club-57",
+    "name": "Club 57",
+    "category": "clubs",
+    "area": "Ikoyi",
+    "tagline": "Formerly Bacchus, now shut",
+    "note": "Club 57 has closed for good — the Abeni House address on Awolowo Road is now a car park. Listed so you do not turn up expecting a night out.",
+    "price": "₦₦₦",
+    "address": null,
+    "gallery": [
+      "photo-1763757575623-ffafe0867aa3",
+      "photo-1784151100421-df2f1e19ee48",
+      "photo-1569924995012-c4c706bfcd51"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null,
+    "status": "closed",
+    "closedCheckedAt": "2026-11-23",
+    "closedNote": "Club 57 has shut. Its Google listing at Abeni House, 57 Awolowo Road is marked permanently closed, and that address now shows up as a car park. It was formerly Bacchus."
+  },
+  {
+    "id": "boho",
+    "name": "Boho",
+    "category": "clubs",
+    "area": "Victoria Island",
+    "tagline": "Speakeasy with catwalk shows",
+    "note": "Surprise sets from artists who are already in town for December. Book a table before you land.",
+    "price": "₦₦₦",
+    "address": null,
+    "gallery": [
+      "/images/locations/clubs/boho/atmosphere.jpg",
+      "/images/locations/clubs/boho/experience.jpg",
+      "photo-1784151100421-df2f1e19ee48"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "Boho on Instagram",
+      "url": "https://www.instagram.com/boholagos/"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "mercury-rooftop",
+    "name": "Mercury Rooftop",
+    "category": "clubs",
+    "area": "Victoria Island",
+    "tagline": "Cocktails above Ajose",
+    "note": "99 Ajose Adeogun St. The skyline does most of the work; arrive early on weekends or you queue.",
+    "price": "₦₦₦",
+    "address": "99 Ajose Adeogun St, Victoria Island, Lagos",
+    "gallery": [
+      "/images/locations/clubs/mercury-rooftop/establishing.webp",
+      "/images/locations/clubs/mercury-rooftop/establishing-2.webp",
+      "/images/locations/clubs/mercury-rooftop/atmosphere.webp",
+      "/images/locations/clubs/mercury-rooftop/atmosphere-2.webp",
+      "/images/locations/clubs/mercury-rooftop/experience.webp",
+      "/images/locations/clubs/mercury-rooftop/experience-2.webp"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "Mercury on Instagram",
+      "url": "https://www.instagram.com/mercuryrooftop/"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "sugar-52",
+    "name": "Sugar 52",
+    "category": "clubs",
+    "area": "Victoria Island",
+    "tagline": "Rooftop pool bar",
+    "note": "52a Kofo Abayomi St. Sundowners that roll into the night. Best for groups who want one venue.",
+    "price": "₦₦₦",
+    "address": "52a Kofo Abayomi St, Victoria Island, Lagos",
+    "gallery": [
+      "/images/locations/clubs/sugar-52/establishing.jpg",
+      "/images/locations/clubs/sugar-52/atmosphere.jpg",
+      "/images/locations/clubs/sugar-52/experience.jpg"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "truth-beach-club",
+    "name": "Truth Beach Club",
+    "category": "clubs",
+    "area": "Lekki",
+    "tagline": "Beach club, harder edge",
+    "note": "Pool, seafood, and Sunday parties that run from noon till late. Ladies' day Sundays.",
+    "price": "₦₦₦",
+    "address": null,
+    "gallery": [
+      "photo-1787478555928-40f802c6bf7b",
+      "photo-1662950267280-0cdf5f7139b4",
+      "photo-1781511832650-4001a029803a"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "Truth Beach weekly line-up",
+      "url": "https://www.truthbeach.com/"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "landmark-beach",
+    "name": "Landmark Beach",
+    "category": "beaches",
+    "area": "Oniru",
+    "tagline": "Demolished for the Lagos–Calabar coastal highway",
+    "note": "Landmark Beach was demolished in April 2024 to make way for the Lagos–Calabar coastal highway. The resort — six years old, with beach clubs, cabanas and water sports — was cleared in a week; the federal government said the land was on its right-of-way. There is no beach access at the old site. Do not travel here expecting a beach day.",
+    "price": "Closed",
+    "address": "Water Corporation Drive, Oniru, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Sunset_at_Landmark_Beach.jpg/1920px-Sunset_at_Landmark_Beach.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null,
+    "status": "closed",
+    "closedCheckedAt": "2026-11-23",
+    "closedNote": "Landmark Beach was demolished in April 2024 for the Lagos–Calabar coastal highway. Its Google listing at Water Corporation Drive, Oniru is marked permanently closed, and there is no beach access at the site. The Landmark Africa Group is rebuilding elsewhere; this entry is kept so you do not turn up expecting a beach day."
+  },
+  {
+    "id": "elegushi",
+    "name": "Elegushi Royal Beach",
+    "category": "beaches",
+    "area": "Lekki",
+    "tagline": "The loud one",
+    "note": "Gate ₦1,000–2,000. Independent lounges (Wave, 234 Loft, Skyfall) charge ₦2,000–3,000 more; cabanas up to ₦150k. Jet skis, horses, speakers.",
+    "price": "₦1,000–2,000",
+    "address": "Lekki-Epe Expressway, Ikate, Lekki, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/The-elegushi-beach-lagos.jpg/1920px-The-elegushi-beach-lagos.jpg",
+      "photo-1603477849227-705c424d1d80",
+      "photo-1626085263072-d503e3dea011"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "tarkwa-bay",
+    "name": "Tarkwa Bay",
+    "category": "beaches",
+    "area": "Lagos Harbour",
+    "tagline": "A boat-only beach with calm water and city views",
+    "note": "Tarkwa Bay is a sheltered artificial beach just off the Lagos harbour — calmer water than the open Atlantic beaches, which is why people swim here and take surf lessons. It's an island, so the only way in is by boat: 15–30 minutes from the CMS, Falomo or Victoria Island jetties. Day entry is about ₦2,000, with chairs and a thatched tent from around ₦500 for the day. On the water you can swim, book surf lessons, hire a jet ski, and eat grilled fish from the shore. There's a small resident community and a jetty station. Sort your return boat before you settle in — the last boats back matter more than the first ones out. Overnight stays aren't really a thing here; this is a day-beach, not a campsite.",
+    "price": "₦2,000 + boat",
+    "address": null,
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e5/Tarkwa_Bay_Beach_Front.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b8/Tarkwa_Bay_-_Jetty_Station.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/92/Tarkwa_Bay_Beach_Tire_shot.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "oniru-beach",
+    "name": "Oniru Private Beach",
+    "category": "beaches",
+    "area": "Victoria Island",
+    "tagline": "Closest proper beach to VI",
+    "note": "Behind the Oniru royal estate, off Admiralty Way. Quieter midweek, busy on Sundays.",
+    "price": "₦1,000–2,000",
+    "address": "Off Admiralty Way, Oniru, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/View_of_the_Atlantic_Ocean_from_Oniru_beach%2C_Victoria_Island%2C_Lagos.jpg/1920px-View_of_the_Atlantic_Ocean_from_Oniru_beach%2C_Victoria_Island%2C_Lagos.jpg",
+      "photo-1544945582-052b29cd29e4",
+      "photo-1527206363095-ca2f054128b0"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "la-campagne",
+    "name": "La Campagne Tropicana",
+    "category": "beaches",
+    "area": "Eleko",
+    "tagline": "The resort escape",
+    "note": "An hour-plus out on Lekki-Epe. ₦10,000 entry, thatched stays from around ₦70,000. Go for a night, not an afternoon.",
+    "price": "₦10,000",
+    "address": "Eleko, Lekki-Epe Expressway, Lagos",
+    "gallery": [
+      "photo-1781511832650-4001a029803a",
+      "photo-1576540882014-86499436546b",
+      "photo-1626085263072-d503e3dea011"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "terra-kulture",
+    "name": "Terra Kulture",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Nigerian food, plus theatre",
+    "note": "Mains ₦17,000–40,000. The reliable answer when someone says they want real Nigerian food in a room that looks good.",
+    "price": "₦₦₦",
+    "address": "1376 Tiamiyu Savage St, Victoria Island, Lagos",
+    "gallery": [
+      "/images/locations/eats/terra-kulture/dish.jpg",
+      "photo-1773209927898-a0a7e0a13125",
+      "photo-1665332561290-cc6757172890"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "nok-by-alara",
+    "name": "NOK by Alara",
+    "category": "eats",
+    "area": "Ikoyi",
+    "tagline": "Contemporary African, garden room",
+    "note": "A grand tour of the continent — Ethiopian lentils, Senegalese dibi, Nigerian suya. Book for dinner.",
+    "price": "₦₦₦",
+    "address": null,
+    "gallery": [
+      "photo-1636405189493-181ecf851006",
+      "photo-1555939594-58d7cb561ad1",
+      "photo-1608500218861-01091cdc501e"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "the-ona",
+    "name": "The Ona",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Tasting menu, chef-led",
+    "note": "1701 Violet Yough Close. Regional Nigerian produce reworked into small plates and a seven-course menu. Reserve ahead.",
+    "price": "₦₦₦₦",
+    "address": "1701 Violet Yough Close, Victoria Island, Lagos",
+    "gallery": [
+      "/images/locations/eats/the-ona/dish.jpg",
+      "photo-1765360773028-6affda725695",
+      "photo-1608500218861-01091cdc501e"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "rsvp",
+    "name": "RSVP",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "The neighbourhood favourite",
+    "note": "Been there since 2014, still full. Poolside terrace, good bar, works for a first night when nobody can agree.",
+    "price": "₦₦₦",
+    "address": null,
+    "gallery": [
+      "/images/locations/eats/rsvp/dish.jpg",
+      "photo-1508424757105-b6d5ad9329d0",
+      "photo-1781511832650-4001a029803a"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "shiro",
+    "name": "Shiro",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Asian fusion with a view",
+    "note": "Sushi, dim sum and wok dishes on a rooftop. One of the safer bets for a mixed group.",
+    "price": "₦₦₦₦",
+    "address": null,
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Sushi_Sashimi_Medium_Platter_-_Yama-ya_%282570349350%29.jpg/1920px-Sushi_Sashimi_Medium_Platter_-_Yama-ya_%282570349350%29.jpg",
+      "photo-1583354608715-177553a4035e",
+      "photo-1621275471769-e6aa344546d5"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "mood-lagos",
+    "name": "Mood Lagos",
+    "category": "eats",
+    "area": "Lekki",
+    "tagline": "Rooftop above Admiralty",
+    "note": "Above Lennox Mall. Nigerian classics done properly, plus a covered terrace for when it rains.",
+    "price": "₦₦₦",
+    "address": "Lennox Mall, Admiralty Way, Lekki, Lagos",
+    "gallery": [
+      "photo-1621275471769-e6aa344546d5",
+      "photo-1665332561290-cc6757172890",
+      "photo-1555939594-58d7cb561ad1"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "norma",
+    "name": "Norma",
+    "category": "eats",
+    "area": "Lekki",
+    "tagline": "24-hour suya",
+    "note": "The after-club stop. Spiced grilled meat, burgers, wings — and a queue at 2am.",
+    "price": "₦₦",
+    "address": null,
+    "gallery": [
+      "photo-1555939594-58d7cb561ad1",
+      "photo-1773209927898-a0a7e0a13125",
+      "photo-1608500218861-01091cdc501e"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "nobs-and-berries",
+    "name": "Nobs & Berries",
+    "category": "eats",
+    "area": "Lekki Phase 1",
+    "tagline": "The slow brunch",
+    "note": "Smoothie bowls, English breakfasts, decent coffee. Plates around ₦8,000–18,000.",
+    "price": "₦₦",
+    "address": null,
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Pancakes_for_Breakfast_-_Oxkutzkab_Yucatan.jpg/1920px-Pancakes_for_Breakfast_-_Oxkutzkab_Yucatan.jpg",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Hotel_breakfast_with_pancakes_in_Kyoto.jpg/1920px-Hotel_breakfast_with_pancakes_in_Kyoto.jpg",
+      "photo-1551632436-cbf8dd35adfa"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "vortex",
+    "name": "Vortex at EbonyLife Place",
+    "category": "play",
+    "area": "Victoria Island",
+    "tagline": "VR, PS5 and arcade cabinets",
+    "note": "1637 Adetokunbo Ademola St. Racing sims, multiplayer arena, 20+ stations. Book a session at peak times.",
+    "price": "₦₦",
+    "address": "1637 Adetokunbo Ademola St, Victoria Island, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/InclusiveGameLab_Person-Playing-Virtual-Reality_4_CC-BY-SA.jpg/1920px-InclusiveGameLab_Person-Playing-Virtual-Reality_4_CC-BY-SA.jpg",
+      "photo-1700085626695-6532f02cc961",
+      "photo-1528870884180-5649b20f6435"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "rufus-and-bee",
+    "name": "Rufus & Bee",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Bowling, arcade, sports bar",
+    "note": "One building, three ways to lose an evening. Good for a group that cannot decide.",
+    "price": "₦₦",
+    "address": null,
+    "gallery": [
+      "photo-1585676396181-34c225d33cf6",
+      "photo-1574661569551-8374cd0465e2",
+      "photo-1636070759654-5c93bbca2862"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "lekki-bowling-grand",
+    "name": "Lekki Bowling Grand",
+    "category": "play",
+    "area": "Chevron Drive",
+    "tagline": "Proper lanes, proper bar",
+    "note": "Atlantic Centre, Chevron Drive. Tuesday–Sunday from 11am; book a lane for weekends.",
+    "price": "₦₦",
+    "address": "Atlantic Centre, Chevron Drive, Lekki, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Bowling_alley%2C_Fun_Park.JPG/1920px-Bowling_alley%2C_Fun_Park.JPG",
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Bowling_Alley_Pelixir_Oulu_20150110.JPG/1920px-Bowling_Alley_Pelixir_Oulu_20150110.JPG",
+      "photo-1700085626695-6532f02cc961"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "fun-factory",
+    "name": "Fun Factory",
+    "category": "play",
+    "area": "Lekki Phase 1",
+    "tagline": "Rides, pools, go-karts",
+    "note": "10 Lai Yusuf Crescent. Built for kids but the teenagers and adults get a section too.",
+    "price": "₦₦",
+    "address": "10 Lai Yusuf Cres, Lekki Phase 1, Lagos",
+    "gallery": [
+      "photo-1700085626695-6532f02cc961",
+      "photo-1636070759654-5c93bbca2862",
+      "photo-1528870884180-5649b20f6435"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "dream-park",
+    "name": "Dream Park & Gardens",
+    "category": "play",
+    "area": "Ikorodu",
+    "tagline": "VR arcade plus four-screen cinema",
+    "note": "7 Adeboro St, Itamaga. Slides, VR, cinema and a grill under one roof — worth it if you are that side.",
+    "price": "₦₦",
+    "address": "7 Adeboro St, Itamaga, Ikorodu, Lagos",
+    "gallery": [
+      "photo-1700085663948-1b03d4fffcec",
+      "photo-1561722798-9a732d141027",
+      "photo-1700085626695-6532f02cc961"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "ebonylife-cinemas",
+    "name": "EbonyLife Cinemas",
+    "category": "play",
+    "area": "Victoria Island",
+    "tagline": "The comfortable cinema",
+    "note": "Inside EbonyLife Place. Recliners, screens that are actually clean, and dinner in the same building.",
+    "price": "₦₦",
+    "address": "1637 Adetokunbo Ademola St, Victoria Island, Lagos",
+    "gallery": [
+      "photo-1759230766134-e3ff1c27d20e",
+      "photo-1561722798-9a732d141027",
+      "photo-1583354608715-177553a4035e"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "silverbird-galleria",
+    "name": "Silverbird Galleria",
+    "category": "play",
+    "area": "Victoria Island",
+    "tagline": "The classic VI cinema run",
+    "note": "Aguiyi Ironsi St. Multiple screens, mall below, easy to combine with dinner on the Island.",
+    "price": "₦₦",
+    "address": "Aguiyi Ironsi St, Victoria Island, Lagos",
+    "gallery": [
+      "photo-1561722798-9a732d141027",
+      "photo-1759230766134-e3ff1c27d20e",
+      "photo-1551632436-cbf8dd35adfa"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "nike-art-gallery",
+    "name": "Nike Art Gallery",
+    "category": "culture",
+    "area": "Lekki Phase 1",
+    "tagline": "Four floors of Nigerian art",
+    "note": "Free to walk, hard to leave. Adire, sculpture, beadwork — and the artist's studio upstairs.",
+    "price": "Free",
+    "address": "2 Nike Art Gallery Rd, Lekki Phase 1, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/Lagos_Lekki_Nike_Art_Gallery_Aug_2026_IMG_6977b.jpg",
+      "photo-1518998053901-5348d3961a04",
+      "photo-1780328863518-59a2105192ac"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "lekki-conservation-centre",
+    "name": "Lekki Conservation Centre",
+    "category": "culture",
+    "area": "Lekki",
+    "tagline": "Africa's longest canopy walk",
+    "note": "200-acre reserve. Go early, take the canopy walk, keep your phone in a pocket with a zip.",
+    "price": "Paid entry",
+    "address": "Lekki-Epe Expressway, Lekki, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/LEKKI_CONSERVATION_CENTRE_%28LCC%29_10.jpg/1920px-LEKKI_CONSERVATION_CENTRE_%28LCC%29_10.jpg",
+      "photo-1789758386057-93368d36b966",
+      "photo-1600668811601-4847b7efd821"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "freedom-park",
+    "name": "Freedom Park",
+    "category": "culture",
+    "area": "Lagos Island",
+    "tagline": "Live music in a former prison yard",
+    "note": "1 Broad St. Jazz, spoken word, theatre and a bar. The cheapest good night out on the Island.",
+    "price": "₦",
+    "address": "1 Broad St, Lagos Island, Lagos",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Beautiful_Freedom_park_walk_way.jpg/1920px-Beautiful_Freedom_park_walk_way.jpg",
+      "photo-1780328863518-59a2105192ac",
+      "photo-1695128881846-7b5de5d5f32d"
+    ],
+    "checkedAt": "2026-11-16",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "new-afrika-shrine",
+    "name": "New Afrika Shrine",
+    "category": "culture",
+    "area": "Ikeja",
+    "tagline": "Fela's house, still playing",
+    "note": "Open-air hall, hot and loud, beer cheap. Femi Kuti's Sunday Jump starts around 7.30pm; Seun and Egypt 80 usually take Thursday. Most nights free; headline nights ₦2,000–5,000.",
+    "price": "₦–₦₦",
+    "address": "1 NERDC Road, Agidingbi, Ikeja",
+    "gallery": [
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/New_Afrika_Shrine_%282020%29.jpg/1920px-New_Afrika_Shrine_%282020%29.jpg",
+      "photo-1544785316-6e58aed68a50",
+      "photo-1577648884063-1d3d1477b8a7"
+    ],
+    "checkedAt": "2026-11-18",
+    "nights": [
+      "thu",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "New Afrika Shrine guide",
+      "url": "https://sumellist.com/the-new-afrika-shrine-your-complete-guide-to-lagoss-iconic-afrobeat-venue"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "ozone-cinemas",
+    "name": "Ozone Cinemas",
+    "category": "play",
+    "area": "Yaba",
+    "tagline": "The mainland multiplex",
+    "note": "Six screens inside E-Centre, with an arcade and shops below. Cheaper than the Island and full of students midweek. Book online and skip the box office.",
+    "price": "₦₦",
+    "address": "E-Centre, 1–11 Commercial Avenue, Sabo, Yaba",
+    "gallery": [
+      "photo-1636070759654-5c93bbca2862",
+      "photo-1561722798-9a732d141027",
+      "photo-1759230766134-e3ff1c27d20e"
+    ],
+    "checkedAt": "2026-11-18",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "purple-maryland",
+    "name": "Purple Maryland",
+    "category": "play",
+    "area": "Maryland",
+    "tagline": "Mall, rink and cinema",
+    "note": "Around 50 shops, Genesis screens, Skate City's ice rink and a food court in a black glass box. The LED façade lights up Ikorodu Road; go early, the car park fills.",
+    "price": "₦₦",
+    "address": "350–360 Ikorodu Road, Anthony, Maryland",
+    "gallery": [
+      "photo-1551632436-cbf8dd35adfa",
+      "photo-1585676396181-34c225d33cf6",
+      "photo-1561722798-9a732d141027"
+    ],
+    "checkedAt": "2026-11-18",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "bukka-hut-yaba",
+    "name": "Bukka Hut",
+    "category": "eats",
+    "area": "Yaba",
+    "tagline": "Amala without the guesswork",
+    "note": "A cleaned-up buka chain: amala with ewedu and gbegiri, egusi, ofada and ram suya rice. Mains ₦4,000–6,500, breakfast from about ₦2,000. Tables turn fast.",
+    "price": "₦₦",
+    "address": "271 Herbert Macaulay Way, Alagomeji, Yaba",
+    "gallery": [
+      "/images/locations/eats/bukka-hut-yaba/dish.jpg",
+      "photo-1665332561290-cc6757172890",
+      "photo-1555939594-58d7cb561ad1"
+    ],
+    "checkedAt": "2026-11-18",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "ilashe-beach",
+    "name": "Ilashe Beach",
+    "category": "beaches",
+    "area": "Ilashe",
+    "tagline": "The island beach",
+    "note": "Boat only — 20–40 minutes from Falomo or the Elegushi jetty. Shared boats about ₦5,000 return, speedboats from ₦50,000. No gate fee, quiet sand, grilled fish on the shore. Fix your return boat first.",
+    "price": "₦1,000 + boat",
+    "address": "Ilashe Island (boat from Falomo or the Elegushi jetty)",
+    "gallery": [
+      "photo-1626085263072-d503e3dea011",
+      "photo-1600668811601-4847b7efd821",
+      "photo-1544945582-052b29cd29e4"
+    ],
+    "checkedAt": "2026-11-18",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "love-lagos-jetty",
+    "name": "Love Lagos Jetty",
+    "category": "eats",
+    "area": "Bariga",
+    "tagline": "Waterfront bar on the mainland",
+    "note": "Ilaje Road, with the Third Mainland Bridge in view. Boat rides by day, outdoor club after dark, cheap drinks and grilled food. Sunset is the reason to come. The bar at the jetty (Beeriga) runs Wednesday to Sunday, 4pm until midnight, and closes Monday and Tuesday.",
+    "price": "₦₦",
+    "address": "Ilaje Road, Bariga",
+    "gallery": [
+      "/images/locations/eats/love-lagos-jetty/dish.jpg",
+      "/images/locations/eats/love-lagos-jetty/exterior.jpg",
+      "photo-1662950267280-0cdf5f7139b4"
+    ],
+    "checkedAt": "2026-11-18",
+    "nights": [
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "nightsSource": {
+      "label": "Beeriga, the jetty bar, on Google Maps",
+      "url": "https://www.google.com/maps/place?q=place_id:ChIJC2xRyq6NOxAR3NNo67Gq2tw"
+    },
+    "nightsCheckedAt": "2026-11-18"
+  },
+  {
+    "id": "national-museum",
+    "name": "National Museum Lagos",
+    "category": "landmarks",
+    "area": "Lagos Island",
+    "tagline": "The national collection, on the Onikan roundabout",
+    "note": "Founded in 1957, the National Museum holds the country's flagship collection: Nok terracotta, Ife and Benin bronzes, Igbo-Ukwu copper work and ethnographic exhibits from across Nigeria. An hour here gives the city's history a shape.",
+    "price": "Entry fee",
+    "address": "Onikan, Lagos Island, Lagos",
+    "gallery": [
+      "/images/landmarks/national-museum.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "lekki-ikoyi-link-bridge",
+    "name": "Lekki-Ikoyi Link Bridge",
+    "category": "landmarks",
+    "area": "Ikoyi",
+    "tagline": "The cable-stayed bridge everyone stops to photograph",
+    "note": "Commissioned in May 2013, the 1.36 km bridge is Nigeria's first cable-stayed crossing, its single pylon throwing cables over Five Cowries Creek between Ikoyi and Lekki. See it from the Ikoyi end at sunset, when the lagoon goes copper — the best city view that costs nothing.",
+    "price": "Free",
+    "address": "Lekki-Ikoyi Link Bridge, Lagos",
+    "gallery": [
+      "/images/landmarks/lekki-ikoyi-link-bridge.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "jaekel-house",
+    "name": "Jaekel House",
+    "category": "landmarks",
+    "area": "Ebute Metta",
+    "tagline": "An 1898 railway mansion with a garden and a story",
+    "note": "Built in 1898 as the residence of the Nigerian Railway Corporation's general manager, Jaekel House is a timber-and-verandah mansion in Ebute Metta, restored in 2010 and named after a long-serving NRC superintendent. Inside is a small museum: railway photographs from the 1940s to the 1970s, tools and equipment. Outside, old trees and a garden that makes the traffic feel far away.",
+    "price": "Entry fee",
+    "address": "17 Federal Road, Ebute Metta, Lagos",
+    "gallery": [
+      "/images/landmarks/jaekel-house.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "tafawa-balewa-square",
+    "name": "Tafawa Balewa Square",
+    "category": "landmarks",
+    "area": "Lagos Island",
+    "tagline": "The square where independence was celebrated",
+    "note": "This is the old Lagos Race Course, where Nigeria's independence ceremony was held on 1 October 1960. The square itself was built in 1972 and named after the first prime minister; the stands, the Remembrance Arcade and Independence House are all still there. Come for the scale and the colonial-era city around it.",
+    "price": "Free to walk",
+    "address": "Tafawa Balewa Square, Lagos Island, Lagos",
+    "gallery": [
+      "/images/landmarks/tafawa-balewa-square.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "national-theatre",
+    "name": "National Theatre",
+    "category": "landmarks",
+    "area": "Iganmu",
+    "tagline": "The concrete shell on the Lagos lagoon",
+    "note": "Completed in 1976 for FESTAC '77, the National Theatre's stacked concrete form is the city's most recognisable silhouette. A Bankers' Committee restoration reopened it on 1 October 2025 as the Wole Soyinka Centre for Culture and the Creative Arts. Check what is on before you go; even from outside it is worth the detour at dusk.",
+    "price": "Check events",
+    "address": "National Theatre, Iganmu, Lagos",
+    "gallery": [
+      "/images/landmarks/national-theatre.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "cathedral-church-christ",
+    "name": "Cathedral Church of Christ",
+    "category": "landmarks",
+    "area": "Lagos Island",
+    "tagline": "Gothic Revival on Marina, founded in 1869",
+    "note": "The cathedral was founded on this Marina site in 1869, though the present Gothic Revival building — clock tower, stained glass and pipe organ — dates from 1924 to 1946. Weekday tours run from 10am to 4pm; outside them the churchyard is one of the quietest corners of Lagos Island.",
+    "price": "Free",
+    "address": "29 Marina, Lagos Island, Lagos",
+    "gallery": [
+      "/images/landmarks/cathedral-church-christ.jpg"
+    ],
+    "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  }
+]

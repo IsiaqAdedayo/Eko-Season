@@ -1,0 +1,30 @@
+[32m✔[0m [33mConsole Ninja[0m extension is connected to [33mNext.js[0m, see [36mhttps://tinyurl.com/2vt8jxzw[0m
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/adedayo/yarn.lock as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /Users/adedayo/Eko-season/package-lock.json
+
+   ▲ Next.js 15.5.29
+   - Local:        http://localhost:3002
+   - Network:      http://192.168.1.100:3002
+
+ ✓ Starting...
+ ✓ Ready in 1757ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1575ms (1504 modules)
+ ✓ Compiled in 566ms (660 modules)
+ GET / 200 in 2834ms
+ ✓ Compiled /weather in 287ms (1495 modules)
+Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
+ GET /weather 200 in 648ms
+ ✓ Compiled /movies in 203ms (1499 modules)
+ GET /movies 200 in 345ms
+ ✓ Compiled /places/[id] in 353ms (1512 modules)
+ GET /places/landmark-beach 200 in 1160ms
+ GET /places/tarkwa-bay 200 in 52ms
+ ✓ Compiled in 394ms (1526 modules)
+[?25h

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "amala-ewedu",
+    "kind": "plate",
+    "name": "Amala & ewedu",
+    "note": "Dark yam-flour swallow with jute-leaf soup, gbegiri and goat. Order it with your hand; the ewedu should draw.",
+    "place": "bukka-hut-yaba",
+    "about": "Amala starts as yam, peeled and dried and milled into a flour called elubo. Whisked into boiling water it turns near-black, glossy and heavy — the darkest thing on a Yoruba table. Ewedu is jute leaf, blended smooth and cooked briefly so it keeps its slip; gbegiri is the pale bean soup that cools the whole thing down. Ask for amala special and you get all three in one bowl.",
+    "eatWith": "Ewedu, gbegiri and a piece of goat, with a bowl of water to wash your right hand.",
+    "image": "/images/dishes/amala-ewedu.jpg",
+    "imageAlt": "Amala, ewedu and gbegiri on a white plate, with a piece of goat meat and pepper stew.",
+    "imageCredit": {
+      "author": "Zend2020",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Amala_with_special_soup_combination.jpg",
+      "title": "Amala with special soup combination.jpg"
+    },
+    "recipe": {
+      "label": "Afri Food Network",
+      "url": "https://afrifoodnetwork.com/recipes/swallow-recipes/amala/"
+    }
+  },
+  {
+    "id": "egusi",
+    "kind": "plate",
+    "name": "Egusi",
+    "note": "Ground melon seed stewed thick with pepper, stock and assorted meat. Pounded yam is the usual vehicle.",
+    "place": "terra-kulture",
+    "about": "Egusi is melon seed, ground and fried down with palm oil, pepper, onion and stock until it separates into bright red oil at the edges. Good egusi is thick enough that a spoon stands in it, and lumpy in the way a stew should be — the seeds are meant to clump, not dissolve. Assorted meat, ponmo and dried fish do the heavy lifting underneath.",
+    "eatWith": "Pounded yam or eba, rolled small enough to finish in one bite.",
+    "image": "/images/dishes/egusi.jpg",
+    "imageAlt": "A bowl of thick egusi soup with ponmo and assorted meat, a bowl of pounded yam beside it.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/egusi-soup/",
+      "title": "Egusi Soup Recipe"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/egusi-soup/"
+    }
+  },
+  {
+    "id": "efo-riro",
+    "kind": "plate",
+    "name": "Efo riro",
+    "note": "Spinach cooked down with pepper, locust bean and stockfish until it tastes like a Sunday afternoon.",
+    "place": "bukka-hut-yaba",
+    "about": "Efo riro means stirred greens. Spinach or shoko is wilted in a base of pepper, onion and locust bean, then finished with palm oil, dried fish and stock. The colour should stay deep green rather than grey, which is why it goes in late and comes off the heat quickly. Every family has a version, and every family thinks theirs is the correct one.",
+    "eatWith": "Eba, semo or pounded yam, with the stew spooned over while it is hot.",
+    "image": "/images/dishes/efo-riro.jpg",
+    "imageAlt": "Efo riro, dark green spinach stew with ponmo and fish, in a white bowl.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/efo-riro-spinach-stew/",
+      "title": "Efo Riro — Spinach Stew"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/efo-riro-spinach-stew/"
+    }
+  },
+  {
+    "id": "jollof",
+    "kind": "plate",
+    "name": "Jollof rice",
+    "note": "Party jollof, one pot, smoke at the bottom of the pan. The argument about whose is best is part of the meal.",
+    "place": "mood-lagos",
+    "about": "Jollof begins with tomato, pepper and onion fried down until the oil separates and the base darkens. Rice cooks in that, absorbing everything, and the last few minutes are left alone so the bottom catches slightly — that smoke is the difference between jollof and red rice. Lagos party jollof is the benchmark the rest of West Africa argues with.",
+    "eatWith": "Fried plantain and roast chicken, and a strong opinion about which country cooks it best.",
+    "image": "/images/dishes/jollof.jpg",
+    "imageAlt": "Jollof rice with roast chicken in a glass serving bowl, salad and fried plantain behind it.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/nigerian-jollof-rice/",
+      "title": "Nigerian Jollof Rice Recipe"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/nigerian-jollof-rice/"
+    }
+  },
+  {
+    "id": "ofada-ayamase",
+    "kind": "plate",
+    "name": "Ofada & ayamase",
+    "note": "Unpolished local rice under a green pepper stew. The rice smells of the farm; the sauce is not shy.",
+    "place": "bukka-hut-yaba",
+    "about": "Ofada is unpolished local rice, nutty, slightly chewy and traditionally served on a banana leaf. Ayamase — also called designer stew — is built on green peppers and palm oil, with locust bean, crayfish and assorted meat, and it is genuinely one of the hottest things on a Lagos table. The forty-pepper version is not a myth.",
+    "eatWith": "A boiled egg and ponmo on the side, and more water than you think you need.",
+    "image": "/images/dishes/ofada-ayamase.jpg",
+    "imageAlt": "Ofada rice served on a banana leaf under a spoonful of dark red pepper stew.",
+    "imageCredit": {
+      "author": "Bukky658",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ofada_Rice_and_stew_on_leaf.jpg",
+      "title": "Ofada Rice and stew on leaf.jpg"
+    },
+    "recipe": {
+      "label": "All Nigerian Recipes",
+      "url": "https://www.allnigerianrecipes.com/stews/ofada-stew"
+    }
+  },
+  {
+    "id": "suya",
+    "kind": "plate",
+    "name": "Suya",
+    "note": "Beef skewers dusted with yaji, wrapped in paper, eaten standing up at midnight. Ask for extra onions.",
+    "place": "norma",
+    "about": "Suya is beef — or ram, or chicken — sliced thin, threaded onto sticks and grilled hard over coals. The spice is yaji: groundnut, chilli, ginger, paprika and enough heat to make you reach for something cold. It arrives wrapped in newspaper with raw onion and tomato, and it is never as good as when you eat it standing beside the grill.",
+    "eatWith": "Onions and tomato from the same paper, and a cold drink.",
+    "image": "/images/dishes/suya.jpg",
+    "imageAlt": "Pieces of beef suya with yaji spice on newspaper, sliced onions and tomato alongside.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/beef-suya-recipe/",
+      "title": "Nigerian Beef Suya Recipe"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/beef-suya-recipe/"
+    }
+  },
+  {
+    "id": "pepper-soup",
+    "kind": "plate",
+    "name": "Pepper soup",
+    "note": "Goat or catfish in a thin, hot broth. The after-midnight cure, and the reason you go home later than planned.",
+    "place": "new-afrika-shrine",
+    "about": "Pepper soup is a thin, clear broth rather than a stew: pepper, uziza, ginger and stock, with goat, catfish or chicken added near the end so it stays tender. It is served in a bowl with no ceremony, and it is the dish Lagos reaches for after midnight — hot enough to clear your head, light enough to eat when you thought you were done.",
+    "eatWith": "Boiled yam or plantain, and a quiet table at the end of the night.",
+    "image": "/images/dishes/pepper-soup.jpg",
+    "imageAlt": "Catfish pepper soup in a black bowl, with boiled plantain and prawns in the broth.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/catfish-pepper-soup/",
+      "title": "Catfish Pepper Soup Recipe"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/catfish-pepper-soup/"
+    }
+  },
+  {
+    "id": "boli",
+    "kind": "plate",
+    "name": "Boli & groundnut",
+    "note": "Roasted plantain and a handful of groundnuts, sold at roadsides after dark. The cheapest good thing in the city.",
+    "place": "love-lagos-jetty",
+    "about": "Boli is plantain roasted whole over charcoal until the skin blackens and the sugars inside turn soft and caramel. The seller splits it open, scrapes off the charred outside and hands it over hot, usually with roasted groundnuts or a spoon of pepper sauce. It costs almost nothing and tastes best standing at the stall.",
+    "eatWith": "A handful of roasted groundnuts, or pepper sauce if the seller keeps it.",
+    "image": "/images/dishes/boli.jpg",
+    "imageAlt": "Roasted plantain, boli, being turned over coals at a roadside stall.",
+    "imageCredit": {
+      "author": "Iamhezzmena",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Boli-plantain.jpg",
+      "title": "Boli-plantain.jpg"
+    },
+    "recipe": {
+      "label": "All Nigerian Recipes",
+      "url": "https://www.allnigerianrecipes.com/plantain/roasted-plantain"
+    }
+  },
+  {
+    "id": "puff-puff",
+    "kind": "snack",
+    "name": "Puff-puff",
+    "note": "Fried dough balls, crisp at the edge and airy inside. A bag costs less than the taxi you are waiting for.",
+    "where": "Roadside fryers from morning; every buka keeps a tray.",
+    "about": "Puff-puff batter is flour, yeast, sugar and water, left to rise until it is full of air, then spooned into hot oil in rough balls. The good ones shatter slightly at the edge and are almost hollow in the middle. They are made in batches all day, so the freshest bag is the one the queue is standing for.",
+    "eatWith": "Eaten from the paper bag, walking, before they cool.",
+    "image": "/images/dishes/puff-puff.jpg",
+    "imageAlt": "Golden puff-puff balls piled in a paper-lined bowl.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/nigerian-puff-puff/",
+      "title": "Nigerian Puff Puff"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/nigerian-puff-puff/"
+    }
+  },
+  {
+    "id": "akara",
+    "kind": "snack",
+    "name": "Akara",
+    "note": "Whipped beans fried into fritters, eaten hot with bread or pap. Best before ten in the morning.",
+    "where": "Breakfast stalls and street corners, mornings only.",
+    "about": "Akara begins with black-eyed beans, soaked and rubbed until the skins come off, then whipped with onion and pepper into a pale, airy batter. Spoonfuls go into hot oil and come out as fritters with a crisp shell and a soft, savoury middle. It is breakfast food, and by noon most stalls have packed up.",
+    "eatWith": "Pap (ogi) or agege bread, dipped while the fritter is still hot.",
+    "image": "/images/dishes/akara.jpg",
+    "imageAlt": "A bowl of fried akara bean cakes lined with paper, with oil heating in a pan behind.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/akara-bean-cakes/",
+      "title": "Irresistible Akara (Bean Cakes)"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/akara-bean-cakes/"
+    }
+  },
+  {
+    "id": "meat-pie",
+    "kind": "snack",
+    "name": "Meat pie",
+    "note": "Shortcrust pastry around minced beef, potato and carrot. The snack you buy for a journey and finish before the bridge.",
+    "where": "Bakeries, kiosks and filling-station counters.",
+    "about": "Meat pie is shortcrust — flour, butter, a little sugar — wrapped around minced beef, potato, carrot and enough pepper to notice. The edges are crimped and the top usually brushed with egg before baking or frying. It is built to travel, which is why it is the standard Nigerian road-trip food.",
+    "eatWith": "A cold drink on a long drive, with the flaky crumbs down your shirt.",
+    "image": "/images/dishes/meat-pie.jpg",
+    "imageAlt": "Five golden Nigerian meat pies fanned out on a plate with leaves at the centre.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/nigerian-meat-pie/",
+      "title": "Crispy Fried Meat Pie"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/nigerian-meat-pie/"
+    }
+  },
+  {
+    "id": "egg-roll",
+    "kind": "snack",
+    "name": "Egg roll",
+    "note": "A boiled egg wrapped in sweet dough and fried. Meat pie's quieter sibling, and the better breakfast.",
+    "where": "The same bakery shelves as meat pie, usually beside them.",
+    "about": "Egg roll is a whole boiled egg wrapped in lightly sweet dough and fried until golden. It is denser than puff-puff and less rich than meat pie, which makes it the one Nigerians eat at seven in the morning without an argument. The good ones are fried to order and still warm in the middle.",
+    "eatWith": "Tea, or the passenger seat of a car heading out of the city.",
+    "image": "/images/dishes/egg-roll.jpg",
+    "imageAlt": "Nigerian egg rolls, golden fried dough around a boiled egg, in a cloth-lined basket.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/nigerian-egg-roll/",
+      "title": "Crispy Nigerian Egg Rolls"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/nigerian-egg-roll/"
+    }
+  },
+  {
+    "id": "buns",
+    "kind": "snack",
+    "name": "Buns",
+    "note": "Denser and sweeter than puff-puff, with a cracked top. Order them hot, when the oil is still going.",
+    "where": "Fried to order at street corners and school gates.",
+    "about": "Buns are puff-puff's denser cousin: less yeast, more sugar, a batter thick enough to drop in spoonfuls that crack open as they fry. The result is a soft, sweet middle under a shell that stays crisp for a while. They are best straight out of the oil, which is why the good stalls sell them in minutes.",
+    "eatWith": "Hot, in a paper bag, with the oil still draining.",
+    "image": "/images/dishes/buns.jpg",
+    "imageAlt": "Nigerian buns, small round fried dough, piled in a white basket.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/nigerian-buns/",
+      "title": "Nigerian Buns Recipe"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/nigerian-buns/"
+    }
+  },
+  {
+    "id": "chin-chin",
+    "kind": "snack",
+    "name": "Chin chin",
+    "note": "Sweet fried dough cut into cubes, crunchy enough to survive a car boot. Buy a tub, not a bag.",
+    "where": "Sold in bags and tubs everywhere; good for the drive home.",
+    "about": "Chin chin is sweet dough rolled out, cut into small cubes and fried hard until it rattle in the bowl. It keeps for days, which is why it travels in tubs and gloveboxes and survives every Lagos traffic jam. Some kitchens add nutmeg or coconut; all of them add more sugar than you expect.",
+    "eatWith": "A tub in the car, and nothing else for the next hour.",
+    "image": "/images/dishes/chin-chin.jpg",
+    "imageAlt": "A bowl of chin chin, the small fried sweet dough cubes, on a wooden table.",
+    "imageCredit": {
+      "author": "Reigninginvictory",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:LoveChinChin.jpg",
+      "title": "LoveChinChin.jpg"
+    },
+    "recipe": {
+      "label": "All Nigerian Recipes",
+      "url": "https://www.allnigerianrecipes.com/snacks/chin-chin/"
+    }
+  },
+  {
+    "id": "moi-moi",
+    "kind": "snack",
+    "name": "Moi moi",
+    "note": "Beans ground with pepper and onion, steamed in leaves until it sets like a savoury custard.",
+    "where": "Wrapped in leaves at bukas, and beside the jollof at every party.",
+    "about": "Moi moi is beans with their skins rubbed off, blended with pepper, onion and a little palm oil, then steamed in banana or uma leaves until it sets. The texture is the tell: soft and custardy rather than dry and crumbly, with the leaf smell cooked into the outside. It is served beside rice, folded into pap, or eaten on its own as a mid-morning meal.",
+    "eatWith": "A spoon of jollof, a bowl of pap, or nothing at all if it is still hot.",
+    "image": "/images/dishes/moi-moi.jpg",
+    "imageAlt": "Moi moi still in its green leaves, one parcel opened to show the orange bean pudding inside.",
+    "imageCredit": {
+      "author": "Joyful Cook",
+      "license": "Used with permission",
+      "page": "https://joyfulcook.com/recipe/leaf-moi-moi/",
+      "title": "Leaf Moi Moi"
+    },
+    "recipe": {
+      "label": "Joyful Cook",
+      "url": "https://joyfulcook.com/recipe/leaf-moi-moi/"
+    }
+  },
+  {
+    "id": "okpa",
+    "kind": "snack",
+    "name": "Okpa",
+    "note": "Enugu's breakfast: bambara nut flour steamed in leaves until dense, warm and faintly nutty.",
+    "where": "Morning sellers at junctions and motor parks; ask for okpa di oku, the hot one.",
+    "about": "Okpa is bambara nut flour, whisked with pepper, palm oil and stock, then steamed in leaves or polythene until it sets into a dense, savoury pudding. It is an Enugu food first and a Lagos breakfast second, sold from coolers at junctions before the city gets going. 'Okpa di oku' means hot okpa, and it is what you should ask for.",
+    "eatWith": "Eaten hot from the leaf, with a sachet of water and no ceremony.",
+    "image": "/images/dishes/okpa.jpg",
+    "imageAlt": "Two leaf-wrapped okpa parcels split open on a white plate, showing the bright orange steamed pudding inside.",
+    "imageCredit": {
+      "author": "Micheal chidubem",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Igbo_Steamed_Okpa.jpg",
+      "title": "Igbo Steamed Okpa.jpg"
+    },
+    "recipe": {
+      "label": "All Nigerian Recipes",
+      "url": "https://www.allnigerianrecipes.com/beans/okpa/"
+    }
+  }
+]

@@ -1,0 +1,13 @@
+import places from './data/places.json' with { type: 'json' };
+import dishes from './data/dishes.json' with { type: 'json' };
+import { places as areasPlaces, dishes as areasDishes, placesInCorridor, dishesInCorridor, clusterPins, mapBounds, categoryCounts } from './lib/areas.ts';
+console.log('areas places length:', areasPlaces.length);
+console.log('areas dishes length:', areasDishes.length);
+console.log('lekki places:', placesInCorridor('lekki').map(p => p.id));
+console.log('lekki dishes:', dishesInCorridor('lekki').map(d => d.id));
+console.log('mainland places:', placesInCorridor('mainland').map(p => p.id));
+console.log('mainland dishes:', dishesInCorridor('mainland').map(d => d.id));
+console.log('island places:', placesInCorridor('lagos-island').map(p => p.id));
+console.log('island dishes:', dishesInCorridor('lagos-island').map(d => d.id));
+console.log('lekki pins:', clusterPins('lekki').length);
+console.log('lekki bounds:', mapBounds('lekki'));

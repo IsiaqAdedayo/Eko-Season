@@ -1,0 +1,112 @@
+{
+  "updatedAt": "2026-11-23T16:04:27.525Z",
+  "events": [
+    {
+      "id": "baba-segi-wives",
+      "title": "The Secret Lives of Baba Segi's Wives",
+      "date": "2026-12-04",
+      "endDate": null,
+      "cinemas": [
+        {
+          "name": "Silverbird Galleria",
+          "area": "Victoria Island",
+          "url": "https://silverbirdcinemas.com/cinema/galleria/"
+        },
+        {
+          "name": "Silverbird Ikeja",
+          "area": "Ikeja",
+          "url": "https://silverbirdcinemas.com/cinema/ikeja/"
+        },
+        {
+          "name": "Silverbird Abuja",
+          "area": "Abuja",
+          "url": "https://silverbirdcinemas.com/cinema/abuja/"
+        },
+        {
+          "name": "Silverbird Kaduna",
+          "area": "Kaduna",
+          "url": "https://silverbirdcinemas.com/cinema/kaduna/"
+        }
+      ],
+      "venueIds": [
+        "silverbird-galleria"
+      ],
+      "source": "EbonyLife Films / Silverbird Cinemas",
+      "sourceUrl": "https://silverbirdcinemas.com/cinema/galleria/",
+      "note": "EbonyLife Films' adaptation of Lola Shoneyin's 2010 novel. Opens in Nigerian cinemas Friday 4 December. Selected for the Centrepiece programme at the 2026 Toronto International Film Festival, so it will have had an international festival run before the Lagos release."
+    },
+    {
+      "id": "jagun-jagun-2",
+      "title": "Jagun Jagun 2: War of Warriors",
+      "date": "2026-12-04",
+      "endDate": null,
+      "cinemas": [
+        {
+          "name": "Silverbird Galleria",
+          "area": "Victoria Island",
+          "url": "https://silverbirdcinemas.com/cinema/galleria/"
+        },
+        {
+          "name": "Silverbird Ikeja",
+          "area": "Ikeja",
+          "url": "https://silverbirdcinemas.com/cinema/ikeja/"
+        }
+      ],
+      "venueIds": [
+        "silverbird-galleria"
+      ],
+      "source": "Netflix / The Cave",
+      "sourceUrl": "https://silverbirdcinemas.com/cinema/galleria/",
+      "note": "Femi Adebayo’s follow-up to Jagun Jagun, expected on Netflix from Friday 4 December 2026. Expected in Nigerian cinemas ahead of the Netflix drop; venue list still being announced.",
+      "platform": "netflix"
+    },
+    {
+      "id": "the-four-no-one-fights-alone",
+      "title": "The Four: No One Fights Alone",
+      "date": "2026-12-11",
+      "endDate": null,
+      "cinemas": [
+        {
+          "name": "Silverbird Galleria",
+          "area": "Victoria Island",
+          "url": "https://silverbirdcinemas.com/cinema/galleria/"
+        },
+        {
+          "name": "Silverbird Ikeja",
+          "area": "Ikeja",
+          "url": "https://silverbirdcinemas.com/cinema/ikeja/"
+        }
+      ],
+      "venueIds": [
+        "silverbird-galleria"
+      ],
+      "source": "Funke Akindele Network / FilmOne Entertainment",
+      "sourceUrl": "https://silverbirdcinemas.com/cinema/galleria/",
+      "note": "Funke Akindele returns to cinemas with a drama about four women whose friendship and loyalty are tested as they work to secure the future of a young man they love. Ensemble cast includes Funke Akindele, Bisola Aiyeola, Chioma Akpotha, Waje and Richard Mofe-Damijo. Expected in Nigerian cinemas from 11 December."
+    },
+    {
+      "id": "bestie-toyin",
+      "title": "Bestie",
+      "date": "2026-12-16",
+      "endDate": null,
+      "cinemas": [
+        {
+          "name": "Silverbird Galleria",
+          "area": "Victoria Island",
+          "url": "https://silverbirdcinemas.com/cinema/galleria/"
+        },
+        {
+          "name": "Silverbird Ikeja",
+          "area": "Ikeja",
+          "url": "https://silverbirdcinemas.com/cinema/ikeja/"
+        }
+      ],
+      "venueIds": [
+        "silverbird-galleria"
+      ],
+      "source": "Toyin Abraham / FilmOne",
+      "sourceUrl": "https://silverbirdcinemas.com/cinema/galleria/",
+      "note": "Toyin Abraham's Christmas release, expected in Nigerian cinemas from 16 December. Detailed plot and full venue list are still being announced — check the cinema page on the day."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+/**
+ * Headings for the home-page sections. Copy lives here so a wording change
+ * never means touching layout — same arrangement as data/hero.ts.
+ */
+export type SectionHeading = {
+  eyebrow?: string;
+  title: string;
+};
+
+export const sections: Record<
+  "places" | "dishes" | "shows" | "transport" | "tonight",
+  SectionHeading
+> = {
+  places: {
+    eyebrow: "Where to go",
+    title: "The places that make December",
+  },
+  dishes: {
+    eyebrow: "What to eat",
+    title: "The plates to plan a day around",
+  },
+  shows: {
+    eyebrow: "What’s on",
+    title: "Big shows, big names",
+  },
+  transport: {
+    eyebrow: "Getting around",
+    title: "How Lagos actually moves",
+  },
+  tonight: {
+    title: "Tonight and this week",
+  },
+};

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Next.js generated files
+.next/
+.next-*/
+
+# Build outputs
+out/
+build/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+

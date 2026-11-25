@@ -1,0 +1,12 @@
+{
+  "$comment": "Sources the scraper watches. Add an entry here and it is picked up on the next run, no code change needed. 'detty' reads the festival's schema.org event list and then its ticket pages for prices. 'jsonld' works on any page that publishes schema.org Event data (most modern ticketing pages do).",
+  "sources": [
+    {
+      "name": "Detty December Fest",
+      "kind": "detty",
+      "url": "https://dettydecfest.com/events/",
+      "wpApi": "https://dettydecfest.com/wp-json/wp/v2"
+    }
+  ],
+  "watchlist": []
+}

@@ -1,0 +1,34 @@
+{
+  "name": "ekoseason",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "scrape:shows": "node scripts/scrape-shows.mjs",
+    "scrape:movies": "node scripts/scrape-movies.mjs",
+    "scrape:all": "node scripts/scrape-shows.mjs && node scripts/scrape-movies.mjs",
+    "refresh": "bash scripts/refresh-all.sh",
+    "check:data": "node scripts/validate-data.mjs",
+    "check:parsers": "node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs",
+    "check:routes": "node scripts/smoke-routes.mjs",
+    "test": "node scripts/validate-data.mjs && node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs",
+    "check:health": "node scripts/check-health.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^12.43.0",
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3"
+  }
+}
