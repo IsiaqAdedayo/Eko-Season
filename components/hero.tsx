@@ -153,6 +153,10 @@ export function Hero({ seasonLabel }: { seasonLabel: string }) {
         </motion.p>
       </div>
 
+      <p className="absolute bottom-2 right-4 z-10 hidden text-[9px] uppercase tracking-[0.18em] text-white/40 sm:block">
+        {scene.credit}
+      </p>
+
       {/* Scene thumbnails */}
       <div className="absolute right-6 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-end gap-5 lg:flex">
         {scenes.map((item, sceneIndex) => {

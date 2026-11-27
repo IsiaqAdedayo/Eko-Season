@@ -16,6 +16,11 @@ export type Place = {
   nights: string[];
   nightsSource: NightsSource | null;
   nightsCheckedAt: string | null;
+  /**
+   * Shown under the lead image when it is not a photograph of the venue, so a
+   * card never implies a stock shot is the place itself.
+   */
+  imageNote?: string;
   /** "closed" means the venue has shut permanently and is never listed. */
   status?: "open" | "closed";
 };
@@ -95,8 +100,19 @@ export const AREA_OPTIONS = [
   "Ilashe",
 ];
 
-const MAINLAND = ["Yaba", "Ikeja", "Maryland", "Bariga", "Ebute Metta", "Iganmu"];
-const LEKKI_CORRIDOR = ["Oniru", "Eleko", "Chevron Drive"];
+const MAINLAND = [
+  "Yaba",
+  "Ikeja",
+  "Maryland",
+  "Bariga",
+  "Ebute Metta",
+  "Iganmu",
+  "Surulere",
+  "Ikorodu",
+  "Apapa",
+  "Agege",
+];
+const LEKKI_CORRIDOR = ["Oniru", "Eleko", "Chevron Drive", "Sangotedo"];
 const ISLAND_WATER = ["Lagos Island", "Lagos Harbour"];
 
 export function getPlace(id: string) {

@@ -12,6 +12,8 @@ export type Scene = {
   label: string;
   description: string;
   photo: string;
+  /** Visible attribution — the hero photos are all openly licensed. */
+  credit: string;
 };
 
 /**
@@ -33,6 +35,7 @@ export const scenes: Scene[] = [
     description:
       "Thirty days of music, food and traffic. A guide for people who have never done this city before.",
     photo: "photo-1682944856348-0665d4b8d81c",
+    credit: "Illustrative stock photograph",
   },
   {
     id: "beach",
@@ -41,7 +44,9 @@ export const scenes: Scene[] = [
     label: "Places to go",
     description:
       "Beach clubs in Oniru, rooftops in VI, quiet sand at Tarkwa Bay, and where to eat after all of it.",
-    photo: "photo-1787478555928-40f802c6bf7b",
+    photo:
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lekki_Beach_in_Lagos.jpg/1920px-Lekki_Beach_in_Lagos.jpg",
+    credit: "Lekki beach — PelumiK, CC BY-SA 4.0",
   },
   {
     id: "night",
@@ -50,6 +55,19 @@ export const scenes: Scene[] = [
     label: "After dark",
     description:
       "Quilox, Vaniti, Boho — plus every big show worth buying a ticket for before it sells out.",
-    photo: "photo-1763757575623-ffafe0867aa3",
+    photo:
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Third-mainland-bridge-at-night.jpg/1920px-Third-mainland-bridge-at-night.jpg",
+    credit: "Third Mainland Bridge at night — S. Aderogba, CC BY-SA 4.0",
+  },
+  {
+    id: "island",
+    head: ["Lagos", "Island"],
+    kicker: "Towers, marina, traffic",
+    label: "The skyline",
+    description:
+      "The city's towers seen from the approach road, the marina on one side and the traffic on the other.",
+    photo:
+      "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Lagos_skyline.jpg/1920px-Lagos_skyline.jpg",
+    credit: "Lagos Island from the bridge — Clara Sanchiz, CC BY-SA 2.0",
   },
 ];

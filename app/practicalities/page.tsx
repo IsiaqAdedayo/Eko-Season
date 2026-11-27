@@ -73,6 +73,16 @@ const RIDES = [
   },
 ];
 
+const SAFETY = [
+  "Look at a bus before you get on it. If the inside or the crowd does not sit right with you, let it go and wait for the next one — you lose ten minutes, not your phone.",
+  "Use the pedestrian bridges. The walk to the steps looks longer from the kerb than it is, and crossing a multi-lane road on foot is the actual risk you are weighing against it. Some corridors are also policed for jaywalking, which turns a shortcut into a fine.",
+  "Carry bags in front of you on buses, in BRT queues, in market aisles and in kekes. A bag behind you is a bag someone else can open.",
+  "Keep your phone out of sight in crowds. Bus stops, market entrances and packed forecourts are where a phone gets lifted, not at the venue itself.",
+  "Before you get into an Uber or Bolt, check the plate number against the app — and the make and model of the car while you are at it. A matching plate on a different car is still the wrong car.",
+  "Going a long way — island to mainland, or out along the Lekki-Epe corridor at night — share your live location with someone who is expecting you, and message them when you arrive.",
+  "Ask what things cost before you agree to them, and ask more than one person. Market prices are not fixed, and a first figure is an opening offer.",
+];
+
 const section = "mt-14";
 const heading = "font-display text-2xl";
 const body = "mt-3 text-sm leading-relaxed text-ink/80";
@@ -217,6 +227,33 @@ export default function PracticalitiesPage() {
             you and keep the plate number. If a driver asks you to cancel and
             pay cash, the trip stops being tracked — that is the point of the
             ask.
+          </p>
+        </section>
+
+        <section className={section}>
+          <h2 className={heading}>On the street</h2>
+          <p className={body}>
+            Nothing here is about a specific venue. It is the stuff Lagos
+            teaches people in their first week, which is easier to read than to
+            learn the hard way.
+          </p>
+          <ul className="mt-4 space-y-3">
+            {SAFETY.map((line) => (
+              <li
+                key={line}
+                className="flex gap-3 text-sm leading-relaxed text-ink/80"
+              >
+                <span
+                  aria-hidden
+                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold"
+                />
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-[11px] leading-relaxed text-muted">
+            Written in our own words after a Lagos safety carousel by
+            @aniksss19 on TikTok; no text or imagery is reproduced from it.
           </p>
         </section>
 

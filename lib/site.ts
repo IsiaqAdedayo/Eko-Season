@@ -19,6 +19,7 @@ export const SOCIAL_IMAGE = imageUrl(
 /** Primary navigation links in the header and footer. */
 export const NAV_LINKS: NavLink[] = [
   { href: "/places", label: "Places" },
+  { href: "/activities", label: "Activities" },
   { href: "/shows", label: "Shows" },
   { href: "/movies", label: "Movies" },
   { href: "/weather", label: "Weather" },

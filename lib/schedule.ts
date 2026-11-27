@@ -97,7 +97,9 @@ const CORRIDOR_AREAS: Record<CorridorId, string[]> = {
   ],
 };
 
-export function corridorForArea(area: string | null | undefined): CorridorId | null {
+export function corridorForArea(
+  area: string | null | undefined,
+): CorridorId | null {
   if (!area) return null;
   const match = (Object.entries(CORRIDOR_AREAS) as [CorridorId, string[]][]).find(
     ([, areas]) => areas.includes(area),
@@ -109,15 +111,27 @@ export function corridorForArea(area: string | null | undefined): CorridorId | n
 export const showMatchesCorridor = (
   event: ShowEvent,
   corridor: CorridorId | null,
-) => !corridor || corridorForArea(event.area) === null || corridorForArea(event.area) === corridor;
+) =>
+  !corridor ||
+  corridorForArea(event.area) === null ||
+  corridorForArea(event.area) === corridor;
+
+/** Night rows include only venues with a published weekly-night schedule.
+ *  A venue that has regular opening hours from a Google Maps aggregate, but no
+ *  published recurring night programme, does not present as a "night" here. */
+export const isPublishedNightVenue = (place: Place) =>
+  place.nightsSource !== null &&
+  place.nightsSource.url !== null &&
+  place.nightsSource.url.startsWith("https://www.google.com/maps/") === false;
 
 export const planDay = (date: string): DayPlan => {
   const weekday = weekdayKey(date);
   return {
     date,
     shows: showEvents.filter((event) => coversDay(event, date)),
-    // Only nights with a published schedule: an unsourced guess is not a plan.
-    clubs: scheduledPlaces.filter((place) => place.nights.includes(weekday)),
+    clubs: scheduledPlaces.filter(
+      (place) => isPublishedNightVenue(place) && place.nights.includes(weekday),
+    ),
   };
 };
 

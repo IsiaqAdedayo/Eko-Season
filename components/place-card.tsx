@@ -28,19 +28,26 @@ export function PlaceCard({ place }: { place: Place }) {
         </span>
 
         <div className="absolute inset-x-4 bottom-4 text-white">
-          <p className="text-[10px] uppercase tracking-[0.2em] text-white/70">
+          <p className="text-[11px] sm:text-[10px] uppercase tracking-[0.1em] sm:tracking-[0.2em] text-white/70">
             {place.area}
           </p>
-          <h3 className="mt-1 line-clamp-1 font-display text-lg leading-tight">
+          <h3 className="mt-1 line-clamp-1 font-display text-base sm:text-lg leading-snug">
             {place.name}
           </h3>
-          <p className="line-clamp-1 text-xs text-white/80">{place.tagline}</p>
+          <p className="mt-1 line-clamp-1 text-[11px] sm:text-xs text-white/80">{place.tagline}</p>
         </div>
       </div>
 
-      {/* Clamped to three lines so a long note cannot make one card taller
-          than its neighbours in the same row. */}
-      <p className="line-clamp-3 px-1 py-4 text-xs leading-relaxed text-muted">
+      {place.imageNote ? (
+        <p className="mx-1 mt-2 border-l-2 border-ember/40 pl-2 text-[10px] uppercase leading-relaxed tracking-[0.1em] text-ember/80">
+          {place.imageNote}
+        </p>
+      ) : null}
+
+      {/* Clamp a long note so one card cannot become much taller than its
+          neighbours in the same row. Show more on wider viewports where
+          the card can breathe. */}
+      <p className="line-clamp-2 px-1 py-4 text-xs leading-relaxed text-muted sm:line-clamp-3">
         {place.note}
       </p>
 

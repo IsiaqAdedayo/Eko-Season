@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter } from "../../components/site-footer";
-import { KIND_LABELS, searchAll, type HitKind, type SearchHit } from "../../lib/search";
+import { KIND_LABELS, searchAll, searchAllCount, SHOWING_LIMIT, type HitKind, type SearchHit } from "../../lib/search";
 
 type PageProps = {
   searchParams: Promise<{ q?: string }>;
@@ -10,18 +10,18 @@ type PageProps = {
 export const metadata: Metadata = {
   title: "Search — Èkó Season",
   description:
-    "Search every Lagos place, show, film and dish in the December guide.",
+    "Search every Lagos place, thing to do, show, film and dish in the December guide.",
   alternates: { canonical: "/search" },
   openGraph: {
     title: "Search the Lagos December guide",
-    description: "Places, shows, films and food — one search box.",
+    description: "Places, things to do, shows, films and food — one search box.",
     url: "/search",
     type: "website",
     siteName: "Èkó Season",
   },
 };
 
-const ORDER: HitKind[] = ["place", "show", "movie", "eat"];
+const ORDER: HitKind[] = ["place", "activity", "show", "movie", "eat"];
 
 function group(hits: SearchHit[]) {
   return ORDER.map((kind) => ({
@@ -54,7 +54,10 @@ function ResultRow({ hit }: { hit: SearchHit }) {
 export default async function SearchPage({ searchParams }: PageProps) {
   const { q = "" } = await searchParams;
   const query = q.trim();
-  const hits = query ? searchAll(query) : [];
+  const hits = query
+    ? searchAll(query, SHOWING_LIMIT, 0)
+    : [];
+  const total = query ? searchAllCount(query) : 0;
   const groups = group(hits);
 
   return (
@@ -75,8 +78,8 @@ export default async function SearchPage({ searchParams }: PageProps) {
             Find anything in the guide
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            Venues, shows, films and plates. Try &ldquo;Lekki beach&rdquo;,
-            &ldquo;Davido&rdquo; or &ldquo;amala&rdquo;.
+            Venues, things to do, shows, films and plates. Try
+            &ldquo;padel&rdquo;, &ldquo;Lekki beach&rdquo; or &ldquo;amala&rdquo;.
           </p>
 
           <form action="/search" method="get" className="mt-6 flex gap-2">
@@ -137,7 +140,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
         <p className="mt-12 text-[11px] leading-relaxed text-muted">
           {hits.length > 0
             ? `${hits.length} result${hits.length === 1 ? "" : "s"} for “${query}”.`
-            : "Search covers the whole guide: place pages, the show calendar, film releases and dishes."}
+            : "Search covers the whole guide: place pages, the activities page, the show calendar, film releases and dishes."}
         </p>
       </div>
 

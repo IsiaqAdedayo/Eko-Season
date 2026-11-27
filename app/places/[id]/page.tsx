@@ -85,6 +85,11 @@ export default async function PlacePage({ params }: Props) {
         all.findIndex((c) => c.author === credit.author) === index,
     );
   const leadCredit = photoCredit(place.gallery[0]);
+  // The lead credit is already printed above, so the "More from" line must not
+  // repeat it — otherwise a two-photo gallery prints the same sentence twice.
+  const moreCredits = credits.filter(
+    (credit) => credit.author !== leadCredit?.author,
+  );
 
   // Illustrative Unsplash images need no credit; a self-hosted asset always does.
   if (!leadCredit && place.gallery[0]?.startsWith("/")) {
@@ -213,6 +218,11 @@ export default async function PlacePage({ params }: Props) {
             className="aspect-[16/9] w-full object-cover"
           />
         </figure>
+        {place.imageNote ? (
+          <p className="mt-2 border-l-2 border-ember/40 pl-2 text-[10px] uppercase leading-relaxed tracking-[0.1em] text-ember/80">
+            {place.imageNote}
+          </p>
+        ) : null}
 
         {moreHtml}
 
@@ -220,8 +230,8 @@ export default async function PlacePage({ params }: Props) {
           {leadCredit
             ? `Photography: ${leadCredit.author} (${leadCredit.license}) — ${leadCredit.source ?? "Wikimedia Commons"}.${leadCredit.venue ? "" : " Illustrative — not the venue itself."}`
             : "Illustrative photography — not the venue itself."}
-          {credits.length > 0 &&
-            " " + `More from ${leadCredit?.source ?? "Wikimedia Commons"}: ${credits.map((c) => c.author + " (" + c.license + ")").join(", ")}.`}
+          {moreCredits.length > 0 &&
+            " " + `More from ${leadCredit?.source ?? "Wikimedia Commons"}: ${moreCredits.map((c) => c.author + " (" + c.license + ")").join(", ")}.`}
         </p>
 
         <div className="mt-10 grid gap-10 border-t border-ink/10 pt-10 lg:grid-cols-[1.6fr_1fr]">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { ShortlistBar } from "../components/shortlist";
+import { SiteHeader } from "../components/site-header";
 import { SITE_URL } from "../lib/site";
 import "./globals.css";
 
@@ -51,6 +52,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <div id="main" tabIndex={-1}>
+          <SiteHeader />
           {children}
         </div>
         <ShortlistBar />

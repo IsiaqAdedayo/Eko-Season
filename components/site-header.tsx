@@ -77,11 +77,18 @@ export function SiteHeader() {
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);
 
+  // Only the home hero runs underneath the bar; every other route is a light
+  // page, so the bar starts solid there instead of fading white-on-cream.
+  const onHome = pathname === "/";
+
   // The open panel sits on a cream background, so the bar has to be solid too.
-  const solidBar = solid || open;
+  const solidBar = solid || open || !onHome;
 
   return (
-    <header
+    <>
+      {/* The bar is fixed, so inner pages reserve its height in the flow. */}
+      {!onHome && <div aria-hidden className="h-[68px]" />}
+      <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
         solidBar
           ? "bg-cream/95 text-ink shadow-[0_1px_0_rgba(23,16,11,0.08)] backdrop-blur-md"
@@ -169,6 +176,7 @@ export function SiteHeader() {
           ))}
         </nav>
       )}
-    </header>
+      </header>
+    </>
   );
 }

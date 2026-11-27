@@ -11,6 +11,7 @@
     "scrape:all": "node scripts/scrape-shows.mjs && node scripts/scrape-movies.mjs",
     "refresh": "bash scripts/refresh-all.sh",
     "check:data": "node scripts/validate-data.mjs",
+    "check:links": "node scripts/check-links.mjs",
     "check:parsers": "node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs",
     "check:routes": "node scripts/smoke-routes.mjs",
     "test": "node scripts/validate-data.mjs && node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs",

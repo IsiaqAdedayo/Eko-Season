@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SiteHeader } from "../components/site-header";
 import { Hero } from "../components/hero";
 import { SeasonNotice } from "../components/season-notice";
 import { TonightStrip } from "../components/tonight-strip";
@@ -33,7 +32,6 @@ export default async function Home() {
 
   return (
     <main id="top">
-      <SiteHeader />
       <Hero seasonLabel={plannedSeasonLabel()} />
       <SeasonNotice className="mx-auto mt-8 max-w-7xl px-6 sm:px-10" />
       <TonightStrip />

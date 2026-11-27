@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { SiteFooter } from "../../components/site-footer";
 import { imageUrl } from "../../lib/media";
@@ -7,6 +8,7 @@ import {
   weatherNow,
   weatherStrip,
   tonightWeatherSignal,
+  type DayWeather,
   type WeatherSnapshot,
 } from "../../lib/weather";
 
@@ -39,6 +41,34 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * One row of the plan. The pill is a fixed height and sits on the first line
+ * of the copy rather than stretching to the paragraph's full height, which is
+ * what a bare `flex` does to a padded span.
+ */
+function PlanRow({
+  label,
+  tone = "ink",
+  children,
+}: {
+  label: string;
+  tone?: "ink" | "ember";
+  children: ReactNode;
+}) {
+  return (
+    <div className="flex items-start gap-3 border-b border-ink/10 py-3 first:pt-0 last:border-0 last:pb-0">
+      <span
+        className={`mt-0.5 inline-flex h-6 shrink-0 items-center justify-center rounded-full px-2.5 text-[11px] font-medium leading-none ${
+          tone === "ember" ? "bg-ember/10 text-ember" : "bg-ink/10 text-ink"
+        }`}
+      >
+        {label}
+      </span>
+      <p className="min-w-0 text-sm leading-relaxed text-ink/80">{children}</p>
+    </div>
+  );
+}
+
 function windDirCardinal(deg: number | null) {
   if (deg == null) return "—";
   const cardinals = [
@@ -63,19 +93,12 @@ function windDirCardinal(deg: number | null) {
   return cardinals[i];
 }
 
-function dayRow(snapshot: WeatherSnapshot, day: {
-  date: string;
-  weekday: string;
-  tempMax: number | null;
-  tempMin: number | null;
-  tempFeelMax: number | null;
-  pop: number | null;
-  windSpeed: number | null;
-  windDir: number | null;
-  condition: string;
-}) {
+function dayRow(day: DayWeather) {
   return (
-    <div className="grid gap-2 rounded-2xl border border-cream/10 bg-white/60 px-5 py-4 sm:grid-cols-[auto_1fr_auto]">
+    <div
+      key={day.date}
+      className="grid gap-2 rounded-2xl border border-cream/10 bg-white/60 px-5 py-4 sm:grid-cols-[auto_1fr_auto]"
+    >
       <div className="flex flex-col items-start gap-1">
         <p className="text-[11px] uppercase tracking-[0.2em] text-ember font-medium">
           {day.weekday.slice(0, 3)}
@@ -258,18 +281,15 @@ export default async function WeatherPage() {
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
-            {days.map((day) => dayRow(snapshot, day))}
+            {days.map((day) => dayRow(day))}
           </div>
         </section>
 
         <section className="mt-12 rounded-2xl border border-ink/10 bg-white/60 p-5">
           <h2 className="font-display text-xl">Plan around it</h2>
-          <div className="mt-4 space-y-3 text-sm leading-relaxed text-ink/80">
+          <div className="mt-2">
             {strip.todayTemp != null && (
-              <p className="flex gap-3">
-                <span className="shrink-0 rounded-full bg-ink/10 px-2 py-0.5 text-xs text-ink">
-                  Today
-                </span>
+              <PlanRow label="Today">
                 {strip.todayTemp >= 32
                   ? "Hot enough that midday beach time is about shade, not sun. Morning and late afternoon are the comfortable windows."
                   : strip.todayTemp >= 28
@@ -277,54 +297,37 @@ export default async function WeatherPage() {
                     : strip.todayTemp >= 24
                       ? "Comfortable beach weather if there's a breeze. Good for a long afternoon."
                       : "On the cool side for a Lagos beach — fine for a walk, less ideal for sunbathing."}
-              </p>
+              </PlanRow>
             )}
-            {strip.todayPop != null && strip.todayPop >= 40 && (
-              <p className="flex gap-3">
-                <span className="shrink-0 rounded-full bg-ember/10 px-2 py-0.5 text-xs text-ember font-medium">
-                  Rain likely today
-                </span>
-                Swimming is still possible in short windows, but a beach day today is a gamble. Move it to{" "}
-                {strip.wettestDay != null ? strip.wettestDay : "a drier day"} if you can.
-              </p>
-            )}
-            {strip.hottestTemp != null && (
-              <p className="flex gap-3">
-                <span className="shrink-0 rounded-full bg-ink/10 px-2 py-0.5 text-xs text-ink">
-                  Hottest day
-                </span>
-                {strip.hottestDay} is the warmest of the next six days at about {Math.round(strip.hottestTemp)}°C.
-                Plan outdoor stuff for morning or late afternoon, and carry water.
-              </p>
-            )}
-            {strip.wettestPop != null && strip.wettestPop >= 40 && (
-              <p className="flex gap-3">
-                <span className="shrink-0 rounded-full bg-ember/10 px-2 py-0.5 text-xs text-ember font-medium">
-                  Wettest day
-                </span>
-                {strip.wettestDay} looks like the day to skip the beach and pick a cinema, museum or covered spot instead.
-              </p>
+            {strip.todayPop != null &&
+              strip.todayPop >= 40 &&
+              signal.rainCue?.dayLabel !== today.weekday && (
+              <PlanRow label="Rain likely today" tone="ember">
+                Swimming is still possible in short windows, but a beach day today
+                is a gamble. Move it to{" "}
+                {strip.wettestDay != null ? strip.wettestDay : "a drier day"} if you
+                can.
+              </PlanRow>
             )}
 
             {signal.rainCue && (
-              <p className="flex gap-3">
-                <span className="shrink-0 rounded-full bg-ember/10 px-2 py-0.5 text-xs text-ember font-medium">
-                  {signal.rainCue.kind === "likely" ? "Rain likely" : "Watch the sky"}
-                </span>
+              <PlanRow
+                label={signal.rainCue.kind === "likely" ? "Wettest day" : "Watch the sky"}
+                tone="ember"
+              >
                 {signal.rainCue.kind === "likely"
                   ? `The wettest day in the next week is ${signal.rainCue.dayLabel} (about ${Math.round(signal.rainCue.pop)}% rain). Beach plans are a gamble that day — a cinema, museum or covered spot is the safer bet.`
                   : `Rain is possible in the next week, especially ${signal.rainCue.dayLabel} (about ${Math.round(signal.rainCue.pop)}% chance). Outdoor plans still work, just keep an eye on the sky.`}
-              </p>
+              </PlanRow>
             )}
             {signal.heatCue && (
-              <p className="flex gap-3">
-                <span className="shrink-0 rounded-full bg-ink/10 px-2 py-0.5 text-xs text-ink">
-                  {signal.heatCue.kind === "very-hot" ? "Very warm" : "Warm"}
-                </span>
+              <PlanRow
+                label={signal.heatCue.kind === "very-hot" ? "Hottest day" : "Warm"}
+              >
                 {signal.heatCue.kind === "very-hot"
                   ? `The warmest day in the next week is ${signal.heatCue.dayLabel} (about ${Math.round(signal.heatCue.tempMax)}°C). Plan outdoor stuff for morning or late afternoon and carry water.`
                   : `The warmest day in the next week is ${signal.heatCue.dayLabel} (about ${Math.round(signal.heatCue.tempMax)}°C). Fine for daytime, with the peak hours still feeling like Lagos midday.`}
-              </p>
+              </PlanRow>
             )}
           </div>
         </section>

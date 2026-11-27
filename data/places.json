@@ -228,7 +228,7 @@
     "tagline": "A boat-only beach with calm water and city views",
     "note": "Tarkwa Bay is a sheltered artificial beach just off the Lagos harbour — calmer water than the open Atlantic beaches, which is why people swim here and take surf lessons. It's an island, so the only way in is by boat: 15–30 minutes from the CMS, Falomo or Victoria Island jetties. Day entry is about ₦2,000, with chairs and a thatched tent from around ₦500 for the day. On the water you can swim, book surf lessons, hire a jet ski, and eat grilled fish from the shore. There's a small resident community and a jetty station. Sort your return boat before you settle in — the last boats back matter more than the first ones out. Overnight stays aren't really a thing here; this is a day-beach, not a campsite.",
     "price": "₦2,000 + boat",
-    "address": null,
+    "address": "Tarkwa Bay Island, Lagos Harbour (boat from Falomo or the CMS jetty)",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/e/e5/Tarkwa_Bay_Beach_Front.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/b/b8/Tarkwa_Bay_-_Jetty_Station.jpg",
@@ -247,7 +247,7 @@
     "tagline": "Closest proper beach to VI",
     "note": "Behind the Oniru royal estate, off Admiralty Way. Quieter midweek, busy on Sundays.",
     "price": "₦1,000–2,000",
-    "address": "Off Admiralty Way, Oniru, Lagos",
+    "address": "1 Ligali Ayorinde Street, Oniru, Victoria Island, Lagos",
     "gallery": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/View_of_the_Atlantic_Ocean_from_Oniru_beach%2C_Victoria_Island%2C_Lagos.jpg/1920px-View_of_the_Atlantic_Ocean_from_Oniru_beach%2C_Victoria_Island%2C_Lagos.jpg",
       "photo-1544945582-052b29cd29e4",
@@ -266,7 +266,7 @@
     "tagline": "The resort escape",
     "note": "An hour-plus out on Lekki-Epe. ₦10,000 entry, thatched stays from around ₦70,000. Go for a night, not an afternoon.",
     "price": "₦10,000",
-    "address": "Eleko, Lekki-Epe Expressway, Lagos",
+    "address": "Ikegun, Ibeju-Lekki, Lagos (off the Lekki-Epe Expressway)",
     "gallery": [
       "photo-1781511832650-4001a029803a",
       "photo-1576540882014-86499436546b",
@@ -378,7 +378,7 @@
     "category": "eats",
     "area": "Lekki",
     "tagline": "Rooftop above Admiralty",
-    "note": "Above Lennox Mall. Nigerian classics done properly, plus a covered terrace for when it rains.",
+    "note": "Above Lennox Mall. Nigerian classics done properly, plus a covered terrace for when it rains. The bucket list prints it as Block A10 on Admiralty Way; the Lennox Mall address above is the one this card covers, so confirm the exact address when you book.",
     "price": "₦₦₦",
     "address": "Lennox Mall, Admiralty Way, Lekki, Lagos",
     "gallery": [
@@ -492,7 +492,7 @@
     "category": "play",
     "area": "Lekki Phase 1",
     "tagline": "Rides, pools, go-karts",
-    "note": "10 Lai Yusuf Crescent. Built for kids but the teenagers and adults get a section too.",
+    "note": "10 Lai Yusuf Crescent. Built for kids but the teenagers and adults get a section too. The bucket list also prints a Fun Factory at 1A Isaac John Street, Ikeja; the Lekki Phase 1 address above is the one this card covers, so confirm which branch you are going to.",
     "price": "₦₦",
     "address": "10 Lai Yusuf Cres, Lekki Phase 1, Lagos",
     "gallery": [
@@ -608,7 +608,7 @@
     "tagline": "Live music in a former prison yard",
     "note": "1 Broad St. Jazz, spoken word, theatre and a bar. The cheapest good night out on the Island.",
     "price": "₦",
-    "address": "1 Broad St, Lagos Island, Lagos",
+    "address": "1 Broad Street (Hospital Road end), Lagos Island, Lagos",
     "gallery": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Beautiful_Freedom_park_walk_way.jpg/1920px-Beautiful_Freedom_park_walk_way.jpg",
       "photo-1780328863518-59a2105192ac",
@@ -706,19 +706,21 @@
     "name": "Ilashe Beach",
     "category": "beaches",
     "area": "Ilashe",
-    "tagline": "The island beach",
-    "note": "Boat only — 20–40 minutes from Falomo or the Elegushi jetty. Shared boats about ₦5,000 return, speedboats from ₦50,000. No gate fee, quiet sand, grilled fish on the shore. Fix your return boat first.",
+    "tagline": "Boat-only island beach",
+    "note": "Boat only: there is no road access, so you have to rent or book a boat — 20–40 minutes from Falomo or the Elegushi jetty. Shared boats about ₦5,000 return, speedboats from ₦50,000. No gate fee, quiet sand, grilled fish on the shore. Fix your return boat first.",
     "price": "₦1,000 + boat",
     "address": "Ilashe Island (boat from Falomo or the Elegushi jetty)",
     "gallery": [
-      "photo-1626085263072-d503e3dea011",
-      "photo-1600668811601-4847b7efd821",
-      "photo-1544945582-052b29cd29e4"
+      "https://italawa.com.ng/wp-content/uploads/listing-uploads/gallery/2025/06/Ilashe-Private-Beach5-600x540-1.jpg",
+      "https://italawa.com.ng/wp-content/uploads/listing-uploads/gallery/2025/06/Ilashe-Private-Beach-600x540-1.jpg",
+      "https://italawa.com.ng/wp-content/uploads/listing-uploads/gallery/2025/06/Ilashe-Private-Beach1-600x540-1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQdXjSa_7I4uBrPTz_JyMir9gJHEt2pCQcW29qTd-4aPKU6HfP0cQ2L0&s=10"
     ],
     "checkedAt": "2026-11-18",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "imageNote": "Three photos from the Italawa listing for Ilashe Private Beach, one a Google Images thumbnail of unknown origin — none is a confirmed venue-owned asset, so each is credited as a listing or unverified image rather than a cleared one."
   },
   {
     "id": "love-lagos-jetty",
@@ -846,6 +848,1250 @@
       "/images/landmarks/cathedral-church-christ.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "ziba-beach-resort",
+    "name": "Ziba Beach Resort",
+    "category": "beaches",
+    "area": "Okun Ajah",
+    "tagline": "Nigeria’s first over-water resort, on the Okun Ajah coastline",
+    "note": "Ziba Beach Resort describes itself as Nigeria’s first over-water resort, in Okun-Mapo / Okun Ajah, Eti-Osa, Lagos. The resort site lists beach-facing family rooms, over-water terrace suites, a games room, an indoor cinema, two pools with a kids’ area, a spa, a playground and a fire pit, and it publicly records Phase 3 of the development as unveiled in September 2026. Google Maps lists the resort on Okun Ajah road, Mopo Akinlade Rd, Ajah, Lagos 106104, with a phone number and resort-site reviews. This is a beachfront resort destination, not a layout-heavy beach-bar card; the price here is a tier, because the reachable hotel aggregates show nightly rates in the $150–160 range while day-pass and all-inclusive figures in third-party guides are not treated as confirmed current resort prices.",
+    "price": "₦₦₦",
+    "address": "Okun Ajah road, Mopo Akinlade Rd, Ajah, Lagos",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SD8qa9S57uvWnVmhRQ4VOqwSUsPOXWI45uxLGk7Og8u-0ymbABkt02Xf5fzswiSGOpb01z7bVTHAceCk1rCURD4JjjBb_8zXiC_RrSwT7D9CcjbQn0PML59AkFHUegoOZaY0q5Jel8YULj=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TAe0LVQrJsR3Gk1uqfrhQuyO1yZZl61Jlur1gn-OfQ6KyNEVxebBHUdbxWyOjx6LZSDpRaMEbhUZ1R4ZWlEDs9MdfjXVJ71SacT7X_DYBZ10VpBHLnZ-iHYuFWhdR1lWcrORM=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T4iMCk32-EbA1mmK7W4bILFkKrCQiMi--wfFjSJseTdenYyuOtfEGejGOqejN8ZSPgh_Kiz7Xi2c6nS1ejnaRyAWlZgV1J8nYw1OFY13Loa0koUJnCM7u7w4oK80P-mP_EHjbIDQ=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sll3A5M14lWdGR6UMRYeUSPpAcj7veALf_hKo66D_FHm1CWH0KM7oq53ap618GOnutxUOUDQAuX1XFhlHtcLhFsEoa6XfGkpNshzwDukxKUce_me-Xk_O0kICl10YyEAZWuslyAnznMTda=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RKMSjpI1Q0xgjRixW6T1LuIhoxIezaMo3fKY9uSSfJ77WX9twkKcA-Io6sgjPpcCxuvHz-yzY496-xwaYVDlnRToIaksGmxSSdsbYTmqFuD1rpfqCBlkHB09_wGpK3po4ezWU=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkC1pdaZtf-LZCBjeFDM7tIpcKKE6CsZQrwh3EQ1_IBRKcEOusibMgvFJAVa81eAT85-12grcPYa2GykVAt1V9m3H88Bi0XOQKCWel-jpZObM_WzQxppH6_JekDjIRiiXKkuQ=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXJesMfQXLugpWMcYmuQ-_-vHKvcWOQwc4g2h5arEQYqKFyl8oIfZLzrgkGE6rcWWkeay-diKmzOs9zwGmEhn2THgMPQ_ztwurCZYFV9wCelqM4gN9XhuQLgxE8hVeZjIpk1aRcg=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://zibabeachresort.com/",
+      "story": "https://zibabeachresort.com/ziba-story",
+      "galleryPage": "https://zibabeachresort.com/gallery",
+      "galleryCandidate": "https://zibabeachresort.com/wp-content/uploads/2023/09/Ziba-Beach-Resort-1.jpg",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJo8mj7W75OxARbhZiA55gcuc",
+      "instagram": "https://www.instagram.com/zibabeachresorts/"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "genesis-cinemas",
+    "name": "Genesis Cinemas",
+    "category": "play",
+    "area": "Mainland",
+    "tagline": "Major multiplex chain with branches across Lagos",
+    "note": "Genesis Cinemas is a major Lagos multiplex operator with reachable Lagos branches — Festac (Festival Mall / Shoprite Festival Mall, Festival Hotel, Festac Town, Amuwo Odofin) and Maryland (Genesis Deluxe Cinemas, Maryland Mall, Ikorodu Road, Maryland, Ikeja). This is one operator card, not two seats; pick a branch if you want a single-venue card. Reachable Lagos branches: Festival Mall, Festac Town (Amuwo Odofin); Maryland Mall, Ikorodu Road, Maryland (an Ikeja-area branch).",
+    "price": "₦",
+    "address": "Festac branch: Festival Mall / Shoprite Festival Mall, Festival Hotel, Festac Town, Amuwo Odofin, Lagos. Maryland branch: Genesis Deluxe Cinemas, Maryland Mall, Ikorodu Road, Maryland, Ikeja, Lagos.",
+    "gallery": [
+      "photo-1561722798-9a732d141027"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Not a Genesis venue: a cinema interior, used because no real photograph of a Genesis Cinemas branch was found on the reachable sources checked.",
+    "sourceUrls": {
+      "brandSite": "https://genesiscinemas.com/",
+      "mapsFestac": "https://www.google.com/maps/place?q=place_id:ChIJ95syta6JOxARYxaZ66OPdjY",
+      "mapsMaryland": "https://www.google.com/maps/place?q=place_id:ChIJG-WGxxWTOxARA_10DP8tN4E",
+      "showtimesFestac": "https://www.showtimes.ng/cinemas/37-genesis-deluxe-cinemas",
+      "showtimesMaryland": "https://www.showtimes.ng/cinemas/36-genesis-deluxe-cinemas",
+      "italawaFestac": "https://italawa.com.ng/place/genesis-cinemas-festac",
+      "italawaMaryland": "https://italawa.com.ng/place/genesis-deluxe-cinemas-maryland"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "dooshima-beach-club",
+    "name": "Dooshima Beach Club",
+    "category": "beaches",
+    "tariff_url": "https://dailymotion.com/video/x8hx8l9",
+    "property_url": "https://dailymotion.com/video/x8qx5sl",
+    "collection_url": "https://dailymotion.com/playlist/x8rhqty",
+    "area": "Lekki",
+    "tagline": "Generating Innovation by Design at Addy’s Verandah",
+    "note": "Generating Innovation by Design at Addy’s Verandah",
+    "price": "₦₦₦",
+    "address": "Dooshima Beach Club, Elegushi Beach",
+    "gallery": [
+      "https://dooshimabeachlagos.com/images/timber-2200.avif",
+      "https://dooshimabeachlagos.com/images/cabanas-2200.avif",
+      "https://dooshimabeachlagos.com/images/loungers-2200.avif"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Venue-published photos from dooshimabeachlagos.com — the venue's own site, which is where the pictures come from. No open licence is stated on the site, so they are treated as venue-published leads rather than cleared assets.",
+    "sourceUrls": {
+      "site": "https://dooshimabeachclub.com/",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJt2ti0WodOxA_R0z72NVKhkY"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "mopo-palm-beach",
+    "name": "Mopo Palm Beach",
+    "category": "beaches",
+    "area": "Ibeju-Lekki",
+    "tagline": "Beach club on the Mopo-Oku coastal corridor",
+    "note": "Mopo Palm Beach is a beach club in Ibeju-Lekki along the Mopo-Oku corridor; reachable sources point to a small beach-set venue with a Sunday brunch and live music, and to a nearby resort-style set-up with a deck, sunbeds and a seawall.",
+    "price": "₦₦₦",
+    "address": "Mopo Palm Beach, Mopo-Oku, Ibeju-Lekki, Lagos",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T2BEDhRC8hCFpASptEvfWSp325bdIYFD2nJ5BOtPRcN-L_0CHUlQpzBwySL8Ldle0AjWoV1gqviQzetymdmAWo1ib8q6qqmYbH00wTWpjweCy8TtVa7Xw4DuwgtqAt0IEV-uliYArStd6T=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TskwvX9vCof_f9i1P_taznhv8eMb8FaCLOEZt_OSPFZqrLT8wKYhf1nlKNr_eBt40Ggoz3vsaEroKb2MtOgqi6rbQ521IaXN-XqdVh31jBuNdB4gy98c59wcxZWCEemZb1Vp9Dm2g34tLq=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SnbQL2Cvqih8fCa-txWyHzskkyF-OtuFBC6CnQz6f9XarNgGKA5MWmz5kmr9LtS4FkbUBbXym0-1TLcVLkBAQ4_aBO8xmRZdy5KMSzQEs2VMZRIwX0tfBUE2J4a2tJOlzNv7IEHG7iCVY=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://mopopalmbeach.com/",
+      "instagram": "https://www.instagram.com/mopopalmbeachlagos/",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJ_1vOUZIWOxAR6RfFT1lH2lI",
+      "ngmaps": "https://www.ngmaps.com/place/mopo-palm-beach-lagos"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "redline-leisure-and-resorts",
+    "name": "Redline Leisure And Resorts",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Beach resort on the Lekki-Epe corridor",
+    "note": "Redline Leisure And Resorts is a beach resort on the Lekki-Epe corridor, in Ibeju-Lekki / Epe / Lekki axis; reachable sources point to a private beach with seating, a beachfront bar and a resort-style set-up with a pool and a deck.",
+    "price": "₦₦₦₦",
+    "address": "Redline Leisure And Resorts, Lekki-Epe Expressway",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QW7U-Dm1dm4Ft_OlVY4P22MRNVaIGz0oLalZjsQ7dMnFZN0cwijb5Vfu30Ds5jBOoYIYmUW2svpXV8QIgr-suLGC4nvmUFjdVOzYkjW5A88yxUonERSlyCWQHp1PizkYLqGsyi=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QEqI307NLKGLSISMdMMXu9K06CpOlDboqcVj6OXjdCrg650pAdYN-4o8a5HnksOd5phekBD0ck8s8ZTRKe7MsGHiAKcdCa38bWx4MIsaYJXDQIw70zU2Otefkesj5ESQq_Dq6d3A=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TK0savGaKeMyXiBt8WbzQr1qtdGKYj-yxnY_ZAiIwdzi1q4UCZn2ka5ac6pq29fsdSaMSF0XBI-NGg91HHDGPclW_dn37-gzyIrMuDwjI08yPHnk6nCOgyGUBvHAK7X0gaw9Dp1Q=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://redlineleisureresorts.com/",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJtbMVfY8TOxARIWaYlcHD8x4"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "sol-beach-elegushi",
+    "name": "Sol Beach Elegushi by Boxmall",
+    "category": "beaches",
+    "area": "Elegushi",
+    "tagline": "Beachfront resort on the Elegushi shoreline",
+    "note": "Sol Beach Elegushi by Boxmall is a beachfront resort on the Elegushi shoreline; reachable sources point to a resort-style set-up with a pool, a deck, sunbeds and a beachfront bar, and to a nearby resort-style set-up with a pool and a deck.",
+    "price": "₦₦₦₦",
+    "address": "Elegushi Private Beach, Gate 2, Elegushi, Lagos",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWyQZuluaiWf6SEuj3cMqhrHyYz_2SCvja0vVDBIFIDwmtoPoi5VyqZmrlVHTcqMCSrHaYGXeknrdqEr6PS4XsteYnzYe8Cfxn8gJdb8VxJKSXO4Pbg-IIvvg1j76cUAFOguQ32N9beHiH=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SLbVChLKQ3kbTrkBSiiRyTT9R0Se9gY9DzZCyGrdT_1xMP7iCw0IpO-ocrn4r6oKAm7yyH1BGQ9Z_PFsrzEhsfTtI0UJnsU0NnGFv62A8_oiPMk7W9scLE37hJUrNWCaV75iU=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SP5zPW2c5EhOjiQUBpxwdaODRgHahBvodCwtvJJE02EJdytGMMG3FccRHS2RMhi2T85XTYWi8XeXEzJpId8FIoZ97j3ehdwnszLM2SCpFs3PqsY9ncIoy4KR2M8NOQLhbfQ1n453-TcTeJ=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tc6tTqgzEs9_APK6mPDivmrmJJGWCPUNbmJW1wLPyKmYwNYrCbN9WVaDX8oOGIZFUVD_fW8-q7YQMFgEL5rLTmbUQrpsUXx26LAVm9AuGKRYohmB6GXePW_pTsExd_-tE1JskC2u7fLKe0=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Raorb1wYpxPasw2K0gpl4Q5k7Gr1mNU7AlPRS1v2QT6EyHG8VAVKiwrEBi7wmRTv6QM1XRsGR8eaU0xqfVO0KArGCpqKCBes1PEpHEIcE1vMgTefkktBHOFijQXwP0gPH13a-rlsj-Yeo=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://solbeachelegushi.com/",
+      "instagram": "https://www.instagram.com/solbeachelegushi/",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJXhj0DFrJOxARRSFOwgcEGZY"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "timeless-haven-and-cottage",
+    "name": "Timeless Haven and Cottage",
+    "category": "beaches",
+    "area": "Okun Ajah",
+    "tagline": "Beach club on the Mopo Akinlade corridor",
+    "note": "Timeless Haven and Cottage is a beach club on Mopo Akinlade Rd, Okun-Ajah Rd, Ajah, open around the clock and listed on Google Maps as a beach club with a 5.0 rating from 6 reviews and phone +234 705 300 0097. It is recorded as one venue card at the boundary of the “Timeless Haven” and “Cottage” naming threads rather than two cards; a separate venue called “Cottage Lagos” was not found.",
+    "price": "₦₦₦",
+    "address": "Mopo Akinlade Rd, Okun-Ajah Rd, Ajah, Lagos 106104",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBppJZ4WOlH0Fq8d-SWiuOzeHD8a7vPLODIhhvDTxZ3pOueMxwkI7f_H2HLg01sCC2j14iu6fd68YEPP0ACoyUJ5TaOCMJmgrlLLLF0BHcIGw61GxbGEitnv9YmnqmeJ7Ew0ijTxTntZg=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R6UuIMlBoPvuUAqwYqd9jEafpHoAUMV32BWQkrJD6cenIsLrGUdYMrLoACT0m4rmTudpV48Argpoq11TorcpJsAZhpZeH2UN4GNGnTB2tDiHMD4TCDewC4dFubFNGdCDDgo68LFrzfE0sz=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfD9QYjGY-zKofWStMWyTo_fqtex1Ox8gwA9Ij3koTUY-rVz9N1wZFURZxIzRcIJ4zcaUyiwU8yMmUj1WPQGGed3FizGSpIN-x0_xKsao2RMaDPWX-cRVU2zQoOlhczgBrhAUmX0JoC60=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://timelesshavens.com.ng/",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJ3f0kq_dkCFErat6Jx0PkgIY",
+      "phone": "tel:+2347053000097"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "avista-beach-resort",
+    "name": "Avista Beach Resort",
+    "category": "beaches",
+    "area": "Okun Ajah",
+    "tagline": "Beachfront resort with villas in Okun Ajah",
+    "note": "Avista Beach Resort is a beachfront resort in Okun Ajah / Okunaja, Eti-Osa, with 16 rooms and apartments plus villas, a restaurant, gym, event space and lounge; its site says the brand was founded in 2020 and expanded in 2021. Google Maps lists it as a beach club in Okunaja, Eti-Osa, Lagos 106104, rated 4.3 from 697 reviews, phone +234 9138 859 696, quiet hours 11pm–8am. No tariff was confirmed from a reachable source, and the site's menu carries placeholder text in places, so the price here is a tier.",
+    "price": "₦₦₦₦",
+    "address": "Raliatu Olorunfunmike St, Okun Ajah / Okunaja, Eti-Osa, Lagos 106104",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1pLS-ssDVy9qXU4fQZxyHv_zSs6a5dn9LO0ad1i7X6CU-Uy3rhpZum4hsPq0DGKeEbK9TBAzi6uWwEoHTwZtOpJFQV4O937jX4X6jrseH1s1BUXD2PzmFWclIIBCcsBxmZww=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TagtZOoUDP8yov1srly00cldpmKLm-6gEAb1vaV9_Z9r1sl8u_UQJCIbgns1XdhK1Qpr9Bgd52VhtugDPEU3_f46Bmgn0l4fApH2Oj-rEYLAO7j0Kmn0by82pxUoesfjYK8VOH=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TfrxnMQeMpt83AonoUh_THGbjX1YQ98aI-WmfWDQm4c9EHtodZws-PrCHPKSIyo4V5N8497hLWOt1yNGKwQyLVcUnwD2TW_ANqd8Mdf3pS_LzDIs7kTWFKX1jylyO0ljtZJO1G6Q=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBROfqi1g43DFYgoR2KSq7dG6QdDAIEZL233ai84BEOduc3i4Hf5812WNCIU2xGg0z3hUtsrIwiHVIjZc4aqAWyyOZbQPkUrPi1KwkGUpJn3Sgv4eM4EGMZVq1Vg88lZphGug=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://avistabeach.com/",
+      "about": "https://avistabeach.com/about-us",
+      "contact": "https://avistabeach.com/contact",
+      "gallery": "https://avistabeach.com/gallery",
+      "maps": "https://www.google.com/maps/search/Avista+Beach+Resort+Lagos",
+      "instagram": "https://www.instagram.com/avistabeachng/",
+      "facebook": "https://www.facebook.com/AvistaBeachResort",
+      "phone": "tel:+2349138859696"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "jara-beach-resort",
+    "name": "Jara Beach Resort",
+    "category": "beaches",
+    "area": "Eleko",
+    "tagline": "All-inclusive beach resort next to Eleko",
+    "note": "Jara Beach Resort is a beachfront resort at Museyo Beach next to Eleko, Ibeju-Lekki, reachable by road only, with 20 en-suite rooms, two pools, a playground, gazebo and games room, a gym and a fire pit, run all-inclusive by Little Company Nigeria Limited. It is open 365 days a year to pre-booked visitors; the site publishes day passes from ₦50,000 per person and overnight packages from ₦144,000 per person per night. Google Maps rates it 4.5 from 1,165 reviews, phone +234 703 513 7057.",
+    "price": "₦₦₦₦",
+    "address": "Museyo Beach, Lotu Street, Off Lekki Free Trade Zone Road, next to Eleko, Ibeju-Lekki, Lagos",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QazOA6HudPV95X3fBjtx8TFuFqDsSszBefsBMs13BSaRRjMqGUq5Eu2o6qRnczlWSS7OJjVsUbGH5omYYltheXQYpPCY-bOICjrljQ7rcLlYqdvU_z4htP2Msf5WXfIp01EA5k96sIoe7J=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdaaiPXtIv0eiQ9QtQb-70IwtsU7K_6pg-L9ZMTR1_fWg_2W8b4uwg4rjy8y_yGiluy_TD7k-M9434GPRyjZIZJ7Hz-yL30Xd0YRs0ZYJY4rdNBtLD49u4IHSCOVdnELvKLoJE6t7veaw=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TyA3GzI4QNZfnA7N8vlFurPA7GYI1vVHyDbvw8PVLC9j3LVFhN__LNK7Pb51ywTUjU1Vxsq9Zahn0DPXwdo6AA4r2ZpBdLsTy3ZSFQdg1AM9Kj4fbYT6LldSseTSdil0FL9DPC2SK5ATtk=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBv6Ea0AwDTO3Z_Spjgl_m4JZ21CurKzjG4WRYpt1ZAEtBgzsRi0sf1GOr46L-GalVYn3d7dYa-T37xTIJpYngnaWOCWR8zC20cZ3LoVgpb08dZvuUwkl7n7WhkjN0JXQGta_Vc7BMQf2q=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://www.jarabeachresort.com/",
+      "overnight": "https://www.jarabeachresort.com/overnight",
+      "dayPass": "https://www.jarabeachresort.com/day-pass",
+      "contact": "https://www.jarabeachresort.com/contact",
+      "maps": "https://www.google.com/maps/search/Jara+Beach+Resort+Lagos",
+      "instagram": "https://www.instagram.com/jarabeachresortng/",
+      "tripadvisor": "https://www.tripadvisor.com/Hotel_Review-g304026-d19454058-Reviews-Jara_Beach_Resort-Lagos_Lagos_State.html",
+      "phone": "tel:+2347035137057"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "providha-fun-city",
+    "name": "Providha Fun City",
+    "category": "play",
+    "area": "Ikeja",
+    "tagline": "Hotel, arcade and pool complex on Mobolaji Bank Anthony Way",
+    "note": "Providha Fun City is a mixed hotel and entertainment complex on Mobolaji Bank Anthony Way, Ikeja: Hotel & Suites, Back Porch restaurant, De Plate Cafeteria, Fun Place, an arcade, a swimming pool and conference facilities. Fun Place runs 10:00–21:00 daily and the arcade 10:00–22:00 daily; phone +234 813 597 2087. It is recorded as one destination rather than one card per sub-venue.",
+    "price": "₦₦",
+    "address": "795 Mobolaji Bank Anthony Way, Ikeja, Lagos 100271",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PAX_2009_-_Gaming_room_%283894331881%29.jpg"
+    ],
+    "checkedAt": "2026-11-26",
+    "imageNote": "Not a Providha venue: an arcade room photographed at PAX 2009, used because no real photograph of the Ikeja complex was found on the reachable sources checked.",
+    "sourceUrls": {
+      "site": "https://providha.ng/",
+      "play": "https://providha.ng/play",
+      "game": "https://providha.ng/game",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJxQ2PCACTOxARX2Pmb9fjUkE",
+      "instagram": "https://www.instagram.com/providha_fun_city/"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "nautica-beach-resort",
+    "name": "Nautica Beach Resort",
+    "category": "beaches",
+    "area": "Lekki",
+    "tagline": "Beach resort on the Lekki / Eti-Osa shoreline",
+    "note": "Nautica Beach Resort is a beach resort on the Lekki / Eti-Osa corridor, listed on Google Maps and on its own site, which says it is open every day 12pm–1am. A BusinessDay report names Cruxstone as the developer. No street address has been confirmed from a reachable source — only the Lekki / Eti-Osa reference, a map pin and the Linktree location code CFFJ+F4 — so the exact address is not printed here and the price is a rough band rather than a published tariff. Confirm both with the venue before travelling.",
+    "price": "₦₦₦",
+    "address": null,
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QCVdtFrT8BUzAgW_aNGRL6CaOG1Iv5lsd5p0oKfEkXxYYwLLPRxiOWDVtCCasKTdCuYin_XfmpAKzRVw97DWab5RRS3PtDrAw63ds3lGpJQ0tTc6d3hS_l5ueB2cDjLTOYvY9uSvBpJWJC=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T66k7pyhkrtkZjucffgEMGgqxxJ15pwPWbSMycDOuYqAdCHRLBfPlZCDbHNm0FiY0f42KDJ9WzIN0ttndxG0bitaqUL2IPk2OxsNlmh9RguGckkq4NeK-MgdF917EFlJXWsbGGQiCHmugo=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S3lBMLxEBIzKpovRCOqS0M6Flxjxgt3elXUXXIoRQcnfSIvspXZ-mokhhi2CGnGM9Hew3d-ex4tC2Jm2O2qV94GliDTiwNS2yeZBfsJ6Uvjwatv-oUuKP5vZb6ULZQwNCh88DRU7VVRZ_5=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Su1_7QwhxxNMTuGrg8GrZT1d6GGFZ--1yT5jvndh_LwH3ed9JG4fM49k3Fl6BoQHlOG5kZmbKPTtnc_IvjXTJmo5W_KYmeX8vgquoJaS8OIvwzrhUEYmvyEVMJPcdvLnu_xIFkFo_VJHYB=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLBr8qV-k0YyW7DgJkZCSKcKvclLsytKugYFW8QMFQcJwGHO0OYE1MBOupeplGvyqOGHr00zwfbOq94Rm_JJalw9qUTyMmsZIYOmcE2hze2bua-udCrZrePQGSNDkI8HyxPdpoR_AQZBg=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
+    "sourceUrls": {
+      "site": "https://nauticabeach.com/",
+      "businessday": "https://businessday.ng/",
+      "linktree": "https://linktr.ee/nauticabeach",
+      "maps": "https://www.google.com/maps/search/Nautica+Beach+Resort+Eti-Osa+Lekki"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "234lofts-beach-resort",
+    "name": "234Lofts Beach Resort",
+    "category": "beaches",
+    "area": "Lekki",
+    "tagline": "Container lofts on Oba Elegushi private beach",
+    "note": "234Lofts is a beachfront resort of twelve lofts built from repurposed shipping containers on Oba Elegushi Beach Rd, Lekki Phase I, with ocean-facing and pool-facing units, a pool, a restaurant and a private beach, plus an indoor event room (Coral at The Lofts) for up to about 120 guests. Google Maps rates it 4.1 from 139 reviews; the venue site lists Ocean Facing Lofts from ₦200,000 per night, so the price here is a premium band and not a single confirmed rate.",
+    "price": "₦₦₦₦",
+    "address": "Oba Elegushi Beach Rd, Lekki Phase I, Ikate, Lagos 106104",
+    "checkedAt": "2026-11-27",
+    "sourceUrls": {
+      "site": "https://the234lofts.com/",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJiROGjz71OxARk2a6T9tAMo8",
+      "phone": "tel:+2349035352515"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null,
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Td6wndr0AMOU3tKNmWIbNWcA0VxmCZi6BL8bRqJKIC-7viX3mSG_qqZp6Wilqrn4oZybsibvE_E-1gN0bTPtp6SfnMGEHiDYDFh04I7Y7pgk8Lws1Wss1UeN4zQ25MKqNK1dlI=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QIx9f4jRIsQ_hCy4x_cofHCyjjI9YV_1TOHBZpmr6CjAWqzYUtyNl4_i1TMmKFvRluQ7SdKoNlXYg2yNHgBGtbDeSlpt31Z7rVVQaljkjgQM9sWgrwlPCqwktDuUBbz9OJ_RIU=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tej9Mbbh8Y5SlgyLTTXE27vagMLkCYtNOMeUR4yTAxGBQuHG2NLh8SiSXnk6ky3jHYvL7ap58cAzSFoTiaGDOg1HPDpkMNXsp1WIwbXWy6N4R-fTTI5awsWqXRdKUOXvDmaZzQ=s1360-w1360-h1020-rw"
+    ],
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them."
+  },
+  {
+    "id": "sunnyside-beach",
+    "name": "Sunnyside Beach",
+    "category": "beaches",
+    "area": "Sangotedo",
+    "tagline": "Beach club and kitchen off Cardinal Okogie Road",
+    "note": "Sunnyside Beach is a private beach club, restaurant and bar at Mopo Onijebu, off Cardinal Anthony Olubunmi Okogie Road, Sangotedo — reachable by road, with no boat needed. It runs Tuesday to Sunday, 2pm–10pm, and is closed Mondays; Google Maps rates it 4.7 from 27 reviews, phone +234 806 444 9817. Entry is a minimum-spend model: a 2026 beach-price guide lists ₦20,000 total, made up of ₦5,000 entry plus ₦15,000 to spend on food and drink, and the venue's own entry policy says all fees are paid at the point of entry. Confirm the current figure before you go.",
+    "price": "₦₦",
+    "address": "Mopo Onijebu, off Cardinal Anthony Olubunmi Okogie Road, Sangotedo, Eti-Osa, Lagos 105101",
+    "checkedAt": "2026-11-27",
+    "sourceUrls": {
+      "instagram": "https://www.instagram.com/sunnyside.beach",
+      "maps": "https://www.google.com/maps/place?q=place_id:ChIJn8yx-0H5OxAR-Ww51AiuVcs",
+      "prices": "https://kamparitours.com/popular-beaches-in-lagos-and-their-entrance-prices-2025",
+      "phone": "tel:+2348064449817"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null,
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ste6aPo4PhxVNHwv2Uss3DJgoFYEXopDnHwoJa6fvMdZGfk9EhPlXi6Qh8JRHY8iNP4PCH4ptBovVe4MelKgwMlvslVBywWzeO9o_xGof9JKcpvAmYzcMdBayiyPnd2VqMLiSxpUroKpXv=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Twjbx-yialaO46Ee0t4esJE0ZSYPhOivyZZ2yskoC7PKcKNtMUUxNAnPi9SKi9fDpAjUpMiRPUAWOoYsoT3zMDM02z5tgQKjWtYofj4bAdbryWXLtt9xwEctl8UBtYuVd-poDKXJWhYhN7=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S8cVVo0FMPwclv6RLxSTQAQBTIr-WRyTUjmrjgT7pY3UqucOKCUe4JwXMKay7MecBI0U-NDh-e40MGylNNhaLCzq70jA82tBLzZpKBdd05EaqNXDjUnqtQ2Qh1Q_eU24R7UJl8LJ1xyPAn=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1x0ixjCOclspI4NCo0hU3EuIXSGGNll-L7FHLPuo83wxPM0Bu9-x1wSzaqnU96tEY5uGC5V-NXQcPoxGrvWYT1v-SKva03DAi9scrC_j-DQsEvDZFOi30s3zyI2sxQ6qpOFfVaDP7Q5NH=s1360-w1360-h1020-rw"
+    ],
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them."
+  },
+  {
+    "id": "barracuda-beach-resort",
+    "name": "Barracuda Beach Resort",
+    "category": "beaches",
+    "area": "Okun Ajah",
+    "tagline": "Beach resort off the Okun Ajah shoreline",
+    "note": "Barracuda Beach Resort is a beach resort off the Abraham Adesanya roundabout, off Ogombo Road, opposite the white house in Okun Ajah, reachable by road. Google Maps lists it as a beach resort with 4.2 from about 6,146 reviews and phone +234 708 865 4508, and its Instagram account carries the same address and numbers. The venue's own domain does not resolve cleanly, so details here rest on Maps, Instagram and local listings; one listing quotes an adult entry around ₦3,000, but treat that as a reference and confirm at the gate.",
+    "price": "₦₦",
+    "address": "Off Abraham Adesanya roundabout, off Ogombo Road, opposite the white house, Okun Ajah, Lagos 106104",
+    "checkedAt": "2026-11-27",
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/Barracuda+Beach+Resort+Okun+Ajah+Lagos",
+      "instagram": "https://www.instagram.com/barracuda_beachresort/",
+      "facebook": "https://www.facebook.com/barracudabeachlagos",
+      "phone": "tel:+2347088654508"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null,
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qmx850Jbc1eCaExbO_97y2HdUI13IS3lJ7O-JF6XSPY1Ar2LScmQTp1NnsabjxuM8FtHD4Yz7mBAMZhpP_ETBvPFsifqjBACAB-9dDTvdPHs252h6xiKwcsAKXk--9CX31uV4RiQ=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RpwVVtUiytOC-XP2grmjO6BHDKT-d2unkZUXJmt9v9tWNYl3dAjHXeblS-DwJ4RnnUiWC7oeV1475K1Tm7HRL5P1guP5RMc6-W6j_iImCY-RQLLuEoNZ01FbwECXbgb2znNJ0=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SlYXdU-BAHlGZOuJBQi6TFb_DzyWkoUu1UROZcPBNVJozWdDaTG_UIeozb622srKxBwroUlNhDIo7RhrEOOR-SJkjm8T5PPfpKif6oa5vNthcZBNypg_n2iEmoUn-ikiE7ddM=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RBESMFelWG2G8E6KXC95zzEPAsSdpRZRoicbyUqIh6C0PDFlouX-IEYg-tYcijLtQTT8UZ3f9mOb3JcGkGceYdAYoI9BSPcLI9ejlC5T7bw8sPWHRmlFuVD3bYi08BF-a1315oUg=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SnVIJ56NO6SETftiEwO8LDoxb9sI84Ps4RfoT6sXiKHnE4edfPN2jSwGCfGMM7ToNgo4oNK4TovUoVQ-LsTH8at8qDubJ0wmHJPaTKIrSkcxXThc-7zKA6YDzN2dZ5N4Vtue5D=s1360-w1360-h1020-rw"
+    ],
+    "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them."
+  },
+  {
+    "id": "twinwaters-entertainment-centre",
+    "name": "Twinwaters Entertainment Centre",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Bowling, and the rest of the entertainment floor",
+    "note": "Twinwaters is the bowling name on the Lagos bucket-list carousel: an entertainment centre in Lekki with a bowling alley. The carousel prints only “Lekki” for it, so the street address is not recorded here. Confirm lanes, hours and shoe hire with the venue before travelling.",
+    "price": "₦₦",
+    "address": "Lekki, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/02/All-Star_Bowling_Alley_%28Orangeburg_SC%29_front_entrance_1.JPG"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Twinwaters: a bowling alley photographed in Orangeburg, South Carolina, used because no photograph of the Twinwaters floor was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "upbeat-centre",
+    "name": "Upbeat Centre",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Trampoline park in Lekki Phase 1",
+    "note": "Upbeat Centre is a trampoline park on Admiralty Road in Lekki Phase 1. The address is as printed on the bucket-list carousel and has not been checked against the venue directly, so confirm sessions and prices before you go.",
+    "price": "₦₦",
+    "address": "11 Admiralty Rd, Lekki Phase 1, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b7/VAUNCE_trampoline_park.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Upbeat Centre: a trampoline park of the same type, used because no photograph of the Lekki Phase 1 venue was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "omu-resort",
+    "name": "Omu Resort",
+    "category": "play",
+    "area": "Ibeju-Lekki",
+    "tagline": "Horse riding, kayaking and a giant slide in one park",
+    "note": "Omu Resort is the one name on the bucket list that appears four times: horse riding, kayaking and go karting on the Ibeju corridor, plus a giant slide. The go-karting item prints no operator name and the same Ibeju address as Omu, so it is recorded here rather than as its own card. The address is as printed on the carousel and unverified.",
+    "price": "₦₦₦",
+    "address": "Asiwaju Bola Ahmed Tinubu Way, Ibeju, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/01/Horse_riding_Ghana.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Omu Resort: horse riding on a West African beach, used because no photograph of the Ibeju resort was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "artforfun",
+    "name": "Artforfun by Craft Village",
+    "category": "play",
+    "area": "Surulere",
+    "tagline": "Pottery and sip-and-paint sessions",
+    "note": "Artforfun runs the two creative sessions on the bucket list — pottery making and sip & paint — and the carousel prints Surulere as the only location. Treat the address as unverified and book ahead, since these are scheduled sessions rather than a walk-in venue.",
+    "price": "₦₦",
+    "address": "Surulere, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Clay_pot_workshop_-_pit_fired_pottery_20220916120834.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Artforfun: a clay-pot workshop, used because no photograph of the Surulere studio was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "escape-room-33",
+    "name": "Escape Room 33",
+    "category": "play",
+    "area": "Victoria Island",
+    "tagline": "Locked-room puzzles on Ahmadu Bello Way",
+    "note": "Escape Room 33 is the escape-room entry on the bucket list, printed at 133 Ahmadu Bello Way on Victoria Island. The venue name comes from the bucket-list table rather than from the slide summary, so confirm the name and address with the venue when booking a room.",
+    "price": "₦₦",
+    "address": "133 Ahmadu Bello Way, Victoria Island, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Interior_of_Getaway_Room_Escape.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Escape Room 33: an escape-room interior elsewhere, used because no photograph of the Victoria Island venue was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "purple-lekki-mall",
+    "name": "Purple Lekki Mall",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Roller skating on the mall's first floor",
+    "note": "Purple Lekki Mall is the skating stop on the bucket list — a rink on the first floor of the mall at 2 Purple Way, off Freedom Way. This is a different venue from Purple Maryland, which the guide already lists, so the two are not merged. Address as printed on the carousel and unverified.",
+    "price": "₦₦",
+    "address": "1st Floor, 2 Purple Way, Off Freedom Way, Lekki, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/82/A_private_skating_rink_-_Hyderabad.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Purple Lekki Mall: a roller-skating rink elsewhere, used because no photograph of the Lekki rink was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "spring-chinese-restaurant",
+    "name": "Spring Chinese Restaurant",
+    "category": "eats",
+    "area": "Ikorodu",
+    "tagline": "Chinese dining out on the Ikorodu road",
+    "note": "Spring Chinese Restaurant is the first restaurant on the bucket list, printed at 78 Ayangburen Road in Ikorodu. The address is an unverified list-post claim; confirm before travelling, since Ikorodu is a long way out if it turns out to have moved.",
+    "price": "₦₦",
+    "address": "78 Ayangburen Road, Ikorodu, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/HK_SW_%E4%B8%8A%E7%92%B0_Sheung_Wan_%E6%98%9F%E6%9C%88%E6%A8%93_Sky_Cuisine_Restaurant_interior_tables_n_seats_March_2023_Px3_02.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Spring Chinese: a Chinese restaurant dining room in Hong Kong, used because no photograph of the Ikorodu restaurant was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "orchid-bistro",
+    "name": "Orchid Bistro",
+    "category": "eats",
+    "area": "Ikeja",
+    "tagline": "Bistro tables on Isaac John Street",
+    "note": "Orchid Bistro is printed at 58 Isaac John Street in Ikeja GRA — the same street as Cubana Ikeja, which the guide already lists under nightlife. Address as printed on the bucket-list carousel and unverified.",
+    "price": "₦₦",
+    "address": "58 Isaac John Street, Ikeja GRA, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f3/Restaurant_room_of_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Orchid Bistro: a restaurant dining room in Laos, used because no photograph of the Ikeja bistro was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "yellow-chilli",
+    "name": "Yellow Chilli",
+    "category": "eats",
+    "area": "Ikeja",
+    "tagline": "Nigerian cooking in Ikeja GRA",
+    "note": "Yellow Chilli is a Nigerian restaurant chain; the bucket list prints the Ikeja GRA branch at 35 Joel Ogunnaike Street. Address as printed on the carousel and unverified, and other branches exist, so check which one you are booking.",
+    "price": "₦₦",
+    "address": "35 Joel Ogunnaike Street, Ikeja GRA, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/df/Mega_Chicken_Restaurant.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Yellow Chilli: a Nigerian restaurant frontage in Lagos, used because no photograph of the Ikeja GRA branch was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "la-chaumiere",
+    "name": "La Chaumière",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Long-standing French dining room",
+    "note": "La Chaumière is the French restaurant on the bucket list, printed at 1384 Tiamiyu Savage Street on Victoria Island — the same street as Terra Kulture, which the guide already lists. Address as printed on the carousel and unverified.",
+    "price": "₦₦₦",
+    "address": "1384 Tiamiyu Savage St, Victoria Island, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7e/The_interior_dining_room_of_a_Red_Lobster_restaurant_in_Knoxville%2C_Tennessee_03.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not La Chaumière: a restaurant dining room in Tennessee, used because no photograph of the Victoria Island restaurant was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "cilantro-lagos",
+    "name": "Cilantro Lagos",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Contemporary dining on Musa Yar'Adua Street",
+    "note": "Cilantro Lagos is printed at 7 Musa Yar'Adua Street on Victoria Island. Address as printed on the bucket-list carousel and unverified.",
+    "price": "₦₦₦",
+    "address": "7 Musa Yar'Adua Street, Victoria Island, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/The_interior_dining_room_of_a_Red_Lobster_restaurant_in_Knoxville%2C_Tennessee_06.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Cilantro: a restaurant dining room in Tennessee, used because no photograph of the Victoria Island restaurant was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "cactus-restaurant",
+    "name": "Cactus Restaurant",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Ozumba Mbadiwe dining room",
+    "note": "Cactus Restaurant is printed at 20/24 Ozumba Mbadiwe Avenue on Victoria Island, the same avenue as Quilox. Address as printed on the bucket-list carousel and unverified.",
+    "price": "₦₦",
+    "address": "20/24 Ozumba Mbadiwe Avenue, Victoria Island, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/Arewa_Traditional_Kitchen.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Cactus: a Nigerian restaurant kitchen, used because no photograph of the Ozumba Mbadiwe restaurant was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "ocean-basket",
+    "name": "Ocean Basket",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Seafood chain on Akin Adesola",
+    "note": "Ocean Basket is a seafood chain; the bucket list prints the Victoria Island branch at 35 Akin Adesola Street. Address as printed on the carousel and unverified, and the chain has other Lagos branches.",
+    "price": "₦₦",
+    "address": "35 Akin Adesola St, Victoria Island, Lagos",
+    "gallery": [
+      "/images/locations/eats/love-lagos-jetty/dish.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Ocean Basket: a plate of grilled tilapia, used because no photograph of the Akin Adesola branch was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "ofada-boy",
+    "name": "Ofada Boy",
+    "category": "eats",
+    "area": "Surulere",
+    "tagline": "Ofada rice and ayamase in Surulere",
+    "note": "Ofada Boy is the ofada-rice spot on the bucket list, printed at 1 Mba Street in Surulere. Address as printed on the carousel and unverified.",
+    "price": "₦",
+    "address": "1 Mba St, Surulere, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/92/Suya_%28827408387%29.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Ofada Boy: a tray of suya, used because no photograph of the Surulere restaurant was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "john-randle-centre",
+    "name": "John Randle Centre",
+    "category": "culture",
+    "area": "Lagos Island",
+    "tagline": "Yoruba history and culture at Onikan",
+    "note": "The John Randle Centre for Yoruba Culture and History sits at the Onikan roundabout on Lagos Island. The bucket list prints only the roundabout, so the exact entrance is not recorded here. Entry is often ticketed; check current hours and price with the centre.",
+    "price": "₦",
+    "address": "Onikan Roundabout, Lagos Island, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Artifacts_from_National_commission_for_Museums_and_Monuments%2C_Kaduna.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not the John Randle Centre: museum artefacts from the National Commission for Museums and Monuments, used because no photograph of the Onikan centre was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "fela-kuti-former-home",
+    "name": "Fela Kuti's Former Home (Kalakuta)",
+    "category": "culture",
+    "area": "Ikeja",
+    "tagline": "The Kalakuta Republic house in Agidingbi",
+    "note": "Fela Kuti's former home, the Kalakuta Republic, is printed at 1 NERDC Road in Agidingbi, Ikeja — the same road as the New Afrika Shrine, which is the separate venue the guide lists under nightlife. The two are not the same place; this card is the house.",
+    "price": "₦",
+    "address": "1 NERDC Rd, Agidingbi, Ikeja, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Amphitheatre_in_Dilijan_at_Myasnikyan_Street%2C_April_2026%2C_no._3.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Kalakuta: an open-air stage elsewhere, used because no photograph of the Agidingbi house was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "jhalobia-recreation-park",
+    "name": "Jhalobia Recreation Park",
+    "category": "culture",
+    "area": "Ikeja",
+    "tagline": "Gardens and picnic lawns off Airport Road",
+    "note": "Jhalobia Recreation Park and Gardens is printed on Airport Road with no street number. Public write-ups describe it as a garden and picnic park with event lawns; treat the exact gate and entry fee as unconfirmed.",
+    "price": "₦",
+    "address": "Airport Rd, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/8f/Abuja_Millennium_Park.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Jhalobia: a public park in Abuja, used because no photograph of the Airport Road park was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "ndubuisi-kanu-park",
+    "name": "Ndubuisi Kanu Park",
+    "category": "culture",
+    "area": "Ikeja",
+    "tagline": "Public green space on Mobolaji Johnson Avenue",
+    "note": "Ndubuisi Kanu Park is printed on Mobolaji Johnson Avenue in Ikeja. It is a public green space rather than a ticketed attraction, so opening hours are the practical detail to check rather than price.",
+    "price": "₦",
+    "address": "Mobolaji Johnson Avenue, Ikeja, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/Millennium_Park_Abuja1.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not Ndubuisi Kanu Park: a public park in Abuja, used because no photograph of the Ikeja park was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "badagry-heritage-museum",
+    "name": "Badagry Heritage Museum",
+    "category": "culture",
+    "area": "Badagry",
+    "tagline": "Transatlantic slave-trade history in Badagry",
+    "note": "Badagry Heritage Museum is printed on Lander Road in Badagry, at the far western end of Lagos State — a day trip rather than an evening out, and usually paired with the Badagry slave-route sites nearby. Address as printed on the carousel; confirm opening days before making the drive.",
+    "price": "₦",
+    "address": "Lander Road, Badagry, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Man%27s_head%2C_Nigeria%2C_Ife%2C_12th-15th_century_AD%2C_terracotta_-_Ethnological_Museum%2C_Berlin_-_DSC02222.JPG"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Not the Badagry Heritage Museum: a Nigerian terracotta head held in a Berlin museum, used because no photograph of the Badagry museum was found on the reachable sources checked.",
+    "sourceUrls": {
+      "carousel": "https://www.tiktok.com/@todolagos",
+      "extraction": "research/00-screenshot-extraction.json"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "hard-rock-cafe-lagos",
+    "name": "Hard Rock Cafe Lagos",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "The chain cafe on Water Corporation Drive",
+    "note": "Hard Rock Cafe Lagos is the Lagos outpost of the American cafe chain, on Water Corporation Road in Oniru — the same beachfront strip as Landmark. Expect the chain format: burgers and American plates, cocktails, live music and the memorabilia on the walls, with a shop attached. Address as printed on the bucket-list list and unverified; confirm current hours and whether live acts are on before you go.",
+    "price": "Check directly",
+    "address": "Water Corporation Road, Oniru, Victoria Island, Lagos",
+    "gallery": [
+      "https://bobbymukherji.com/wp-content/uploads/2025/10/HARD-ROCK-CAFE-LAGOS-NIGERIA-ENTRY-PORCH-NIGHT-VIEW-scaled.jpg",
+      "https://cimages.timbu.com/guides/2017/07/Hard-Rock-Cafe-2.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of Hard Rock Cafe Lagos from a travel-photography blog and a Lagos guide; both are credited below and neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "maps": "https://www.google.com/maps/search/Hard+Rock+Cafe+Lagos",
+      "site": "https://www.hardrock.com/cafes/lagos",
+      "blog": "https://bobbymukherji.com/"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "trib3-lagos",
+    "name": "Trib3 Lagos",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "Afro-fusion show restaurant",
+    "note": "Trib3 Lagos is an Afro-fusion restaurant and lounge on Ajose Adeogun Street that runs as a show restaurant — food plus live music and performances rather than a plain dinner. It takes bookings, and the later seatings are the ones with the full show. Address as printed on the bucket-list list and unverified; reserve ahead and confirm the show times with the venue.",
+    "price": "Check directly",
+    "address": "288b Ajose Adeogun Street, Victoria Island, Lagos",
+    "gallery": [
+      "https://static.wixstatic.com/media/19c327_a9542c3ccf3e4ec990ccc8978be1ddab~mv2.webp",
+      "https://static.wixstatic.com/media/19c327_d0771aea0c2c4f5c89fa907f28dc98a6~mv2.webp",
+      "https://static-images.dinesurf.tech/2415-Trib3Lagos-bds-2024-05-22-00-06-10-631"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos published on Trib3 Lagos's own website, plus one from its DineSurf listing. They are venue-published, but no reuse licence has been confirmed.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "site": "https://www.trib3lagos.com/",
+      "maps": "https://www.google.com/maps/search/Trib3+Lagos+Victoria+Island"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "the-library-lagos",
+    "name": "The Library Lagos",
+    "category": "clubs",
+    "area": "Victoria Island",
+    "tagline": "Lounge-bar on Adetokunbo Ademola",
+    "note": "The Library Lagos is a lounge and bar on Adetokunbo Ademola Street, built around a book-and-library theme, with cocktails and small plates and a crowd that arrives late. It works as a sit-down lounge rather than a dance floor. Address as printed on the bucket-list list and unverified; confirm opening nights and any table minimum with the venue.",
+    "price": "Check directly",
+    "address": "82 Adetokunbo Ademola Street, Victoria Island, Lagos",
+    "gallery": [
+      "https://www.idoff.net/storage/places/gallery/69fdedcf3e647.jpg",
+      "https://lagosnownow.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-22.32.59_67c19819.jpg",
+      "https://media.dineazi.com/restaurant-media/586/1777862886124-4cdd690a-ce85-4dd3-926b-73d953170a0f.png"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of The Library Lagos from a Lagos places directory, a nightlife guide and a restaurant listing; all are credited below, none is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "maps": "https://www.google.com/maps/search/The+Library+Lagos+Victoria+Island",
+      "site": "https://thelibrarylagos.com/"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "cubana-ikeja",
+    "name": "Cubana Ikeja",
+    "category": "clubs",
+    "area": "Ikeja",
+    "tagline": "The Ikeja branch of the Cubana lounge",
+    "note": "Cubana Ikeja is the Ikeja branch of the Cubana lounge group, on Isaac John Street in GRA — the same street as Rhapsody's and a short walk from the rest of the GRA nightlife strip. It is a lounge-and-club set-up with a big outdoor terrace, bottle service and DJs. Address as printed on the bucket-list list and unverified; confirm the night you are going and any table minimum.",
+    "price": "Check directly",
+    "address": "15 Isaac John Street, Ikeja GRA, Lagos",
+    "gallery": [
+      "https://fastlagos.com/wp-content/uploads/2020/02/Cubana-Lagos.jpeg",
+      "https://nevadahotelsandsuites.com/wp-content/uploads/2025/06/Cubana-Club-1024x512.webp"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of Cubana Lagos from Lagos nightlife write-ups; both are credited below and neither is a cleared venue asset. The first is an older frame, so the venue may look different now.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "maps": "https://www.google.com/maps/search/Cubana+Ikeja+Isaac+John"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "rhapsodys",
+    "name": "Rhapsody's",
+    "category": "clubs",
+    "area": "Ikeja",
+    "tagline": "Lounge-restaurant chain, three Lagos addresses",
+    "note": "Rhapsody's is a lounge-restaurant chain rather than a single venue, and the bucket list prints three Lagos addresses: Isaac John Street in Ikeja GRA, the ICM site at Alausa, and The Palms at Oniru/Ikota. All three run the same formula — cocktails, a bar menu and music, busy at weekends. Check which branch you are going to before you set out; the addresses are as printed on the list and unverified.",
+    "price": "Check directly",
+    "address": "Isaac John Street, Ikeja GRA; ICM, Alausa; The Palms, Oniru/Ikota",
+    "gallery": [
+      "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/08/7e/16/inside.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/08/7e/28/bar.jpg?w=1200&h=1200&s=1"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Traveller photos of Rhapsody's from Tripadvisor; credited below and neither is a cleared venue asset. They show one branch, not all three.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "site": "https://www.rhapsodys.com/",
+      "maps": "https://www.google.com/maps/search/Rhapsodys+Lagos"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "the-good-beach",
+    "name": "The Good Beach",
+    "category": "beaches",
+    "area": "Victoria Island",
+    "tagline": "Beach club on Water Corporation Drive",
+    "note": "The Good Beach is a private beach club on Water Corporation Drive, off Trinity Avenue — the same waterfront strip as Landmark, so it is one of the few proper sand-and-sea spots you can reach without leaving Victoria Island. Expect a paid entry, sunbeds and umbrellas, a bar and food, and a younger weekend crowd. Address as printed on the bucket-list list and unverified; entry prices change, so confirm at the gate or on their page.",
+    "price": "Entry fee",
+    "address": "10B Water Corporation Drive, Trinity Avenue, Victoria Island, Lagos",
+    "gallery": [
+      "https://thewheatbakerlagos.com/oatchace/2022/12/The-Good-Beach-@-goodbeachlagos-com.jpg",
+      "https://slaylebrity.com/wp-content/uploads/2023/10/228A1AB3-3F9F-48CE-89B8-9A4670E74D40.jpeg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of The Good Beach published by a Lagos hotel and a lifestyle site; credited below, neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "maps": "https://www.google.com/maps/search/The+Good+Beach+Lagos",
+      "instagram": "https://www.instagram.com/goodbeachlagos/"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "atican-beach-resort",
+    "name": "Atican Beach Resort",
+    "category": "beaches",
+    "area": "Lekki",
+    "tagline": "Private beach resort off the Lekki-Epe Expressway",
+    "note": "Atican Beach Resort is a private beach resort off the Lekki-Epe Expressway at Abraham Adesanya, one of the older organised beaches on this stretch. It has a gate fee, thatched seating and cabanas on the sand, a bar and food, and it takes groups and day trips. Address as printed on the bucket-list list and unverified; gate prices and opening days change, so confirm before you travel.",
+    "price": "Entry fee",
+    "address": "27 Abraham Adesanya, Lekki-Epe Expressway, Lagos",
+    "gallery": [
+      "https://www.idoff.net/storage/places/gallery/6a13164b40e8f.jpg",
+      "https://tourafricamag.com/wp-content/uploads/2026/02/atican-beach-resort-1024x683.png"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of Atican Beach Resort from a Lagos places directory and a travel magazine; credited below, neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "site": "https://www.aticanbeachresort.com/",
+      "maps": "https://www.google.com/maps/search/Atican+Beach+Resort+Lagos"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "eleko-beach",
+    "name": "Eleko Beach",
+    "category": "beaches",
+    "area": "Eleko",
+    "tagline": "The long public beach past Lekki",
+    "note": "Eleko Beach is the long public beach at Eleko on the Lekki-Epe Expressway, past the turn-off for the resorts — open sand, Atlantic surf and a scatter of thatched shacks and bars rather than a manicured club. It is a gate-fee beach, and the far ends are quieter than the entrance. It is a road trip: allow for the traffic on the expressway and confirm the gate is open before you set out.",
+    "price": "Entry fee",
+    "address": "Eleko, Ibeju-Lekki, Lagos",
+    "gallery": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Eleko_beach_lagos.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/2011_ElekoBeach_Lagos_Nigeria_5501501209.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Openly licensed photographs taken at Eleko Beach and credited below (Wikimedia Commons, CC BY-SA 4.0 and CC BY 2.0).",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "maps": "https://www.google.com/maps/search/Eleko+Beach+Lagos"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "whispering-palms-resort",
+    "name": "Whispering Palms Resort",
+    "category": "beaches",
+    "area": "Badagry",
+    "tagline": "The Badagry beach resort at Iworo",
+    "note": "Whispering Palms Resort is a beach resort at Iworo on the Badagry road, a long way out of town — it is the one that turns the trip into a day out, with beach, gardens, a pool and food, and it takes overnight guests as well as day visitors. Budget for the drive: Badagry is a couple of hours from the island on a good day. Address as printed on the bucket-list list and unverified; confirm day-pass prices and whether the resort is open to non-residents.",
+    "price": "Paid entry",
+    "address": "Iworo, Badagry, Lagos",
+    "gallery": [
+      "https://media.hotels.ng/img/h46718/whispering-palms-resort-46718-57.jpg",
+      "https://media.hotels.ng/img/h46718/whispering-palms-resort-46718-52.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos from the Hotels.ng listing for Whispering Palms Resort; credited below, not a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "site": "https://whisperingpalmslagos.com/",
+      "maps": "https://www.google.com/maps/search/Whispering+Palms+Resort+Badagry"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "eric-kayser-lagos",
+    "name": "Eric Kayser Lagos",
+    "category": "eats",
+    "area": "Victoria Island",
+    "tagline": "French bakery and brunch on Adetokunbo Ademola",
+    "note": "Maison Eric Kayser's Lagos bakery-cafe, on Adetokunbo Ademola Street — sourdough, viennoiseries, pastries and a sit-down breakfast and brunch menu. It is a proper bakery counter as well as a cafe, so you can buy bread to take away. Phone 0813 223 3772 as listed. Details come from the Lagos listing that carries it, not from a venue statement, so confirm hours before you go.",
+    "price": "₦₦",
+    "address": "1411 Adetokunbo Ademola Street, Victoria Island, Lagos",
+    "gallery": [
+      "https://italawa.com.ng/wp-content/uploads/2025/08/Maison-Kayser-Nigeria-1024x1024.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/4a/80/27/eric-kayser.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of Eric Kayser Lagos from a Lagos listing and Tripadvisor; credited below, neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "listing": "https://italawa.com.ng/place/eric-kayser-lagos",
+      "maps": "https://www.google.com/maps/search/Eric+Kayser+Lagos",
+      "instagram": "https://www.instagram.com/maisonkayser_ng/"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "thompson-23",
+    "name": "Thompson 23",
+    "category": "eats",
+    "area": "Ikoyi",
+    "tagline": "Taiwanese bubble tea and bakery in Ikoyi",
+    "note": "Thompson 23 is a Taiwanese bubble-tea bar and bakery on Thompson Avenue in Ikoyi — the address is the name. It is a small, casual stop rather than a restaurant: milk teas, bakes and pastries, and it is popular enough that queues at peak times are normal. Confirm hours on the day; the details here are from delivery and listing pages rather than a venue statement.",
+    "price": "₦₦",
+    "address": "23 Thompson Avenue, Ikoyi, Lagos",
+    "gallery": [
+      "https://flavorqueste.com/restaurants/cafe/thompson-23/opengraph-image-1mrsnh?b80ab2e5919f5031",
+      "https://pbs.twimg.com/media/G7U8BbkWAAAc-Jn.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "A listing image for Thompson 23 and a photo posted publicly about it; credited below, neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "listing": "https://flavorqueste.com/restaurants/cafe/thompson-23",
+      "menu": "https://chowdeck.com/store/ikoyi/restaurants",
+      "maps": "https://www.google.com/maps/search/Thompson+23+Ikoyi"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "illusions-zone",
+    "name": "Illusions Zone",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Mirror rooms and optical-illusion sets",
+    "note": "Illusions Zone is Lagos's first illusions attraction: mirror rooms, infinity-mirror sets and forced-perspective scenes built for photographs, and walk-ins are welcome. It has two sites — Garnet Plaza on the Lekki-Epe Expressway in Eti-Osa, and Ile Oja Mall at Opebi in Ikeja — so check which one you are booking. The venue's booking page sells 60-minute passes at ₦15,000 for one, ₦30,000 for two and ₦45,000 for three; its own opening hours post lists Lekki as Mon–Fri 10–5 and Sat 10–6, Opebi as Mon–Fri 10–6 and Sat 10–7. Confirm the branch, hours and pass price before you go.",
+    "price": "₦15,000–45,000",
+    "address": "Garnet Plaza, Lekki-Epe Expressway, Eti-Osa, Lekki 106104 — and Ile Oja Mall, Opebi, Ikeja 101233",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_qadfNI3eOgY1BogSXLo83ronq5lHQWqgD-5zcRTePxvu39zCKaqpdTr0uXe1gv9yaV7X89EU2OdMyRFHsaGAau8oLXDAVp7WTzZfq8aetuSzkn7g0kBu5Idp_K_Fy6KsqsDRffRwYKk-=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RfRZiffA9XpJCznrxCRJG_4IZ43NpA-PbfW6VT1oXio6sdrZHH-3gcAlwlUK2Aht9nPVWTfF6oF_fAmz7euKS-BDMluGuNrosHUDSFgbCj18YjWsgo_bnGBIhy14XeZ8R0F_qXj_7r_A-z=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TiulfaCqAmlWtAGjef1D8Zp6BRn4FqtigsrMlO-myrCVhEQSB-BqbBqingoVtRG5CHLKKKCQbQ74fLes2CbdB-NT9Fa0Rm4xxa-5NqaJYnWlhNa3BaK6lD8k6S2b9NB5izL6dusMKTMDcL=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCIWG71kg9NN2QcWKlI6V0AmymvE6Zif0nOqHVmUDYhqRr2p0tRouLRVQ5aV4y0H3tlblN2XxH7ALFmEfn4pmr02vI1SDTXC_nszlEUbuocdzyn_ORcYteSDoUtHFVDj6j8vrEDat8zFpa=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-yNrCcxCF5dJiClg5D6bWhIAJQtQ1N719DjRA4YLFL9jN267wVbc8ZYPE5nZqXteHu5R2VeN4C4CWekBqCNAQzGcQqfv9yuCrYxxAAja4vcn3EMHy_0lbh4Ym7WsN0jyCaGsTq3IvumdL=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Google Maps listing photos for this venue, supplied by the guide's owner — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; swap for a venue-owned photo with a clear reuse basis when one is available.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "instagram": "https://www.instagram.com/illusions.zone_ng/",
+      "booking": "https://app.kindlybook.com/book-business/illusionszoneng",
+      "maps": "https://www.google.com/maps/search/Illusions+Zone+Lekki"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "leisure-sports-park",
+    "name": "Leisure Sports Park (LSP)",
+    "category": "play",
+    "area": "Lekki Phase 1",
+    "tagline": "Football pitches and paintball at Ikate",
+    "note": "Leisure Sports Park sits on Kusenla Road at Ikate Elegushi, just off the Lekki-Epe Expressway near the Chisco bus stop. It runs five-a-side football pitches, paintball and open recreational space, and it is booked by teams and groups rather than walk-in visitors — reserve a pitch or a paintball session first. Confirm the current pitch rates and opening hours with the park.",
+    "price": "Entry fee",
+    "address": "39 Kusenla Road, Ikate Elegushi, Lekki Phase 1, Lagos",
+    "gallery": [
+      "https://blog.krent.space/wp-content/uploads/2024/07/Leisure-Sports-Park-Google.jpg",
+      "https://blog.krent.space/wp-content/uploads/2025/09/leisure-park.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of Leisure Sports Park from a Lagos property blog; credited below, neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "listing": "https://ng.africabz.com/lagos/leisure-sports-park-lsp-39-kusenla-rd",
+      "maps": "https://www.google.com/maps/search/Leisure+Sports+Park+Ikate+Lekki"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "greenfingers-wildlife",
+    "name": "Greenfingers Wildlife Initiative",
+    "category": "play",
+    "area": "Lekki",
+    "tagline": "Wildlife rescue you can visit",
+    "note": "Greenfingers Wildlife Initiative is a conservation NGO and wildlife rescue off the Lekki-Epe Expressway, not a commercial attraction: they take school groups and booked visits for nature programmes, run a Wildlife Warriors club, and handle rescues. Go for a guided visit rather than a day out, and arrange it first — phone +234 818 874 3394 or info@greenfingerswi.org, both published on their site.",
+    "price": "Donation / check",
+    "address": "10 Emmanuel Iroabuchi Street, Thera-Annex Estate, off Lekki-Epe Expressway, Lagos",
+    "gallery": [
+      "https://news.unitednetwork.earth/wp-content/uploads/2024/06/Nigeria-Green-Fingers-Wildlife-Sanctuary-Nigeria-Wildlife-Conservation-Efforts.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "A photograph published with coverage of Greenfingers' conservation work; credited below, not a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "site": "https://www.greenfingerswi.org/",
+      "contact": "https://www.greenfingerswi.org/contact/",
+      "facebook": "https://www.facebook.com/greenfingerswi"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "vintage-africana-museum",
+    "name": "Vintage Africana Museum",
+    "category": "culture",
+    "area": "Agege",
+    "tagline": "Retro Africana museum and photo studio",
+    "note": "The Vintage Africana Museum is part museum, part retro interactive set and part content-creation studio, on the mainland at New Oko-Oba in Agege — old Nigerian objects and rooms staged for photographs, so people come to shoot as much as to look. It is a booked visit, and it is a long way from the island: go with a driver or a ride-hailing car and arrange the session first.",
+    "price": "Entry fee",
+    "address": "6 William Elliot Street, Dele Adedugbe Estate, New Oko-Oba, Agege, Lagos",
+    "gallery": [
+      "https://wakaabuja.com/wp-content/uploads/2025/07/Vintage-Africana-Lagos-.webp"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "A photograph of the Vintage Africana Museum from a Nigerian travel guide; credited below, not a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "listing": "https://placestotour.com/tour/vintage-africana-museum-lagos",
+      "guide": "https://wakaabuja.com/vintage-africana-lagos",
+      "maps": "https://www.google.com/maps/search/Vintage+Africana+Museum+Lagos"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "apapa-amusement-park",
+    "name": "Apapa Amusement Park",
+    "category": "play",
+    "area": "Apapa",
+    "tagline": "The old Apapa fun park, 7.7 acres of rides",
+    "note": "Apapa Amusement Park is the old harbour-side fun park at 34 Randle Road, Apapa Quays — 7.7 acres of classic rides: Ferris wheel, carousel, bumper cars, pirate ship and a mini roller coaster, plus picnic areas and snack corners. It is a family and school-trip park rather than a thrill park. Opening hours vary by day and rides are ticketed individually, so check before you travel; the park's listed number is 0901 111 1909.",
+    "price": "Entry fee",
+    "address": "34 Randle Road, Apapa Quays, Lagos 102272",
+    "gallery": [
+      "https://firstclassnigeria.com/wp-content/uploads/2021/11/Apapa-Amusement-Park.jpg",
+      "https://cimages.timbu.com/guides/2017/08/apapa8.jpg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Photos of Apapa Amusement Park from Lagos guides; credited below, neither is a cleared venue asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "listing": "https://italawa.com.ng/place/apapa-amusement-park",
+      "maps": "https://www.google.com/maps/search/Apapa+Amusement+Park"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "unilag-campus",
+    "name": "University of Lagos campus",
+    "category": "culture",
+    "area": "Yaba",
+    "tagline": "Botanical garden, lagoon front and sports centre",
+    "note": "The University of Lagos campus at Akoka holds three things worth a trip in one go: the Botanical Garden, the lagoon front behind the campus — the quiet water-and-mangrove edge students use to get away from the road — and the sports centre with its pitches and courts. It is a working university, so go on a weekday, expect to sign in at the gate, and ask permission before photographing people or setting up a shoot. Confirm garden opening times and any sports-centre booking with the university.",
+    "price": "Check directly",
+    "address": "University of Lagos, Akoka, Yaba, Lagos",
+    "gallery": [
+      "https://coinventmediastorage.blob.core.windows.net/media-storage-container/gphoto_ChIJa39y8zmNOxARts3eIVRSTpU_0.jpg",
+      "https://transnationalarchitecture.group/wp-content/uploads/2024/01/img_1575.jpeg"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "A Google-hosted photo of the UNILAG campus republished by a travel site, plus a photograph from an architecture research blog. Credited below; neither is a cleared university asset.",
+    "sourceUrls": {
+      "list": "https://www.tiktok.com/@todolagos",
+      "site": "https://unilag.edu.ng/",
+      "maps": "https://www.google.com/maps/search/University+of+Lagos+Akoka"
+    },
+    "nights": [],
+    "nightsSource": null,
+    "nightsCheckedAt": null
+  },
+  {
+    "id": "landmark-upside-down-house",
+    "name": "Landmark Upside Down House",
+    "category": "play",
+    "area": "Victoria Island",
+    "tagline": "A full-size house built upside down",
+    "price": "Entry fee",
+    "address": "3 & 4 Water Corporation Drive (Landmark Boulevard), Victoria Island, Lagos 106104",
+    "note": "The Upside Down House on Landmark Boulevard is exactly that: a full-size house standing on its roof, with the rooms inside fitted out upside down — a bedroom with the bunk bed and toys overhead, a bathroom you pose in as if you are hanging from the ceiling, a living room under your feet. It is an attraction for photographs rather than a long visit, and it is ticketed separately from Landmark Beach next door, so buy the house ticket on its own and go early or off-peak to get the rooms without a queue. Confirm the current ticket price and opening hours with Landmark before you travel.",
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RzPp4Q9xmtKqt1pnqW8xFuhPRZVDeshWOMm6ewGJk0VIBS92ILF0A58gCLK7g_yw248YVjFmzQesxVugdx3a83-74AyAyW91I30H-LXMUbWJV7gRa-YTeIm99u-Pkl1p-7v-rJ6grdPgM=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7M72QwTblCg0rImM17GbYSDrNry6KuWHw4BnRr6D7y_-XFI8L5k7Pchf_HUppW5U1NxJqs6DkpqipBzlCzwzx5JzLw6bsgWE3Cl__bsN7uuDGlvjm90qKCfCY6g1YlsaKJYlK=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qx29J_OAC3f1kVwgTuApyA0E44auwkLqDGdQpulUYuQ-t_6S3zeIBIn9gfD1Nfp-837hI56flpUizGJIeKZ1giopJVFewq2f1cd_a7J8Ks2TQUchLBwranwA6u4KRX_WOYbBlJHbVbJbA=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RGA_W4v0pQbGjNZ6OhigF2kgTCtoqTLqqqLgLOpOv9RK9_k5wem688vZN221NHqY1kLTFatQND8LgeXzPG6ZqfmC7bGlaKNNDLs5z5gSiUB6dPiFOZqEF4J51Q5gVWwClUWo-cV5h26ZoL=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T1viBR56pc7IEPPd2FqNWulJIblSJ99xCOvfgZYWvzeOXn0G7F4u8cLQSHcDX4gc5VpoXR5pn6jX1GIV1N8Lu3KRAVEMgojQ-Bx1PqTrla9vNZUZTjmQ07gdRhAURKvIcZi5ioeXDfD3rk=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwtiiJgftWwONRFFXR-e6RI-Uc8eF2HmwuO_Ha4UKZ6nCfeKSeU3jojzv8RS_Qfcpgcav4bYerwaaQVbIJo0Wv09aybu9Oef__GZ4ONirkUpYmKWKhie9GqAjDWCYRtWgFzlUJuyattVkM=s1360-w1360-h1020-rw"
+    ],
+    "checkedAt": "2026-11-27",
+    "imageNote": "Google Maps listing photos for the Upside Down House, supplied by the guide's owner — taken from its Google Maps place page. Not verified reusable venue assets; swap for a venue-owned photo with a clear reuse basis when one is available.",
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/Landmark+Upside+Down+House+Lagos",
+      "landmark": "https://landmarkafrica.com/",
+      "beach": "https://www.google.com/maps/search/Landmark+Beach+Lagos"
+    },
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null

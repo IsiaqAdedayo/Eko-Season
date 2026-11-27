@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "=== git status (all, excluding .next and tmp) ==="
+git status --short | grep -vE '^(\?\? \.next|?? tmp|?? \.next-final|?? \.next-final2|?? \.next-final3|?? \.next-final4)' || true
+echo
+echo "=== git diff (HEAD vs working tree) for sitemap + clubs + markets + clubs data + activities data ==="
+git diff -- app/sitemap.ts app/clubs app/markets data/clubs.ts data/activities.ts || true
+echo
+echo "=== git log -1 (current HEAD) ==="
+git log -1 --oneline --decorate || true
