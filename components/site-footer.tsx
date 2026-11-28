@@ -12,8 +12,11 @@ export function SiteFooter() {
               Èkó Season
             </p>
             <p className="mt-3 max-w-sm text-sm text-cream/60">
-              A December guide to Lagos: where to go, who is playing, and how to
-              get there without losing an hour to traffic.
+              A Lagos guide: where to go, who is playing, and how to get there
+              without losing an hour to traffic.
+            </p>
+            <p className="mt-2 text-[11px] text-cream/45">
+              Listings are rechecked weekly; each page carries its own check date.
             </p>
           </div>
 
@@ -29,17 +32,16 @@ export function SiteFooter() {
         <div className="mt-8 flex flex-col gap-3 text-[11px] leading-relaxed text-cream/45 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-2">
             <p>
-              Check dates are per entry: each place page carries its own. Doors
-              close, prices move, and December sells out — confirm before you
-              pay.
+              Every entry carries its own check date. Doors close, prices move,
+              and the season sells out — confirm before you pay.
             </p>
             <DataStamp kind="shows" tone="dark" />
             <DataStamp kind="movies" tone="dark" />
           </div>
           <p>
-            Venue photography used with permission, and food photography from
+            Venue photography is used with permission; food photography is from
             Joyful Cook, also used with permission. Remaining images are
-            illustrative — Unsplash and Wikimedia Commons — credited per photo.
+            illustrative and credited per photo — Unsplash and Wikimedia Commons.
           </p>
         </div>
       </div>

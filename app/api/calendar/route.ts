@@ -40,7 +40,7 @@ export function GET(request: Request) {
   const body = showsToIcs(
     upcoming,
     requested.length > 0
-      ? "Èkó Season — my December list"
+      ? "Èkó Season — my Lagos list"
       : undefined,
   );
 

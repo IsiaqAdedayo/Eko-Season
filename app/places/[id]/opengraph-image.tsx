@@ -17,10 +17,10 @@ export default async function Image({
 }) {
   const { id } = await params;
   const place = getPlace(id);
-  const title = (place?.name ?? "Lagos in December").slice(0, 80);
+  const title = (place?.name ?? "Lagos").slice(0, 80);
   const category = place
     ? (CATEGORY_LABELS[place.category] ?? place.category)
-    : "The December guide";
+    : "The Lagos guide";
 
   return new ImageResponse(
     (
@@ -66,7 +66,7 @@ export default async function Image({
           }}
         >
           <div style={{ maxWidth: 820 }}>{place?.tagline ?? "Where to go, what to eat, who is playing"}</div>
-          <div style={{ color: "#f2a03d" }}>ekoseason · December guide</div>
+          <div style={{ color: "#f2a03d" }}>ekoseason · Lagos guide</div>
         </div>
       </div>
     ),

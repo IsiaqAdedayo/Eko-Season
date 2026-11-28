@@ -13,7 +13,7 @@ import {
 } from "../../lib/movies";
 import { allPlaces, getPlace } from "../../lib/place";
 import { imageSrcSet, imageUrl } from "../../lib/media";
-import { todayInLagos } from "../../lib/schedule";
+import { longDate, todayInLagos } from "../../lib/schedule";
 import { SITE_URL } from "../../lib/site";
 
 export const revalidate = 3600;
@@ -21,13 +21,13 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Movies in Lagos — Èkó Season",
   description:
-    "Nollywood and cinema releases screening in Lagos this December, with venues, release dates and ticket links.",
+    "Nollywood and cinema releases screening in Lagos, with venues, release dates and ticket links.",
   alternates: { canonical: "/movies" },
   openGraph: {
     type: "website",
     siteName: "Èkó Season",
     url: "/movies",
-    title: "Movies in Lagos this December",
+    title: "Movies in Lagos",
     description:
       "What's in Nigerian cinemas now and what's coming — Nollywood releases, venues and where to buy tickets.",
     // The social card is app/movies/opengraph-image.tsx.
@@ -166,6 +166,12 @@ export default function MoviesPage() {
     (m) => m.date <= today && (m.endDate ?? m.date) >= today,
   );
   const comingSoon = movieEvents.filter((m) => m.date > today);
+  // The newest date on file (a release, or the end of a run), so an empty list
+  // can say when it stopped instead of implying nothing plays anywhere.
+  const lastDateOnFile = movieEvents
+    .map((m) => m.endDate ?? m.date)
+    .sort()
+    .at(-1);
   const lagosCinemas = allPlaces.filter((p) => LAGOS_CINEMA_IDS.includes(p.id));
 
   return (
@@ -174,7 +180,7 @@ export default function MoviesPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Movies in Lagos this December",
+          name: "Movies in Lagos",
           numberOfItems: movieEvents.length,
           itemListElement: movieEvents.map((movie, index) => ({
             "@type": "ListItem",
@@ -205,7 +211,7 @@ export default function MoviesPage() {
             Movies in Lagos
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            What's on in Nigerian cinemas now and what's coming this December — Nollywood releases, where to watch them,
+            What's on in Nigerian cinemas now and what's coming next — Nollywood releases, where to watch them,
             and the Lagos cinemas worth choosing. Updated from cinema listings and release trackers.
           </p>
         </header>
@@ -213,10 +219,27 @@ export default function MoviesPage() {
         <SeasonNotice className="mt-8" />
 
         {nowShowing.length === 0 && comingSoon.length === 0 && (
-          <p className="mt-10 text-sm text-muted">
-            No films are listed for this season yet. Release dates are added
-            from the distributors&rsquo; own announcements.
-          </p>
+          <div className="mt-10 rounded-2xl border border-ember/30 bg-ember/5 p-4">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-ember">
+              {lastDateOnFile ? "Release slate ended" : "No release dates yet"}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-ink/80">
+              {lastDateOnFile ? (
+                <>
+                  The latest date on file was {longDate(lastDateOnFile)}.
+                  The next month&rsquo;s slate has not been published yet, so
+                  this is not a list of what is in cinemas now — check a
+                  cinema&rsquo;s own schedule before travelling.
+                </>
+              ) : (
+                <>
+                  Release dates are added from the distributors&rsquo; own
+                  announcements. Check a cinema&rsquo;s own schedule before
+                  travelling.
+                </>
+              )}
+            </p>
+          </div>
         )}
 
         {nowShowing.length > 0 && (
@@ -237,7 +260,7 @@ export default function MoviesPage() {
           <section className="mt-14">
             <h2 className="font-display text-2xl">Coming to cinemas</h2>
             <p className="mt-2 text-sm text-muted">
-              Scheduled releases this December — dates are what the distributor announced, so confirm on the cinema page before you travel.
+              Scheduled releases — dates are what the distributor announced, so confirm on the cinema page before you travel.
             </p>
             <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map((movie) => (

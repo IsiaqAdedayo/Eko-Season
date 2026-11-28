@@ -16,7 +16,7 @@ import { imageUrl } from "../../lib/media";
 
 const TITLE = "Big shows — Èkó Season";
 const DESCRIPTION =
-  "Every big show announced for Lagos between now and December, with venue, date and ticket prices.";
+  "Every show announced for Lagos right now, with venue, date and ticket prices.";
 
 /** Twelve cards a page: enough to scan, short enough to reach the footer. */
 const PAGE_SIZE = 12;
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Èkó Season",
     url: "/shows",
-    title: "Big shows in Lagos this December",
+    title: "Big shows in Lagos",
     description: DESCRIPTION,
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         ),
         width: 1200,
         height: 630,
-        alt: "Big shows in Lagos this December",
+        alt: "Big shows in Lagos",
       },
     ],
   },
@@ -73,7 +73,7 @@ export default async function ShowsPage({ searchParams }: PageProps) {
         data={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Big shows in Lagos this December",
+          name: "Big shows in Lagos",
           numberOfItems: listed.length,
           itemListElement: listed.slice(0, 30).map((event, index) => ({
             "@type": "ListItem",

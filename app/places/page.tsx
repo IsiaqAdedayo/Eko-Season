@@ -13,12 +13,12 @@ type PageProps = {
 export const metadata: Metadata = {
   title: `All ${allPlaces.length} places — Èkó Season`,
   description:
-    "Every club, beach, table, landmark and cinema in the Detty December guide, filtered by category and area.",
+    "Every club, beach, table, landmark and cinema in the Lagos guide, filtered by category and area.",
   alternates: { canonical: "/places" },
   openGraph: {
     title: `All ${allPlaces.length} places`,
     description:
-              "Clubs, beaches, restaurants, landmarks and things to do in Lagos this December.",
+              "Clubs, beaches, restaurants, landmarks and things to do in Lagos.",
     url: "/places",
     type: "website",
     siteName: "Èkó Season",

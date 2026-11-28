@@ -1,6 +1,6 @@
 import { scheduledPlaces, type Place } from "./place";
 import type { CorridorId } from "./areas";
-import { showEvents, type ShowEvent } from "./shows";
+import { isParty, showEvents, type ShowEvent } from "./shows";
 
 const LAGOS = "Africa/Lagos";
 
@@ -51,6 +51,46 @@ export const longDate = (iso: string) =>
     timeZone: "UTC",
   }).format(at(iso));
 
+/** "2026-12-17" -> "December 2026" */
+export const monthLabel = (iso: string) =>
+  new Intl.DateTimeFormat("en-GB", {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(at(`${iso.slice(0, 7)}-01`));
+
+/** Month name on its own, for a range that shares one year. */
+const monthName = (iso: string) =>
+  new Intl.DateTimeFormat("en-GB", { month: "long", timeZone: "UTC" }).format(
+    at(`${iso.slice(0, 7)}-01`),
+  );
+
+/**
+ * "December 2026", or "November – December 2026" when a listing runs across
+ * months. Nothing is hardcoded: the label follows the dates in the data.
+ */
+export function monthRangeLabel(fromIso: string, toIso: string) {
+  const fromMonth = fromIso.slice(0, 7);
+  const toMonth = toIso.slice(0, 7);
+  if (fromMonth === toMonth) return monthLabel(toMonth);
+
+  const fromYear = Number(fromMonth.slice(0, 4));
+  const toYear = Number(toMonth.slice(0, 4));
+  if (fromYear === toYear) {
+    return `${monthName(fromMonth)} – ${monthName(toMonth)} ${toYear}`;
+  }
+  return `${monthName(fromMonth)} ${fromYear} – ${monthName(toMonth)} ${toYear}`;
+}
+
+/** First day of the calendar month an ISO date falls in. */
+export const monthStart = (iso: string) => `${iso.slice(0, 7)}-01`;
+
+/** Last day of that month. */
+export function monthEnd(iso: string) {
+  const [year, month] = iso.slice(0, 7).split("-").map(Number);
+  return new Date(Date.UTC(year, month, 0)).toISOString().slice(0, 10);
+}
+
 const coversDay = (event: ShowEvent, date: string) =>
   event.date <= date && (event.endDate ?? event.date) >= date;
 
@@ -76,6 +116,9 @@ const CORRIDOR_AREAS: Record<CorridorId, string[]> = {
     "Eleko",
     "Chevron Drive",
     "Ajah",
+    "Ibeju-Lekki",
+    "Sangotedo",
+    "Epe",
   ],
   "lagos-island": [
     "Lagos Island",
@@ -94,6 +137,21 @@ const CORRIDOR_AREAS: Record<CorridorId, string[]> = {
     "Iganmu",
     "Surulere",
     "Ojota",
+    "Apapa",
+    "Agege",
+    "Ikorodu",
+    "Gbagada",
+    "Ogudu",
+    "Magodo",
+    "Ketu",
+    "Oshodi",
+    "Mushin",
+    "Festac",
+    "Amuwo-Odofin",
+    "Ilupeju",
+    "Anthony",
+    "Ojodu",
+    "Badagry",
   ],
 };
 
@@ -135,7 +193,32 @@ export const planDay = (date: string): DayPlan => {
   };
 };
 
-/** Today plus the next six days, in Lagos time. */
+/**
+ * Parties and raves running inside a window, soonest first.
+ *
+ * Most listings publish no price at all, so ranking the list by price would
+ * float an arbitrary handful to the top and imply the rest cost more. Date is
+ * the one fact every row carries; price only breaks ties within a night.
+ */
+export function partiesBetween(
+  from: string,
+  days: number,
+  corridor: CorridorId | null = null,
+) {
+  const to = addDays(from, days - 1);
+  return showEvents
+    .filter(isParty)
+    .filter((event) => event.date <= to && (event.endDate ?? event.date) >= from)
+    .filter((event) => showMatchesCorridor(event, corridor))
+    .sort(
+      (a, b) =>
+        a.date.localeCompare(b.date) ||
+        (a.priceFrom ?? Number.POSITIVE_INFINITY) -
+          (b.priceFrom ?? Number.POSITIVE_INFINITY) ||
+        a.title.localeCompare(b.title),
+    );
+}
+
 /** First show strictly after the given date, for the "nothing on yet" case. */
 export const nextShowAfter = (date: string) =>
   showEvents.find((event) => event.date > date) ?? null;

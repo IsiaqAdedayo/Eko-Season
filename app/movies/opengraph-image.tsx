@@ -3,7 +3,7 @@ import { movieEvents } from "../../lib/movies";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Movies in Lagos this December";
+export const alt = "Movies in Lagos";
 
 /** A card that lists the actual slate, so the preview is not a stock photo. */
 export default async function Image() {
@@ -38,7 +38,7 @@ export default async function Image() {
             Movies in Lagos
           </div>
           <div style={{ marginTop: 12, fontSize: 26, color: "rgba(255,247,236,0.6)" }}>
-            Nollywood and cinema releases this December
+            Nollywood and cinema releases in Lagos cinemas
           </div>
         </div>
 

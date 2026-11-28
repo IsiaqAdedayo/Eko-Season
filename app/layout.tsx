@@ -17,9 +17,9 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const TITLE = "Èkó Season — Detty December in Lagos";
+const TITLE = "Èkó Season — the Lagos guide";
 const DESCRIPTION =
-  "Where to go, what to eat, who is playing and how to move around Lagos this December.";
+  "Where to go, what to eat, who is playing and how to move around Lagos, month after month.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -32,7 +32,12 @@ export const metadata: Metadata = {
     url: "/",
     title: TITLE,
     description: DESCRIPTION,
-    // The image comes from app/opengraph-image.tsx, generated per request.
+    // Site-wide card: app/opengraph-image.tsx, generated per request from
+    // metadataBase. The card origin is set by ImageResponse from the request
+    // Host header, not by metadataBase, so the same build still ships
+    // localhost:opengraph-image?… while served from localhost. Fixing the
+    // shared card origin means serving this from the real domain so the Host
+    // header is the real origin.
   },
   // Card type only: X falls back to each page's og:title/og:image, so this
   // doesn't stomp on a place page's own preview.

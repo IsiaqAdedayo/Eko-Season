@@ -3,13 +3,11 @@ import { imageUrl } from "./media";
 type NavLink = { href: string; label: string };
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+  process.env.NEXT_PUBLIC_SITE_URL ?? process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000"
 ).replace(/\/$/, "");
 
-/** Shown under the transport fares. */
-export const FARES_CHECKED = "16 November 2026";
-
-/** Default share image: a real Lagos beach scene rather than a sunset stock photo. */
+/** Lead social image for places pages that still need a single static fallback
+ * while the per-page opengraph-image route is being widened. */
 export const SOCIAL_IMAGE = imageUrl(
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/The-elegushi-beach-lagos.jpg/1920px-The-elegushi-beach-lagos.jpg",
   1200,
@@ -24,6 +22,7 @@ export const NAV_LINKS: NavLink[] = [
   { href: "/movies", label: "Movies" },
   { href: "/weather", label: "Weather" },
   { href: "/practicalities", label: "Practicalities" },
+  { href: "/sources", label: "Sources" },
 ];
 
 /** Area links shown in the footer. */
@@ -49,3 +48,6 @@ export function formatChecked(date: string | null | undefined): string {
  * route is deliberately missing until a destination exists. */
 export const REPORT_EMAIL =
   process.env.REPORT_EMAIL ?? "isiaqadedayo@outlook.com";
+
+/** Fare timetable checked from the Lagos Transport Network PDF. */
+export const FARES_CHECKED = "16 November 2026";

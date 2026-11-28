@@ -23,3 +23,6 @@ pnpm-debug.log*
 # OS files
 .DS_Store
 
+
+# Pre-refresh copies of data files, kept by scripts/refresh-all.sh
+data/.snapshots/

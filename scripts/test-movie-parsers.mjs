@@ -20,6 +20,7 @@ import {
   parseFromSilverbird,
   parseGenericTracker,
   parseNaijaSabi,
+  slateEnd,
 } from "./scrape-movies.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -106,6 +107,29 @@ async function main() {
     "generic tracker: headline row filtered out",
     generic.length === 1 && !isFilmRow(generic[0]),
   );
+
+  // ---- slate freshness -------------------------------------------------
+  // December's pages keep parsing in January, so "the scrape worked" has to be
+  // distinguishable from "the calendar is current".
+  check(
+    "slate: a future release leaves days to run",
+    slateEnd([{ date: "2026-12-04" }], "2026-11-28").daysLeft === 6,
+  );
+  check(
+    "slate: the last end date decides",
+    slateEnd(
+      [
+        { date: "2026-12-04" },
+        { date: "2026-12-11", endDate: "2027-01-10" },
+      ],
+      "2026-12-31",
+    ).last === "2027-01-10",
+  );
+  check(
+    "slate: a finished slate goes negative",
+    slateEnd([{ date: "2026-12-04" }], "2027-01-01").daysLeft === -28,
+  );
+  check("slate: no dates is no slate", slateEnd([], "2026-11-28").last === null);
 
   console.log(
     failures === 0 ? "\n✓ movie parsers ok" : `\n✗ ${failures} parser check(s) failed`,

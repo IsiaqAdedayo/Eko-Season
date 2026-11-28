@@ -12,7 +12,20 @@ export type Place = {
   price: string;
   address: string | null;
   gallery: string[];
+  /**
+   * Legacy single date, kept as an alias of listedAt so old records and the
+   * validator still work. It conflated "we read this row" with "we confirmed
+   * it", which is why the two fields below exist.
+   */
   checkedAt: string;
+  /** When the row was added or re-read from the source. */
+  listedAt?: string;
+  /**
+   * When a person confirmed the facts on the card — address, trading status,
+   * price band. `null` means it was looked at and could not be confirmed;
+   * absent means there is no record either way. Never inferred from listedAt.
+   */
+  verifiedAt?: string | null;
   nights: string[];
   nightsSource: NightsSource | null;
   nightsCheckedAt: string | null;
@@ -21,6 +34,15 @@ export type Place = {
    * card never implies a stock shot is the place itself.
    */
   imageNote?: string;
+  /**
+   * The lead image is a stand-in rather than a photograph of this venue.
+   *
+   * Cards turn this into a one-line "Illustrative photo" badge and let the
+   * venue name lead; imageNote keeps the full explanation, shown on the detail
+   * page and as the badge's tooltip. Set only when the picture is not the place
+   * — a listing photo of the venue is unverified, not illustrative.
+   */
+  illustrativePhoto?: boolean;
   /** "closed" means the venue has shut permanently and is never listed. */
   status?: "open" | "closed";
 };
@@ -37,6 +59,21 @@ const isClosed = (place: Place) => place.status === "closed";
  * fall through to 404, and they are out of the sitemap and the search index.
  */
 export const allPlaces = (places as Place[]).filter((place) => !isClosed(place));
+
+/**
+ * What date a place can honestly show, and what that date means.
+ *
+ * listedAt says "this is what the source said that day"; only verifiedAt says
+ * a person confirmed it. A card that showed the first as if it were the second
+ * is how the 27 November batch looked checked while its notes said otherwise.
+ */
+export type PlaceProvenance = { date: string; verified: boolean };
+
+export function placeProvenance(place: Place): PlaceProvenance {
+  return place.verifiedAt
+    ? { date: place.verifiedAt, verified: true }
+    : { date: place.listedAt ?? place.checkedAt, verified: false };
+}
 
 export const CATEGORY_LABELS: Record<string, string> = {
   clubs: "Clubs",

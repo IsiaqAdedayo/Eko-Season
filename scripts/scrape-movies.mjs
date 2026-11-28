@@ -7,11 +7,15 @@
  *   3. Merges into data/movies.json: new movies appended, known movies updated,
  *      old movies that have finished their run are dropped.
  *   4. Writes only when something changed.
+ *   5. Refuses to write an empty slate: if every date on file is in the past,
+ *      the source list is last month's page and the run fails loudly instead of
+ *      blanking /movies. check:health starts failing ten days before that.
  *
  * Run: node scripts/scrape-movies.mjs [--dry-run]
  *
  * Sources worth keeping:
- *   - NaijaSabi "h2 list" — canonical four-film December 2026 slate, with
+ *   - NaijaSabi "h2 list" — canonical four-film slate for the month the page
+ *     names, with
  *     cinema vs Netflix tags. This is the best current source; we parse both
  *     the summary table and the section headings so the scraper keeps working
  *     if only one form is present.
@@ -155,9 +159,11 @@ function parseDate(raw, defaultYear) {
   return null;
 }
 
-/** Year a source page is about, e.g. "December 2026" in its headline. */
+/** Year a source page is about, e.g. "March 2027" in its headline. */
 function pageYear(html) {
-  const m = String(html).match(/December\s+(\d{4})/i);
+  const m = String(html).match(
+    /\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})\b/i,
+  );
   return m ? m[1] : new Date().getUTCFullYear();
 }
 
@@ -555,6 +561,30 @@ function isFilmRow(row) {
   return row.date >= oldest && row.date <= newest;
 }
 
+/**
+ * How far the release calendar actually reaches.
+ *
+ * The point of this helper is to tell "no films have been announced" apart from
+ * "the pages in movie-sources.json are last month's": December's articles keep
+ * parsing perfectly in January, so a successful scrape is no evidence the slate
+ * is current. `daysLeft` is negative once the last release is in the past.
+ */
+export function slateEnd(
+  events,
+  today = new Date().toISOString().slice(0, 10),
+) {
+  const dates = (events ?? [])
+    .map((event) => event.endDate ?? event.date)
+    .filter(Boolean)
+    .sort();
+  const last = dates.at(-1) ?? null;
+  if (!last) return { last: null, daysLeft: null };
+  return {
+    last,
+    daysLeft: Math.round((Date.parse(last) - Date.parse(today)) / 86_400_000),
+  };
+}
+
 /* ------------------------------------------------------------------- main */
 
 async function main() {
@@ -593,6 +623,9 @@ async function main() {
       } else {
         ev = parseGenericTracker(html, entry);
       }
+      // The source list is the truth about where a row came from, so a parser's
+      // own hardcoded URL cannot stamp this month's page with last month's.
+      ev = ev.map((row) => ({ ...row, sourceUrl: entry.url ?? row.sourceUrl }));
       const evFilms = ev.filter(isFilmRow);
       console.log(
         `${entry.name}${replay ? " (from saved copy)" : ""}: ${ev.length} block(s), ${evFilms.length} film(s) after sanity filter`,
@@ -629,7 +662,10 @@ async function main() {
   }
 
   if (scraped.length === 0) {
-    console.error("No movies scraped — leaving data untouched.");
+    console.error(
+      "No movies scraped — leaving data untouched. If the current slate has " +
+        "finished, add the next month's release page to data/movie-sources.json.",
+    );
     process.exitCode = 1;
     return;
   }
@@ -641,6 +677,21 @@ async function main() {
   const kept = events
     .filter((m) => (m.endDate ?? m.date) >= cutoff)
     .sort((a, b) => a.date.localeCompare(b.date));
+
+  // A scrape can succeed and still be last month's news: the December pages
+  // parse just as well in January. Without this guard the run would write an
+  // empty slate and /movies would go blank without anyone being told. The
+  // earlier warning about a slate that is about to run out belongs to
+  // check:health, which owns that threshold.
+  if (kept.length === 0) {
+    console.error(
+      `No upcoming films: everything scraped ends before ${cutoff}. The pages ` +
+        "in data/movie-sources.json describe a slate that has finished — add " +
+        "the next month's release page and drop the old one.",
+    );
+    process.exitCode = 1;
+    return;
+  }
 
   const changed = JSON.stringify(kept) !== JSON.stringify(data.events ?? []);
 

@@ -101,7 +101,7 @@ export function SiteHeader() {
             Èkó Season
           </span>
           <span className="hidden text-[10px] uppercase tracking-[0.25em] opacity-60 sm:inline">
-            Detty &rsquo;26
+            Lagos guide
           </span>
         </Link>
 

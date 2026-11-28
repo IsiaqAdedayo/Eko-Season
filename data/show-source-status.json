@@ -1,10 +1,34 @@
 {
-  "checkedAt": "2026-11-24T13:46:27.383Z",
+  "checkedAt": "2026-11-28T00:29:48.284Z",
   "sources": [
     {
       "name": "Detty December Fest",
       "ok": true,
-      "events": 13,
+      "events": 12,
+      "error": null
+    },
+    {
+      "name": "Eventbrite Lagos — parties",
+      "ok": true,
+      "events": 29,
+      "error": null
+    },
+    {
+      "name": "Eventbrite Lagos — nightlife",
+      "ok": true,
+      "events": 27,
+      "error": null
+    },
+    {
+      "name": "Eventbrite Lagos — music",
+      "ok": true,
+      "events": 19,
+      "error": null
+    },
+    {
+      "name": "Eventbrite Lagos — free",
+      "ok": true,
+      "events": 16,
       "error": null
     }
   ]

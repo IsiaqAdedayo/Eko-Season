@@ -10,10 +10,10 @@ type PageProps = {
 export const metadata: Metadata = {
   title: "Search — Èkó Season",
   description:
-    "Search every Lagos place, thing to do, show, film and dish in the December guide.",
+    "Search every Lagos place, thing to do, show, film and dish in the guide.",
   alternates: { canonical: "/search" },
   openGraph: {
-    title: "Search the Lagos December guide",
+    title: "Search the Lagos guide",
     description: "Places, things to do, shows, films and food — one search box.",
     url: "/search",
     type: "website",

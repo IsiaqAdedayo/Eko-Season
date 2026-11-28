@@ -1,48 +1,65 @@
-import { todayInLagos } from "./schedule";
+import { monthLabel, monthRangeLabel, todayInLagos } from "./schedule";
 import { showEvents } from "./shows";
 
 /**
- * The festival window, read from the calendar rather than typed in.
+ * The span the shows calendar covers, read from the dates in data/shows.json
+ * rather than typed in.
  *
- * The guide has to survive the other eleven months and the next December, so
- * the dates come from the shows data: when a new season is scraped the window
- * moves with it and nothing here needs editing. Everything is a pure function
- * of the data plus today's date in Lagos.
+ * Nothing here knows about December. A scrape in March moves the window to
+ * March, a run in December moves it back, and the year follows the last date on
+ * file — so the guide survives the other eleven months and the next year
+ * without an edit. Everything is a pure function of the data plus today in
+ * Lagos.
  */
 
-export type Season = { start: string; end: string; year: number };
-
-const yearOf = (iso: string) => Number(iso.slice(0, 4));
+export type Season = {
+  /** First and last night currently on the calendar. */
+  start: string;
+  end: string;
+  year: number;
+  /** "December 2026", or "November – December 2026" across a month boundary. */
+  label: string;
+};
 
 export function seasonWindow(
   events = showEvents,
   today = todayInLagos(),
 ): Season {
-  const lastNight = events
+  // Upcoming dates describe the live calendar; with none left, the window
+  // describes the archive rather than dressing a past night up as current.
+  const upcoming = events.filter(
+    (event) => (event.endDate ?? event.date) >= today,
+  );
+  const pool = upcoming.length > 0 ? upcoming : events;
+
+  const first = pool
+    .map((event) => event.date)
+    .filter(Boolean)
+    .sort()[0];
+  const last = pool
     .map((event) => event.endDate ?? event.date)
     .filter(Boolean)
-    .sort();
+    .sort()
+    .pop();
 
-  const end = lastNight[lastNight.length - 1];
-  const year = end ? yearOf(end) : yearOf(today);
+  const start = first ?? today;
+  const end = last ?? today;
 
   return {
-    start: `${year}-12-01`,
-    end: end ?? `${year}-12-31`,
-    year,
+    start,
+    end,
+    year: Number(end.slice(0, 4)),
+    label: monthRangeLabel(start, end),
   };
 }
 
-export const season = seasonWindow();
-export const seasonLabel = `December ${season.year}`;
-
-export type SeasonState = "before" | "during" | "after";
-
-export const seasonState = (
-  today: string,
-  window: Season = seasonWindow(showEvents, today),
-): SeasonState =>
-  today < window.start ? "before" : today > window.end ? "after" : "during";
+/**
+ * The window's name as of today. A function on purpose: a module-level constant
+ * is evaluated once per process, so a server that stays up through the turn of
+ * a month would keep titling the site with the month it started in.
+ */
+export const seasonLabel = (today = todayInLagos()) =>
+  seasonWindow(showEvents, today).label;
 
 /** A show is over once its last night has passed. */
 export const showIsPast = (
@@ -55,8 +72,10 @@ export const upcomingShows = (today = todayInLagos()) =>
   showEvents.filter((event) => !showIsPast(event, today));
 
 /**
- * What the hero's plan bar promises. Between seasons next year's dates are not
- * published yet, so it says "December" rather than repeating last year's.
+ * What the hero's plan bar promises. With nothing on the calendar the window
+ * describes the archive, so name the month we are actually in instead.
  */
-export const plannedSeasonLabel = (today = todayInLagos()) =>
-  seasonState(today) === "after" ? "December" : seasonLabel;
+export const plannedSeasonLabel = (today = todayInLagos()) => {
+  const window = seasonWindow(showEvents, today);
+  return today > window.end ? monthLabel(today) : window.label;
+};

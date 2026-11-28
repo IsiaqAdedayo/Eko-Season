@@ -6,6 +6,7 @@ import { upcomingShows } from "../lib/season";
 import {
   dateRange,
   naira,
+  priceLabel,
   showEvents,
   showsUpdatedAt,
   type ShowEvent,
@@ -88,9 +89,7 @@ export function ShowCard({
 
       <div className="border-t border-cream/10 p-5 pt-4">
         <p className="text-sm font-medium">
-          {event.priceFrom != null
-            ? `From ${naira(event.priceFrom)}`
-            : "Price not published"}
+          {priceLabel(event)}
         </p>
 
         {event.tiers.length > 0 && (
@@ -155,16 +154,25 @@ export function BigShows({
           </div>
           <div className="max-w-sm">
             <p className="text-sm leading-relaxed text-cream/55">
-              The December calendar, refreshed automatically from the festival
-              and ticket pages. Prices are face value before booking fees.
+              The show calendar, refreshed automatically from the festival and
+              ticket pages. Prices are face value before booking fees.
             </p>
-            <Link
-              href="/tonight"
-              className="mt-3 inline-flex items-center gap-2 text-xs text-gold underline-offset-4 hover:underline"
-            >
-              What&rsquo;s on tonight
-              <span aria-hidden>→</span>
-            </Link>
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs">
+              <Link
+                href="/tonight"
+                className="inline-flex items-center gap-2 text-gold underline-offset-4 hover:underline"
+              >
+                What&rsquo;s on tonight
+                <span aria-hidden>→</span>
+              </Link>
+              <Link
+                href="/tonight#parties"
+                className="inline-flex items-center gap-2 text-cream/70 underline-offset-4 hover:text-cream hover:underline"
+              >
+                Parties and raves
+                <span aria-hidden>→</span>
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -172,8 +180,8 @@ export function BigShows({
           <div className="mt-10 rounded-2xl border border-cream/15 bg-cream/[0.04] p-6">
             <p className="font-display text-xl">No shows announced yet</p>
             <p className="mt-2 max-w-lg text-sm leading-relaxed text-cream/60">
-              The December calendar fills up from September, when venues publish
-              their line-ups. Nothing is invented between announcements — what is
+              The calendar fills up as venues publish their line-ups, usually a
+              few months ahead. Nothing is invented between announcements — what is
               still open all year is below: where to eat, where to go and how to
               get around.
             </p>

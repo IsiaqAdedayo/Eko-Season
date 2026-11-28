@@ -1,9 +1,13 @@
 import { longDate, todayInLagos } from "../lib/schedule";
-import { season, seasonState } from "../lib/season";
+import { seasonWindow } from "../lib/season";
+import { showEvents } from "../lib/shows";
 
 /**
- * Says plainly when the guide is ahead of, or behind, the calendar. Renders
- * nothing during the season, which is most of the year it is useful.
+ * Says plainly when the calendar has nothing left on it.
+ *
+ * The old version counted down to a December season; this one only appears when
+ * every listed night is in the past, so it works in any month of any year.
+ * Otherwise it renders nothing.
  */
 export function SeasonNotice({
   tone = "light",
@@ -12,9 +16,14 @@ export function SeasonNotice({
   tone?: "light" | "dark";
   className?: string;
 }) {
-  const state = seasonState(todayInLagos());
-  if (state === "during") return null;
+  const today = todayInLagos();
+  const upcoming = showEvents.filter(
+    (event) => (event.endDate ?? event.date) >= today,
+  );
+  if (upcoming.length > 0) return null;
 
+  // Read at render, not at import: the notice outlives the month it appears in.
+  const season = seasonWindow(showEvents, today);
   const dark = tone === "dark";
 
   return (
@@ -28,16 +37,17 @@ export function SeasonNotice({
           dark ? "text-gold" : "text-ember"
         }`}
       >
-        {state === "before" ? "Season not started" : "Season finished"}
+        Nothing on the calendar yet
       </p>
       <p
         className={`mt-2 text-sm leading-relaxed ${
           dark ? "text-cream/70" : "text-ink/75"
         }`}
       >
-        {state === "before"
-          ? `The ${season.year} season opens on ${longDate(season.start)}. Everything listed is the announced programme, not a confirmed night out yet.`
-          : `The ${season.year} season finished on ${longDate(season.end)}. This is the archive: dates and prices are as published at the time. New dates appear here as soon as venues announce them.`}
+        {showEvents.length > 0
+          ? `The last night on file was ${longDate(season.end)}. Everything below is the archive, with dates and prices as published at the time.`
+          : "No dates have been announced yet."}{" "}
+        New dates appear here as soon as venues publish them.
       </p>
     </div>
   );

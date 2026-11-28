@@ -1,11 +1,40 @@
 {
-  "$comment": "Sources the scraper watches. Add an entry here and it is picked up on the next run, no code change needed. 'detty' reads the festival's schema.org event list and then its ticket pages for prices. 'jsonld' works on any page that publishes schema.org Event data (most modern ticketing pages do).",
+  "$comment": "Sources the scraper watches. Add an entry here and it is picked up on the next run, no code change needed. 'detty' reads the festival's schema.org event list and then its ticket pages for prices. 'jsonld' works on any page that publishes schema.org Event data (most modern ticketing pages do). 'eventbrite' reads a Lagos destination listing (parties, nightlife, music) and its embedded page data; set eventKind to 'party' for pages that are parties by definition, and maxPages to read more than the first page.",
   "sources": [
     {
       "name": "Detty December Fest",
       "kind": "detty",
       "url": "https://dettydecfest.com/events/",
       "wpApi": "https://dettydecfest.com/wp-json/wp/v2"
+    },
+    {
+      "name": "Eventbrite Lagos — parties",
+      "kind": "eventbrite",
+      "eventKind": "party",
+      "url": "https://www.eventbrite.com/d/nigeria--lagos/parties/",
+      "maxPages": 2
+    },
+    {
+      "name": "Eventbrite Lagos — nightlife",
+      "kind": "eventbrite",
+      "eventKind": "party",
+      "url": "https://www.eventbrite.com/d/nigeria--lagos/nightlife/",
+      "maxPages": 2
+    },
+    {
+      "name": "Eventbrite Lagos — music",
+      "kind": "eventbrite",
+      "eventKind": "show",
+      "url": "https://www.eventbrite.com/d/nigeria--lagos/music/",
+      "maxPages": 1
+    },
+    {
+      "name": "Eventbrite Lagos — free",
+      "kind": "eventbrite",
+      "eventKind": "show",
+      "free": true,
+      "url": "https://www.eventbrite.com/d/nigeria--lagos/free--events/",
+      "maxPages": 3
     }
   ],
   "watchlist": []

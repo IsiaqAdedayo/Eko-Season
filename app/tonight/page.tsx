@@ -10,6 +10,7 @@ import {
   corridorForArea,
   longDate,
   nextShowAfter,
+  partiesBetween,
   planDay,
   shortDay,
   showMatchesCorridor,
@@ -18,7 +19,15 @@ import {
   type DayPlan,
 } from "../../lib/schedule";
 import { CORRIDORS, type CorridorId } from "../../lib/areas";
-import { dateRange, naira, showEvents, type ShowEvent } from "../../lib/shows";
+import {
+  dateRange,
+  isParty,
+  priceBadge,
+  priceLabel,
+  showEvents,
+  type ShowEvent,
+} from "../../lib/shows";
+import { sections } from "../../data/sections";
 import { formatChecked, SOCIAL_IMAGE } from "../../lib/site";
 import { imageUrl } from "../../lib/media";
 import { allPlaces } from "../../lib/place";
@@ -35,12 +44,12 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Tonight in Lagos — Èkó Season",
   description:
-    "What's on in Lagos tonight and for the next seven days: December shows, weekday nights out and where to go.",
+    "What's on in Lagos tonight and for the next seven days: shows, weekday nights out and where to go.",
   alternates: { canonical: "/tonight" },
   openGraph: {
     title: "Tonight in Lagos",
     description:
-      "Shows and weekly nights out for the next seven days, from the Detty December guide.",
+      "Shows and weekly nights out for the next seven days, from the Lagos guide.",
     url: "/tonight",
     type: "website",
     siteName: "Èkó Season",
@@ -69,6 +78,9 @@ function ShowRow({ event }: { event: ShowEvent }) {
       <div className="min-w-0">
         <p className="text-[10px] uppercase tracking-[0.2em] text-gold">
           {dateRange(event)}
+          {isParty(event) && (
+            <span className="ml-2 text-cream/55">· Party</span>
+          )}
         </p>
         <p className="mt-1 font-display text-lg leading-tight">{event.title}</p>
         <p className="mt-1 text-xs text-cream/55">
@@ -76,10 +88,46 @@ function ShowRow({ event }: { event: ShowEvent }) {
           {event.area ? `, ${event.area}` : " · Location TBC"}
         </p>
       </div>
-      <p className="shrink-0 text-xs text-cream/70">
-        {event.priceFrom != null ? `From ${naira(event.priceFrom)}` : "TBA"}
-      </p>
+      <p className="shrink-0 text-xs text-cream/70">{priceLabel(event)}</p>
     </Link>
+  );
+}
+
+/**
+ * One party in the week's list. Unpublished prices say so rather than
+ * borrowing a number from another night.
+ */
+function PartyRow({ event }: { event: ShowEvent }) {
+  const badge = priceBadge(event);
+
+  return (
+    <li>
+      <Link
+        href={`/shows/${event.id}`}
+        className="group flex items-start justify-between gap-4 rounded-2xl border border-ink/10 bg-white/60 px-4 py-3 transition hover:border-ink/30"
+      >
+        <div className="min-w-0">
+          <p className="text-[10px] uppercase tracking-[0.18em] text-ember">
+            {dateRange(event)}
+          </p>
+          <p className="mt-1 truncate font-medium group-hover:text-ember">
+            {event.title}
+          </p>
+          <p className="mt-0.5 truncate text-xs text-muted">
+            {event.venue}
+            {event.area ? `, ${event.area}` : " · location TBC"}
+          </p>
+        </div>
+        <div className="shrink-0 text-right">
+          <p className="text-xs">{priceLabel(event)}</p>
+          {badge && (
+            <p className="mt-0.5 text-[10px] uppercase tracking-[0.12em] text-ember">
+              {badge}
+            </p>
+          )}
+        </div>
+      </Link>
+    </li>
   );
 }
 
@@ -196,6 +244,9 @@ export default async function TonightPage({ searchParams }: PageProps) {
   const shownTonight = tonight.shows.length > 0;
   const upcoming = nextShowAfter(today);
   const weekHasShows = week.some((day) => day.shows.length > 0);
+  // The week's parties, soonest first — the section readers asked for by
+  // name, and the reason a Lagos trip can include a night under ₦10,000.
+  const parties = partiesBetween(today, 7, corridor);
 
   return (
     <main className="bg-cream text-ink">
@@ -339,6 +390,39 @@ export default async function TonightPage({ searchParams }: PageProps) {
           )}
         </section>
 
+        {parties.length > 0 && (
+          <section id="parties" className="mt-12 scroll-mt-24">
+            <div className="flex flex-col gap-2 border-b border-ink/10 pb-2 sm:flex-row sm:items-baseline sm:justify-between">
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-ember">
+                  {sections.parties.eyebrow}
+                </p>
+                <h2 className="mt-1 font-display text-2xl">
+                  {sections.parties.title}
+                </h2>
+              </div>
+              <p className="text-xs text-muted">
+                {parties.length} in the next seven days · soonest first
+              </p>
+            </div>
+
+            <ul className="mt-4 grid gap-2">
+              {parties.map((event) => (
+                <PartyRow key={event.id} event={event} />
+              ))}
+            </ul>
+
+            <p className="mt-3 text-[11px] leading-relaxed text-muted">
+              Line-ups and prices come from the organiser’s own listing. Where a
+              price is not shown, the ticket page is the only place to check it
+              — nothing here is filled in from another night. “Free ticket”
+              means the organiser lists one, not that entry is free: check what
+              it covers before you plan around it. Parties move late in Lagos,
+              so confirm the date before you travel.
+            </p>
+          </section>
+        )}
+
         <ContingencyPlan signal={signal} />
 
         <div className="mt-10">
@@ -403,7 +487,7 @@ export default async function TonightPage({ searchParams }: PageProps) {
         <p className="mt-10 text-[11px] leading-relaxed text-muted">
           Each night above is the venue’s own published schedule, last
           read {formatChecked(nightsCheckedOn)}; anywhere without one stays off
-          this page. December moves things around, so confirm on the day.{" "}
+          this page. Lagos moves things around, so confirm on the day.{" "}
           <Link
             href="/#getting-around"
             className="underline decoration-ink/25 underline-offset-4 hover:decoration-ink"

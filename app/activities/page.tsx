@@ -18,12 +18,12 @@ import { formatChecked, SOCIAL_IMAGE } from "../../lib/site";
 export const metadata: Metadata = {
   title: "Things to do in Lagos — Èkó Season",
   description:
-    "Beyond the clubs: go-karting, archery, paint and sip, padel, five-a-side football, markets and the Lagos clubs you can watch this December.",
+    "Beyond the clubs: go-karting, archery, paint and sip, padel, five-a-side football, markets and the Lagos clubs you can watch any weekend.",
   alternates: { canonical: "/activities" },
   openGraph: {
     title: "Things to do in Lagos",
     description:
-      "Activities, sports, markets and matchdays for a December in Lagos.",
+      "Activities, sports, markets and matchdays for a Lagos weekend.",
     url: "/activities",
     type: "website",
     siteName: "Èkó Season",
@@ -48,7 +48,7 @@ const ACTIVITY_GROUPS = [
     id: "games",
     label: "Games, targets and craft",
     blurb:
-      "Sessions you book by the hour or the day: karts, paintball, bows, axes, a game bar, a paintbrush and a potter's wheel. Mostly under cover, which is what a rainy December afternoon needs.",
+      "Sessions you book by the hour or the day: karts, paintball, bows, axes, a game bar, a paintbrush and a potter's wheel. Mostly under cover, which is what a rainy Lagos afternoon needs.",
     ids: [
       "karting",
       "paintball",
@@ -80,7 +80,7 @@ const ACTIVITY_GROUPS = [
     id: "slow-days",
     label: "Slow days",
     blurb:
-      "Not a night out: a spa morning, a hammam, a Pilates class and a set of nails in the same building. The right answer to the day after a late December night, when the beach is too far and the traffic is too much.",
+      "Not a night out: a spa morning, a hammam, a Pilates class and a set of nails in the same building. The right answer to the day after a late Lagos night, when the beach is too far and the traffic is too much.",
     ids: ["spa-day"],
   },
 ];
@@ -380,7 +380,7 @@ export default function ActivitiesPage() {
             More than a night out
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
-            December in Lagos is not only clubs and concerts. There is a kart
+            Lagos is not only clubs and concerts. There is a kart
             track out past Lekki, three archery ranges, four padel clubs, a
             top-flight football league that has come home, and markets that will
             sell you a whole new wardrobe before lunch.
@@ -627,7 +627,7 @@ export default function ActivitiesPage() {
 
         <p className="mt-12 text-[11px] leading-relaxed text-muted">
           Venues, hours and prices were read on {formatChecked(ACTIVITIES_CHECKED)}
-          . December moves things: call before a long trip across town, and check
+          . Lagos moves things: call before a long trip across town, and check
           a club&rsquo;s own page for kick-off times.
         </p>
       </div>

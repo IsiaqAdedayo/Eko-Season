@@ -1,0 +1,23 @@
+name: checks
+
+# The data model has invariants (listedAt/checkedAt aliasing, ISO dates, a
+# non-empty slate) and they were only enforced when someone remembered to run
+# the npm scripts locally. This runs them on every push.
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check:data
+      - run: npm run check:parsers
+      - run: npm run test:health
+      - run: npx tsc --noEmit

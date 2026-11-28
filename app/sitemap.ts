@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { allDishes } from "../lib/dishes";
-import { allPlaces } from "../lib/place";
+import { allPlaces, placeProvenance } from "../lib/place";
 import { clubs } from "../data/clubs";
 import { markets } from "../data/activities";
 import { showEvents, showsUpdatedAt } from "../lib/shows";
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/practicalities`, changeFrequency: "monthly", priority: 0.7 },
     ...allPlaces.map((place) => ({
       url: `${SITE_URL}/places/${place.id}`,
-      lastModified: place.checkedAt,
+      lastModified: placeProvenance(place).date,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

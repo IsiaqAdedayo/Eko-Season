@@ -1,5 +1,5 @@
 {
-  "$comment": "Sources the movies scraper watches. Add an entry here and it is picked up on the next run, no code change needed.",
+  "$comment": "Sources the movies scraper watches. Add an entry here and it is picked up on the next run, no code change needed. Each entry is one release slate, so when a slate finishes add the next month's page and drop the old one: the parser reads whatever month and year the page names, but a finished slate is a failure, not a quiet empty list. A run whose dates are all past refuses to write, and npm run check:health fails once the slate has ten days or fewer left, so a stale source list surfaces in the weekly refresh instead of emptying /movies.",
   "sources": [
     {
       "name": "African Movie Database - December 2026",

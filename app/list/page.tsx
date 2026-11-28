@@ -49,13 +49,13 @@ export async function generateMetadata({
   const summary = summarise(places, shows);
 
   return {
-    title: "A Detty December list — Èkó Season",
+    title: "A Lagos list — Èkó Season",
     description:
-      "A shareable shortlist of Lagos places and December shows, put together with Èkó Season.",
+      "A shareable shortlist of Lagos places and shows, put together with Èkó Season.",
     // Personal links shouldn't be indexed; the pages they point at already are.
     robots: { index: false, follow: true },
     openGraph: {
-      title: "A Detty December list",
+      title: "A Lagos list",
       description: summary,
       type: "website",
       images: [
@@ -90,7 +90,7 @@ export default async function ListPage({ searchParams }: PageProps) {
             Shared list
           </p>
           <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
-            December shortlist
+            Lagos shortlist
           </h1>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
             {total > 0
@@ -120,7 +120,7 @@ export default async function ListPage({ searchParams }: PageProps) {
                     id: show.id,
                   })),
                 ])}
-                message={`Detty December in Lagos — ${summarise(places, shows)}`}
+                message={`Lagos — ${summarise(places, shows)}`}
               />
               {route && (
                 <a

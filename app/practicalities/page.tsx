@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter } from "../../components/site-footer";
 import {
-  DECEMBER_HOLIDAYS,
   HOLIDAY_GUIDANCE,
   nextHoliday,
+  upcomingHolidays,
 } from "../../data/holidays";
 import { longDate, todayInLagos } from "../../lib/schedule";
 import { formatChecked } from "../../lib/site";
@@ -16,13 +16,13 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Practicalities — Èkó Season",
   description:
-    "General guidance for December in Lagos: emergency numbers, when to look up a hospital, cash and cards, ride-hailing and the public holidays.",
+    "General guidance for Lagos: emergency numbers, when to look up a hospital, cash and cards, ride-hailing and the public holidays.",
   alternates: { canonical: "/practicalities" },
   openGraph: {
     type: "website",
     siteName: "Èkó Season",
     url: "/practicalities",
-    title: "Lagos practicalities for December",
+    title: "Lagos practicalities",
     description:
       "General guidance on emergencies, money, rides and public holidays — with the caveat that details change.",
   },
@@ -90,6 +90,7 @@ const body = "mt-3 text-sm leading-relaxed text-ink/80";
 export default function PracticalitiesPage() {
   const today = todayInLagos();
   const upcoming = nextHoliday(today);
+  const holidayList = upcomingHolidays(today);
 
   return (
     <main className="bg-cream text-ink">
@@ -108,7 +109,7 @@ export default function PracticalitiesPage() {
             Practicalities
           </p>
           <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
-            The unglamorous half of December
+            The unglamorous half of a Lagos trip
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
             General guidance for the things that are not on a listing: who to
@@ -262,14 +263,14 @@ export default function PracticalitiesPage() {
           <p className={body}>
             {upcoming
               ? `Next up: ${upcoming.name} on ${longDate(upcoming.date)}.`
-              : "No holidays left in this season's calendar."}{" "}
-            The guidance below applies all year; the dates are the gazetted
-            2026/27 Nigerian public holidays, and the next ones are added when
-            the federal calendar is published.
+              : "No gazetted holidays in the next two years."}{" "}
+            Fixed dates and Easter are calculated for any year, so this list keeps
+            going past the current one; Eid dates are added when the federal
+            government announces them.
           </p>
-          {DECEMBER_HOLIDAYS.some((holiday) => holiday.date >= today) && (
+          {holidayList.length > 0 && (
             <ul className="mt-5 divide-y divide-ink/10 border-y border-ink/10">
-            {DECEMBER_HOLIDAYS.filter((holiday) => holiday.date >= today).map((holiday) => (
+            {holidayList.map((holiday) => (
               <li
                 key={holiday.date}
                 className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 py-3"
@@ -307,11 +308,12 @@ export default function PracticalitiesPage() {
         <section className={section}>
           <h2 className={heading}>Health and weather</h2>
           <p className={body}>
-            December in Lagos is typically hot and dry, with harmattan haze on
-            some mornings and occasional heavy showers. Carry water, use
-            sunscreen at the beach, and move long walks to the cooler parts of
-            the day. Mosquitoes are present year-round, so repellent at dusk is
-            worth packing.
+            Lagos is hot and humid all year. The driest months, roughly November
+            to February, bring harmattan haze on some mornings; the heavy rains
+            arrive around April and last into October. Carry water, use sunscreen
+            at the beach, and move long walks to the cooler parts of the day.
+            Mosquitoes are present year-round, so repellent at dusk is worth
+            packing.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-muted">
             <Link

@@ -69,6 +69,10 @@ async function validateShows() {
       }
       if (event.currency !== "NGN") fail(file, id, "currency is not NGN");
     }
+    // A free ticket exists; it is not a price and must not be read as one.
+    if (event.freeTicket != null && typeof event.freeTicket !== "boolean") {
+      fail(file, id, "freeTicket is not a boolean");
+    }
 
     for (const tier of event.tiers ?? []) {
       if (!tier.name) fail(file, id, "tier without a name");
@@ -137,6 +141,11 @@ async function validatePlaces() {
   const data = await readJson(file);
   if (!Array.isArray(data)) return fail(file, null, "not an array");
 
+  const credits = await readJson("photo-credits.json");
+  const pendingBaseline = new Set(
+    (await readJson("photo-pending-baseline.json"))?.pending ?? [],
+  );
+
   const ids = new Set();
   for (const place of data) {
     const id = place.id;
@@ -152,7 +161,36 @@ async function validatePlaces() {
     if (!Array.isArray(place.gallery) || place.gallery.length === 0) {
       fail(file, id, "no gallery image");
     }
-    if (!isDate(place.checkedAt)) fail(file, id, "checkedAt is not ISO");
+    // Reuse rights are the field nobody re-checks by eye. Every image needs a
+    // credit, and a credit whose permission is still pending only ships if it
+    // is already in the baseline — so the backlog can shrink but not grow.
+    for (const src of place.gallery ?? []) {
+      // Only remote images carry an entry; local ids and Unsplash ``photo-…``
+      // ids go through the image pipeline and have their own attribution.
+      if (!/^https?:/i.test(src)) continue;
+      const credit = credits[src];
+      if (!credit) {
+        fail(file, id, `gallery image has no credit entry (${src})`);
+      } else if (
+        /pending/i.test(credit.permissionStatus ?? "") &&
+        !pendingBaseline.has(src)
+      ) {
+        fail(file, id, `new image with pending permission (${src})`);
+      }
+    }
+    // checkedAt is the legacy alias for listedAt: the day the row was read.
+    const listed = place.listedAt ?? place.checkedAt;
+    if (!isDate(listed)) fail(file, id, "listedAt/checkedAt is not ISO");
+    if (place.listedAt && place.checkedAt && place.listedAt !== place.checkedAt) {
+      fail(file, id, "listedAt and checkedAt disagree");
+    }
+    if (
+      place.verifiedAt !== undefined &&
+      place.verifiedAt !== null &&
+      !isDate(place.verifiedAt)
+    ) {
+      fail(file, id, "verifiedAt is not ISO");
+    }
 
     for (const night of place.nights ?? []) {
       if (!WEEKDAYS.has(night)) fail(file, id, `unknown night (${night})`);
@@ -167,6 +205,17 @@ async function validatePlaces() {
     }
     if (place.status && place.status !== "open" && place.status !== "closed") {
       fail(file, id, `unknown status (${place.status})`);
+    }
+    // An illustrative badge is a claim of its own, so it has to carry the
+    // explanation that says what the picture actually is.
+    if (
+      place.illustrativePhoto !== undefined &&
+      typeof place.illustrativePhoto !== "boolean"
+    ) {
+      fail(file, id, "illustrativePhoto must be a boolean");
+    }
+    if (place.illustrativePhoto && !place.imageNote) {
+      fail(file, id, "illustrativePhoto needs an imageNote explaining it");
     }
   }
 

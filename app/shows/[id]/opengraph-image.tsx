@@ -1,15 +1,29 @@
 import { ImageResponse } from "next/og";
 import { dateRange, getShow } from "../../../lib/shows";
+import { seasonLabel } from "../../../lib/season";
 
-/** Satori's bundled font has no naira glyph, so the card spells it out. */
-const priceLabel = (value: number | null | undefined) =>
-  value == null
-    ? "Tickets and prices on the guide"
-    : `Tickets from NGN ${value.toLocaleString("en-NG")}`;
+/**
+ * Satori's bundled font has no naira glyph, so the card spells it out.
+ *
+ * A free listing proves a free ticket exists, not that entry is free — it can be
+ * an early window, an RSVP list or one of several tiers — so this says what the
+ * listing carries and claims nothing more. Same wording as priceLabel in
+ * lib/shows.
+ */
+const priceLabel = (
+  event: { priceFrom?: number | null; freeTicket?: boolean } | null | undefined,
+) => {
+  if (event?.priceFrom != null) {
+    return `Tickets from NGN ${event.priceFrom.toLocaleString("en-NG")}`;
+  }
+  return event?.freeTicket
+    ? "Free ticket listed"
+    : "Tickets and prices on the guide";
+};
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "A Detty December show in Lagos";
+export const alt = "A show in Lagos";
 
 /**
  * One PNG per show, so a link pasted into WhatsApp previews with that show's
@@ -23,7 +37,9 @@ export default async function Image({
 }) {
   const { id } = await params;
   const event = getShow(id);
-  const title = (event?.title ?? "Detty December").slice(0, 90);
+  const title = (event?.title ?? "Lagos shows").slice(0, 90);
+  // Computed per card, so a cached card never outlives its month.
+  const label = seasonLabel().toUpperCase();
 
   return new ImageResponse(
     (
@@ -44,7 +60,7 @@ export default async function Image({
             ÈKÓ SEASON
           </div>
           <div style={{ fontSize: 20, letterSpacing: 4, color: "rgba(255,247,236,0.45)" }}>
-            DETTY DECEMBER 2026
+            {label}
           </div>
         </div>
 
@@ -61,7 +77,7 @@ export default async function Image({
               letterSpacing: 2,
             }}
           >
-            {event ? dateRange(event).toUpperCase() : "DECEMBER 2026"}
+            {event ? dateRange(event).toUpperCase() : label}
           </div>
 
           <div
@@ -100,8 +116,8 @@ export default async function Image({
             color: "rgba(255,247,236,0.55)",
           }}
         >
-          <div>{priceLabel(event?.priceFrom)}</div>
-          <div style={{ color: "#f2a03d" }}>ekoseason · the December guide</div>
+          <div>{priceLabel(event)}</div>
+          <div style={{ color: "#f2a03d" }}>ekoseason · the Lagos guide</div>
         </div>
       </div>
     ),

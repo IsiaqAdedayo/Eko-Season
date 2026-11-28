@@ -16,7 +16,11 @@ export function PlaceCard({ place }: { place: Place }) {
           src={imageUrl(place.gallery[0], 900)}
           srcSet={imageSrcSet(place.gallery[0])}
           sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
-          alt={place.name}
+          alt={
+            place.illustrativePhoto
+              ? `Illustrative photo — not ${place.name}`
+              : place.name
+          }
           loading="lazy"
           decoding="async"
           className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
@@ -38,7 +42,21 @@ export function PlaceCard({ place }: { place: Place }) {
         </div>
       </div>
 
-      {place.imageNote ? (
+      {/* An illustrative picture gets a badge, not a paragraph: the venue name
+          should be the loudest thing on the card, and the explanation is long
+          enough to bury it. The full note stays in the tooltip, for screen
+          readers, and on the detail page. */}
+      {place.illustrativePhoto ? (
+        <p
+          title={place.imageNote}
+          className="mx-1 mt-2 w-fit rounded-full bg-ember/10 px-2 py-0.5 text-[10px] uppercase tracking-[0.12em] text-ember"
+        >
+          Illustrative photo
+          {place.imageNote ? (
+            <span className="sr-only"> — {place.imageNote}</span>
+          ) : null}
+        </p>
+      ) : place.imageNote ? (
         <p className="mx-1 mt-2 border-l-2 border-ember/40 pl-2 text-[10px] uppercase leading-relaxed tracking-[0.1em] text-ember/80">
           {place.imageNote}
         </p>

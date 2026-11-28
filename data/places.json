@@ -14,6 +14,7 @@
       "photo-1682944856348-0665d4b8d81c"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [
       "wed",
       "thu",
@@ -42,6 +43,7 @@
       "photo-1764510377513-1e8c847fb7f8"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [
       "fri",
       "sat",
@@ -68,6 +70,7 @@
       "photo-1569924995012-c4c706bfcd51"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null,
@@ -90,6 +93,7 @@
       "photo-1784151100421-df2f1e19ee48"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [
       "thu",
       "fri",
@@ -120,6 +124,7 @@
       "/images/locations/clubs/mercury-rooftop/experience-2.webp"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [
       "tue",
       "wed",
@@ -149,6 +154,7 @@
       "/images/locations/clubs/sugar-52/experience.jpg"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -168,6 +174,7 @@
       "photo-1781511832650-4001a029803a"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [
       "wed",
       "thu",
@@ -194,6 +201,7 @@
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Sunset_at_Landmark_Beach.jpg/1920px-Sunset_at_Landmark_Beach.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null,
@@ -216,6 +224,7 @@
       "photo-1626085263072-d503e3dea011"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -235,6 +244,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/9/92/Tarkwa_Bay_Beach_Tire_shot.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -254,6 +264,7 @@
       "photo-1527206363095-ca2f054128b0"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -273,6 +284,7 @@
       "photo-1626085263072-d503e3dea011"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -282,8 +294,8 @@
     "name": "Terra Kulture",
     "category": "eats",
     "area": "Victoria Island",
-    "tagline": "Nigerian food, plus theatre",
-    "note": "Mains ₦17,000–40,000. The reliable answer when someone says they want real Nigerian food in a room that looks good.",
+    "tagline": "Nigerian food, theatre and a 400-seat arena",
+    "note": "A restaurant, art gallery and theatre in one compound. The Arena is a 400-seat performance hall for live shows, theatre, music and cultural events. The kitchen serves Nigerian food Monday to Sunday, 9am–10pm, though it closes before the venue does; book at restaurant.terrakulture.com or +234 810 422 4137.",
     "price": "₦₦₦",
     "address": "1376 Tiamiyu Savage St, Victoria Island, Lagos",
     "gallery": [
@@ -291,7 +303,15 @@
       "photo-1773209927898-a0a7e0a13125",
       "photo-1665332561290-cc6757172890"
     ],
-    "checkedAt": "2026-11-16",
+    "sourceUrls": {
+      "restaurant": "https://www.terrakulture.com/welcome.html",
+      "reservations": "https://restaurant.terrakulture.com/reservations",
+      "arena": "https://app.terrakulture.com/arena",
+      "tickets": "https://tickets.terrakulture.com/tickets/events"
+    },
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -302,18 +322,23 @@
     "category": "eats",
     "area": "Ikoyi",
     "tagline": "Contemporary African, garden room",
-    "note": "A grand tour of the continent — Ethiopian lentils, Senegalese dibi, Nigerian suya. Book for dinner.",
+    "note": "NOK by Alara is the garden restaurant at 12A Akin Olugbade Street in Victoria Island, per its Google listing, and was trading when checked in November 2026.",
     "price": "₦₦₦",
-    "address": null,
+    "address": "12A Akin Olugbade Street, Victoria Island, Lagos",
     "gallery": [
       "photo-1636405189493-181ecf851006",
       "photo-1555939594-58d7cb561ad1",
       "photo-1608500218861-01091cdc501e"
     ],
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/NOK+by+Alara+Lagos"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "the-ona",
@@ -321,7 +346,7 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Tasting menu, chef-led",
-    "note": "1701 Violet Yough Close. Regional Nigerian produce reworked into small plates and a seven-course menu. Reserve ahead.",
+    "note": "The Ona is the tasting-menu room at 1701 Violet Yough Close, and it is closed on Wednesdays — worth knowing before you plan a weeknight.",
     "price": "₦₦₦₦",
     "address": "1701 Violet Yough Close, Victoria Island, Lagos",
     "gallery": [
@@ -329,10 +354,15 @@
       "photo-1765360773028-6affda725695",
       "photo-1608500218861-01091cdc501e"
     ],
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/The+Ona+Lagos"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "rsvp",
@@ -340,18 +370,23 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "The neighbourhood favourite",
-    "note": "Been there since 2014, still full. Poolside terrace, good bar, works for a first night when nobody can agree.",
+    "note": "RSVP is at 9 Eletu Ogabi Street on Victoria Island, per its Google listing, and was trading when checked in November 2026.",
     "price": "₦₦₦",
-    "address": null,
+    "address": "9 Eletu Ogabi Street, Victoria Island, Lagos",
     "gallery": [
       "/images/locations/eats/rsvp/dish.jpg",
       "photo-1508424757105-b6d5ad9329d0",
       "photo-1781511832650-4001a029803a"
     ],
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/RSVP+Lagos+Eletu+Ogabi"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "shiro",
@@ -359,18 +394,23 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Asian fusion with a view",
-    "note": "Sushi, dim sum and wok dishes on a rooftop. One of the safer bets for a mixed group.",
+    "note": "Shiro is in Block XVI, units 3 and 4, of the Oniru Estate development on Victoria Island, per its listing, and was trading when checked in November 2026.",
     "price": "₦₦₦₦",
-    "address": null,
+    "address": "Block XVI, 3 & 4 Oniru Estate, Victoria Island, Lagos",
     "gallery": [
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Sushi_Sashimi_Medium_Platter_-_Yama-ya_%282570349350%29.jpg/1920px-Sushi_Sashimi_Medium_Platter_-_Yama-ya_%282570349350%29.jpg",
       "photo-1583354608715-177553a4035e",
       "photo-1621275471769-e6aa344546d5"
     ],
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/Shiro+Lagos+Oniru"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "mood-lagos",
@@ -387,6 +427,7 @@
       "photo-1555939594-58d7cb561ad1"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -397,18 +438,23 @@
     "category": "eats",
     "area": "Lekki",
     "tagline": "24-hour suya",
-    "note": "The after-club stop. Spiced grilled meat, burgers, wings — and a queue at 2am.",
+    "note": "Norma is on Admiralty Way in Lekki Phase 1 and runs late — the 2am suya queue is the point. No plot number is published, so navigate to Admiralty Way and follow the crowd.",
     "price": "₦₦",
-    "address": null,
+    "address": "Admiralty Way, Lekki Phase 1, Lagos",
     "gallery": [
       "photo-1555939594-58d7cb561ad1",
       "photo-1773209927898-a0a7e0a13125",
       "photo-1608500218861-01091cdc501e"
     ],
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/Norma+Lagos+Admiralty+Way"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "nobs-and-berries",
@@ -416,7 +462,7 @@
     "category": "eats",
     "area": "Lekki Phase 1",
     "tagline": "The slow brunch",
-    "note": "Smoothie bowls, English breakfasts, decent coffee. Plates around ₦8,000–18,000.",
+    "note": "Nobs & Berries sits on Adebisi Ogunniyi Crescent in Ikoyi, but Google currently lists it as temporarily closed while delivery apps still show it open — call before you travel.",
     "price": "₦₦",
     "address": null,
     "gallery": [
@@ -424,10 +470,15 @@
       "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Hotel_breakfast_with_pancakes_in_Kyoto.jpg/1920px-Hotel_breakfast_with_pancakes_in_Kyoto.jpg",
       "photo-1551632436-cbf8dd35adfa"
     ],
-    "checkedAt": "2026-11-16",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/Nobs+and+Berries+Lagos"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "vortex",
@@ -444,6 +495,7 @@
       "photo-1528870884180-5649b20f6435"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -463,6 +515,7 @@
       "photo-1636070759654-5c93bbca2862"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -482,6 +535,7 @@
       "photo-1700085626695-6532f02cc961"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -501,6 +555,7 @@
       "photo-1528870884180-5649b20f6435"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -520,6 +575,7 @@
       "photo-1700085626695-6532f02cc961"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -539,6 +595,7 @@
       "photo-1583354608715-177553a4035e"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -558,6 +615,7 @@
       "photo-1551632436-cbf8dd35adfa"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -577,6 +635,7 @@
       "photo-1780328863518-59a2105192ac"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -596,6 +655,7 @@
       "photo-1600668811601-4847b7efd821"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -615,6 +675,7 @@
       "photo-1695128881846-7b5de5d5f32d"
     ],
     "checkedAt": "2026-11-16",
+    "listedAt": "2026-11-16",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -634,6 +695,7 @@
       "photo-1577648884063-1d3d1477b8a7"
     ],
     "checkedAt": "2026-11-18",
+    "listedAt": "2026-11-18",
     "nights": [
       "thu",
       "sun"
@@ -659,6 +721,7 @@
       "photo-1759230766134-e3ff1c27d20e"
     ],
     "checkedAt": "2026-11-18",
+    "listedAt": "2026-11-18",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -678,6 +741,7 @@
       "photo-1561722798-9a732d141027"
     ],
     "checkedAt": "2026-11-18",
+    "listedAt": "2026-11-18",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -697,6 +761,7 @@
       "photo-1555939594-58d7cb561ad1"
     ],
     "checkedAt": "2026-11-18",
+    "listedAt": "2026-11-18",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -717,6 +782,7 @@
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQdXjSa_7I4uBrPTz_JyMir9gJHEt2pCQcW29qTd-4aPKU6HfP0cQ2L0&s=10"
     ],
     "checkedAt": "2026-11-18",
+    "listedAt": "2026-11-18",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null,
@@ -728,7 +794,7 @@
     "category": "eats",
     "area": "Bariga",
     "tagline": "Waterfront bar on the mainland",
-    "note": "Ilaje Road, with the Third Mainland Bridge in view. Boat rides by day, outdoor club after dark, cheap drinks and grilled food. Sunset is the reason to come. The bar at the jetty (Beeriga) runs Wednesday to Sunday, 4pm until midnight, and closes Monday and Tuesday.",
+    "note": "This is the Bariga jetty run that Beeriga and Love Lagos Jetty share, and it is trading. Sources disagree on the address: Google puts Love Lagos Jetty on Ilaje Road and Beeriga at 1 Ifesowapo Street, while the venue's own posts say Alhaja Alake Street, Ilaje. Confirm the jetty before you set out.",
     "price": "₦₦",
     "address": "Ilaje Road, Bariga",
     "gallery": [
@@ -736,7 +802,8 @@
       "/images/locations/eats/love-lagos-jetty/exterior.jpg",
       "photo-1662950267280-0cdf5f7139b4"
     ],
-    "checkedAt": "2026-11-18",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "nights": [
       "wed",
       "thu",
@@ -748,7 +815,11 @@
       "label": "Beeriga, the jetty bar, on Google Maps",
       "url": "https://www.google.com/maps/place?q=place_id:ChIJC2xRyq6NOxAR3NNo67Gq2tw"
     },
-    "nightsCheckedAt": "2026-11-18"
+    "nightsCheckedAt": "2026-11-18",
+    "sourceUrls": {
+      "maps": "https://www.google.com/maps/search/Beeriga+Bariga+jetty+Lagos"
+    },
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "national-museum",
@@ -763,6 +834,7 @@
       "/images/landmarks/national-museum.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -780,6 +852,7 @@
       "/images/landmarks/lekki-ikoyi-link-bridge.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -797,6 +870,7 @@
       "/images/landmarks/jaekel-house.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -814,6 +888,7 @@
       "/images/landmarks/tafawa-balewa-square.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -831,6 +906,7 @@
       "/images/landmarks/national-theatre.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -848,6 +924,7 @@
       "/images/landmarks/cathedral-church-christ.jpg"
     ],
     "checkedAt": "2026-11-23",
+    "listedAt": "2026-11-23",
     "nights": [],
     "nightsSource": null,
     "nightsCheckedAt": null
@@ -871,6 +948,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RXJesMfQXLugpWMcYmuQ-_-vHKvcWOQwc4g2h5arEQYqKFyl8oIfZLzrgkGE6rcWWkeay-diKmzOs9zwGmEhn2THgMPQ_ztwurCZYFV9wCelqM4gN9XhuQLgxE8hVeZjIpk1aRcg=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://zibabeachresort.com/",
@@ -897,6 +975,8 @@
       "photo-1561722798-9a732d141027"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
+    "illustrativePhoto": true,
     "imageNote": "Not a Genesis venue: a cinema interior, used because no real photograph of a Genesis Cinemas branch was found on the reachable sources checked.",
     "sourceUrls": {
       "brandSite": "https://genesiscinemas.com/",
@@ -929,6 +1009,7 @@
       "https://dooshimabeachlagos.com/images/loungers-2200.avif"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Venue-published photos from dooshimabeachlagos.com — the venue's own site, which is where the pictures come from. No open licence is stated on the site, so they are treated as venue-published leads rather than cleared assets.",
     "sourceUrls": {
       "site": "https://dooshimabeachclub.com/",
@@ -953,6 +1034,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SnbQL2Cvqih8fCa-txWyHzskkyF-OtuFBC6CnQz6f9XarNgGKA5MWmz5kmr9LtS4FkbUBbXym0-1TLcVLkBAQ4_aBO8xmRZdy5KMSzQEs2VMZRIwX0tfBUE2J4a2tJOlzNv7IEHG7iCVY=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://mopopalmbeach.com/",
@@ -979,6 +1061,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TK0savGaKeMyXiBt8WbzQr1qtdGKYj-yxnY_ZAiIwdzi1q4UCZn2ka5ac6pq29fsdSaMSF0XBI-NGg91HHDGPclW_dn37-gzyIrMuDwjI08yPHnk6nCOgyGUBvHAK7X0gaw9Dp1Q=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://redlineleisureresorts.com/",
@@ -1005,6 +1088,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Raorb1wYpxPasw2K0gpl4Q5k7Gr1mNU7AlPRS1v2QT6EyHG8VAVKiwrEBi7wmRTv6QM1XRsGR8eaU0xqfVO0KArGCpqKCBes1PEpHEIcE1vMgTefkktBHOFijQXwP0gPH13a-rlsj-Yeo=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://solbeachelegushi.com/",
@@ -1030,6 +1114,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SfD9QYjGY-zKofWStMWyTo_fqtex1Ox8gwA9Ij3koTUY-rVz9N1wZFURZxIzRcIJ4zcaUyiwU8yMmUj1WPQGGed3FizGSpIN-x0_xKsao2RMaDPWX-cRVU2zQoOlhczgBrhAUmX0JoC60=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://timelesshavens.com.ng/",
@@ -1056,6 +1141,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBROfqi1g43DFYgoR2KSq7dG6QdDAIEZL233ai84BEOduc3i4Hf5812WNCIU2xGg0z3hUtsrIwiHVIjZc4aqAWyyOZbQPkUrPi1KwkGUpJn3Sgv4eM4EGMZVq1Vg88lZphGug=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://avistabeach.com/",
@@ -1087,6 +1173,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TBv6Ea0AwDTO3Z_Spjgl_m4JZ21CurKzjG4WRYpt1ZAEtBgzsRi0sf1GOr46L-GalVYn3d7dYa-T37xTIJpYngnaWOCWR8zC20cZ3LoVgpb08dZvuUwkl7n7WhkjN0JXQGta_Vc7BMQf2q=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://www.jarabeachresort.com/",
@@ -1115,6 +1202,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/0/0b/PAX_2009_-_Gaming_room_%283894331881%29.jpg"
     ],
     "checkedAt": "2026-11-26",
+    "listedAt": "2026-11-26",
+    "illustrativePhoto": true,
     "imageNote": "Not a Providha venue: an arcade room photographed at PAX 2009, used because no real photograph of the Ikeja complex was found on the reachable sources checked.",
     "sourceUrls": {
       "site": "https://providha.ng/",
@@ -1144,6 +1233,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RLBr8qV-k0YyW7DgJkZCSKcKvclLsytKugYFW8QMFQcJwGHO0OYE1MBOupeplGvyqOGHr00zwfbOq94Rm_JJalw9qUTyMmsZIYOmcE2hze2bua-udCrZrePQGSNDkI8HyxPdpoR_AQZBg=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "Google Maps listing photos for this venue — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; shown until a venue-owned photo with a clear reuse basis replaces them.",
     "sourceUrls": {
       "site": "https://nauticabeach.com/",
@@ -1165,6 +1255,7 @@
     "price": "₦₦₦₦",
     "address": "Oba Elegushi Beach Rd, Lekki Phase I, Ikate, Lagos 106104",
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "sourceUrls": {
       "site": "https://the234lofts.com/",
       "maps": "https://www.google.com/maps/place?q=place_id:ChIJiROGjz71OxARk2a6T9tAMo8",
@@ -1190,6 +1281,7 @@
     "price": "₦₦",
     "address": "Mopo Onijebu, off Cardinal Anthony Olubunmi Okogie Road, Sangotedo, Eti-Osa, Lagos 105101",
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "sourceUrls": {
       "instagram": "https://www.instagram.com/sunnyside.beach",
       "maps": "https://www.google.com/maps/place?q=place_id:ChIJn8yx-0H5OxAR-Ww51AiuVcs",
@@ -1217,6 +1309,7 @@
     "price": "₦₦",
     "address": "Off Abraham Adesanya roundabout, off Ogombo Road, opposite the white house, Okun Ajah, Lagos 106104",
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "sourceUrls": {
       "maps": "https://www.google.com/maps/search/Barracuda+Beach+Resort+Okun+Ajah+Lagos",
       "instagram": "https://www.instagram.com/barracuda_beachresort/",
@@ -1248,6 +1341,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/0/02/All-Star_Bowling_Alley_%28Orangeburg_SC%29_front_entrance_1.JPG"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not Twinwaters: a bowling alley photographed in Orangeburg, South Carolina, used because no photograph of the Twinwaters floor was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1270,6 +1365,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/b/b7/VAUNCE_trampoline_park.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not Upbeat Centre: a trampoline park of the same type, used because no photograph of the Lekki Phase 1 venue was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1292,6 +1389,9 @@
       "https://upload.wikimedia.org/wikipedia/commons/0/01/Horse_riding_Ghana.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
+    "illustrativePhoto": true,
     "imageNote": "Not Omu Resort: horse riding on a West African beach, used because no photograph of the Ibeju resort was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1314,6 +1414,9 @@
       "https://upload.wikimedia.org/wikipedia/commons/a/a1/Clay_pot_workshop_-_pit_fired_pottery_20220916120834.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
+    "illustrativePhoto": true,
     "imageNote": "Not Artforfun: a clay-pot workshop, used because no photograph of the Surulere studio was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1336,6 +1439,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/3/3e/Interior_of_Getaway_Room_Escape.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not Escape Room 33: an escape-room interior elsewhere, used because no photograph of the Victoria Island venue was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1358,6 +1463,9 @@
       "https://upload.wikimedia.org/wikipedia/commons/8/82/A_private_skating_rink_-_Hyderabad.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
+    "illustrativePhoto": true,
     "imageNote": "Not Purple Lekki Mall: a roller-skating rink elsewhere, used because no photograph of the Lekki rink was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1369,21 +1477,26 @@
   },
   {
     "id": "spring-chinese-restaurant",
-    "name": "Spring Chinese Restaurant",
+    "name": "Spring Tree Chinese Restaurant",
     "category": "eats",
     "area": "Ikorodu",
     "tagline": "Chinese dining out on the Ikorodu road",
-    "note": "Spring Chinese Restaurant is the first restaurant on the bucket list, printed at 78 Ayangburen Road in Ikorodu. The address is an unverified list-post claim; confirm before travelling, since Ikorodu is a long way out if it turns out to have moved.",
+    "note": "The bucket list prints this as \"Spring\"; the restaurant itself is Spring Tree, at 78 Ayangbure Road (also written Ayangburen) along Palace Road in Ikorodu. Its own site lists that address and Google shows it trading with recent reviews. Ikorodu is a long way out, so book before the drive.",
     "price": "₦₦",
-    "address": "78 Ayangburen Road, Ikorodu, Lagos",
+    "address": "78 Ayangbure Road, Ikorodu, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/3/3a/HK_SW_%E4%B8%8A%E7%92%B0_Sheung_Wan_%E6%98%9F%E6%9C%88%E6%A8%93_Sky_Cuisine_Restaurant_interior_tables_n_seats_March_2023_Px3_02.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Spring Chinese: a Chinese restaurant dining room in Hong Kong, used because no photograph of the Ikorodu restaurant was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "site": "https://www.springtreechinese.com/",
+      "maps": "https://www.google.com/maps/search/Spring+Tree+Chinese+Restaurant+Ikorodu"
     },
     "nights": [],
     "nightsSource": null,
@@ -1395,17 +1508,21 @@
     "category": "eats",
     "area": "Ikeja",
     "tagline": "Bistro tables on Isaac John Street",
-    "note": "Orchid Bistro is printed at 58 Isaac John Street in Ikeja GRA — the same street as Cubana Ikeja, which the guide already lists under nightlife. Address as printed on the bucket-list carousel and unverified.",
+    "note": "Orchid Bistro is at 58A Isaac John Street in Ikeja GRA — the number its own site prints, one letter up from the carousel's 58. Same street as Cubana Ikeja.",
     "price": "₦₦",
-    "address": "58 Isaac John Street, Ikeja GRA, Lagos",
+    "address": "58A Isaac John Street, Ikeja GRA, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f3/Restaurant_room_of_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Orchid Bistro: a restaurant dining room in Laos, used because no photograph of the Ikeja bistro was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "site": "https://theorchidbistro.org/"
     },
     "nights": [],
     "nightsSource": null,
@@ -1417,17 +1534,22 @@
     "category": "eats",
     "area": "Ikeja",
     "tagline": "Nigerian cooking in Ikeja GRA",
-    "note": "Yellow Chilli is a Nigerian restaurant chain; the bucket list prints the Ikeja GRA branch at 35 Joel Ogunnaike Street. Address as printed on the carousel and unverified, and other branches exist, so check which one you are booking.",
+    "note": "Yellow Chilli is a Nigerian chain; this is the Ikeja GRA branch at 35 Joel Ogunnaike Street, per the chain's own contacts page, Google and Tripadvisor. There is also a Victoria Island branch at 27 Oju-olobun Close, so check which one you are booking.",
     "price": "₦₦",
     "address": "35 Joel Ogunnaike Street, Ikeja GRA, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/d/df/Mega_Chicken_Restaurant.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Yellow Chilli: a Nigerian restaurant frontage in Lagos, used because no photograph of the Ikeja GRA branch was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "site": "https://yellowchilling.com/contacts.html",
+      "maps": "https://www.google.com/maps/search/Yellow+Chilli+Ikeja+GRA"
     },
     "nights": [],
     "nightsSource": null,
@@ -1439,17 +1561,21 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Long-standing French dining room",
-    "note": "La Chaumière is the French restaurant on the bucket list, printed at 1384 Tiamiyu Savage Street on Victoria Island — the same street as Terra Kulture, which the guide already lists. Address as printed on the carousel and unverified.",
+    "note": "La Chaumière is the French dining room at 1384 Tiamiyu Savage Street on Victoria Island, the address Google and the venue's listings print. It posted as open through 2026.",
     "price": "₦₦₦",
     "address": "1384 Tiamiyu Savage St, Victoria Island, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/7/7e/The_interior_dining_room_of_a_Red_Lobster_restaurant_in_Knoxville%2C_Tennessee_03.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not La Chaumière: a restaurant dining room in Tennessee, used because no photograph of the Victoria Island restaurant was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "maps": "https://www.google.com/maps/search/La+Chaumiere+Lagos"
     },
     "nights": [],
     "nightsSource": null,
@@ -1461,17 +1587,21 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Contemporary dining on Musa Yar'Adua Street",
-    "note": "Cilantro Lagos is printed at 7 Musa Yar'Adua Street on Victoria Island. Address as printed on the bucket-list carousel and unverified.",
+    "note": "Cilantro is at 7 Musa Yar'Adua Street on Victoria Island, per the restaurant's own locations page.",
     "price": "₦₦₦",
     "address": "7 Musa Yar'Adua Street, Victoria Island, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/7/72/The_interior_dining_room_of_a_Red_Lobster_restaurant_in_Knoxville%2C_Tennessee_06.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Cilantro: a restaurant dining room in Tennessee, used because no photograph of the Victoria Island restaurant was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "site": "https://cilantrorestaurants.com/restaurants"
     },
     "nights": [],
     "nightsSource": null,
@@ -1483,17 +1613,21 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Ozumba Mbadiwe dining room",
-    "note": "Cactus Restaurant is printed at 20/24 Ozumba Mbadiwe Avenue on Victoria Island, the same avenue as Quilox. Address as printed on the bucket-list carousel and unverified.",
+    "note": "Cactus is at 20/24 Ozumba Mbadiwe Avenue on Victoria Island, the same avenue as Quilox, per Google Maps. Reviews run into late 2025.",
     "price": "₦₦",
     "address": "20/24 Ozumba Mbadiwe Avenue, Victoria Island, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/0/05/Arewa_Traditional_Kitchen.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Cactus: a Nigerian restaurant kitchen, used because no photograph of the Ozumba Mbadiwe restaurant was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "maps": "https://www.google.com/maps/search/Cactus+Restaurant+Ozumba+Mbadiwe+Lagos"
     },
     "nights": [],
     "nightsSource": null,
@@ -1505,17 +1639,22 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Seafood chain on Akin Adesola",
-    "note": "Ocean Basket is a seafood chain; the bucket list prints the Victoria Island branch at 35 Akin Adesola Street. Address as printed on the carousel and unverified, and the chain has other Lagos branches.",
+    "note": "Ocean Basket is a seafood chain; this is the Victoria Island branch at 35 Akin Adesola Street, per the chain's own restaurant page. The Ikeja branch is at 58c Isaac John Street.",
     "price": "₦₦",
     "address": "35 Akin Adesola St, Victoria Island, Lagos",
     "gallery": [
       "/images/locations/eats/love-lagos-jetty/dish.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Ocean Basket: a plate of grilled tilapia, used because no photograph of the Akin Adesola branch was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "site": "https://nigeria.oceanbasket.com/our-restaurants/ocean-basket-victoria-island",
+      "maps": "https://www.google.com/maps/search/Ocean+Basket+Akin+Adesola+Lagos"
     },
     "nights": [],
     "nightsSource": null,
@@ -1527,17 +1666,21 @@
     "category": "eats",
     "area": "Surulere",
     "tagline": "Ofada rice and ayamase in Surulere",
-    "note": "Ofada Boy is the ofada-rice spot on the bucket list, printed at 1 Mba Street in Surulere. Address as printed on the carousel and unverified.",
+    "note": "Ofada Boy is at 1 Mba Street in Surulere, per the restaurant's own contact page.",
     "price": "₦",
     "address": "1 Mba St, Surulere, Lagos",
     "gallery": [
       "https://upload.wikimedia.org/wikipedia/commons/9/92/Suya_%28827408387%29.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
+    "illustrativePhoto": true,
     "imageNote": "Not Ofada Boy: a tray of suya, used because no photograph of the Surulere restaurant was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
-      "extraction": "research/00-screenshot-extraction.json"
+      "extraction": "research/00-screenshot-extraction.json",
+      "site": "https://ofadaboy.ng/contact"
     },
     "nights": [],
     "nightsSource": null,
@@ -1556,6 +1699,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/e/e1/Artifacts_from_National_commission_for_Museums_and_Monuments%2C_Kaduna.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not the John Randle Centre: museum artefacts from the National Commission for Museums and Monuments, used because no photograph of the Onikan centre was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1578,6 +1723,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/c/c6/Amphitheatre_in_Dilijan_at_Myasnikyan_Street%2C_April_2026%2C_no._3.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not Kalakuta: an open-air stage elsewhere, used because no photograph of the Agidingbi house was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1600,6 +1747,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/8/8f/Abuja_Millennium_Park.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not Jhalobia: a public park in Abuja, used because no photograph of the Airport Road park was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1622,6 +1771,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/4/45/Millennium_Park_Abuja1.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not Ndubuisi Kanu Park: a public park in Abuja, used because no photograph of the Ikeja park was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1644,6 +1795,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/d/dd/Man%27s_head%2C_Nigeria%2C_Ife%2C_12th-15th_century_AD%2C_terracotta_-_Ethnological_Museum%2C_Berlin_-_DSC02222.JPG"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "illustrativePhoto": true,
     "imageNote": "Not the Badagry Heritage Museum: a Nigerian terracotta head held in a Berlin museum, used because no photograph of the Badagry museum was found on the reachable sources checked.",
     "sourceUrls": {
       "carousel": "https://www.tiktok.com/@todolagos",
@@ -1655,24 +1808,28 @@
   },
   {
     "id": "hard-rock-cafe-lagos",
-    "name": "Hard Rock Cafe Lagos",
+    "name": "Curate (Landmark Village)",
     "category": "eats",
     "area": "Victoria Island",
-    "tagline": "The chain cafe on Water Corporation Drive",
-    "note": "Hard Rock Cafe Lagos is the Lagos outpost of the American cafe chain, on Water Corporation Road in Oniru — the same beachfront strip as Landmark. Expect the chain format: burgers and American plates, cocktails, live music and the memorabilia on the walls, with a shop attached. Address as printed on the bucket-list list and unverified; confirm current hours and whether live acts are on before you go.",
+    "tagline": "The beachfront site that replaced Hard Rock Cafe",
+    "note": "Hard Rock Cafe Lagos closed when the franchise ended in 2026, and the site relaunched as Curate, which is trading at the same Landmark Village address with reviews as recent as November 2026. The entry keeps its old slug so saved links still land somewhere truthful: expect the beachfront format, not the memorabilia.",
     "price": "Check directly",
-    "address": "Water Corporation Road, Oniru, Victoria Island, Lagos",
+    "address": "Landmark Village, Water Corporation Road, Oniru, Victoria Island, Lagos",
     "gallery": [
       "https://bobbymukherji.com/wp-content/uploads/2025/10/HARD-ROCK-CAFE-LAGOS-NIGERIA-ENTRY-PORCH-NIGHT-VIEW-scaled.jpg",
       "https://cimages.timbu.com/guides/2017/07/Hard-Rock-Cafe-2.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
     "imageNote": "Photos of Hard Rock Cafe Lagos from a travel-photography blog and a Lagos guide; both are credited below and neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
       "maps": "https://www.google.com/maps/search/Hard+Rock+Cafe+Lagos",
       "site": "https://www.hardrock.com/cafes/lagos",
-      "blog": "https://bobbymukherji.com/"
+      "blog": "https://bobbymukherji.com/",
+      "guardian": "https://guardian.ng/life/hard-rock-cafe-lagos-exits-global-franchise-to-launch-independent-hospitality-concept/",
+      "listing": "https://www.tripadvisor.com/Restaurant_Review-g304026-d9747188-Reviews-Curate-Lagos_Lagos_State.html"
     },
     "nights": [],
     "nightsSource": null,
@@ -1684,19 +1841,21 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "Afro-fusion show restaurant",
-    "note": "Trib3 Lagos is an Afro-fusion restaurant and lounge on Ajose Adeogun Street that runs as a show restaurant — food plus live music and performances rather than a plain dinner. It takes bookings, and the later seatings are the ones with the full show. Address as printed on the bucket-list list and unverified; reserve ahead and confirm the show times with the venue.",
+    "note": "TRIB3 is at 288B Ajose Adeogun Street on Victoria Island, per its own location page. Sessions are booked ahead and timed, so reserve rather than walk in.",
     "price": "Check directly",
-    "address": "288b Ajose Adeogun Street, Victoria Island, Lagos",
+    "address": "288B Ajose Adeogun Street, Victoria Island, Lagos",
     "gallery": [
       "https://static.wixstatic.com/media/19c327_a9542c3ccf3e4ec990ccc8978be1ddab~mv2.webp",
       "https://static.wixstatic.com/media/19c327_d0771aea0c2c4f5c89fa907f28dc98a6~mv2.webp",
       "https://static-images.dinesurf.tech/2415-Trib3Lagos-bds-2024-05-22-00-06-10-631"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
+    "verifiedAt": "2026-11-28",
     "imageNote": "Photos published on Trib3 Lagos's own website, plus one from its DineSurf listing. They are venue-published, but no reuse licence has been confirmed.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
-      "site": "https://www.trib3lagos.com/",
+      "site": "https://www.trib3lagos.com/location",
       "maps": "https://www.google.com/maps/search/Trib3+Lagos+Victoria+Island"
     },
     "nights": [],
@@ -1718,6 +1877,8 @@
       "https://media.dineazi.com/restaurant-media/586/1777862886124-4cdd690a-ce85-4dd3-926b-73d953170a0f.png"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
     "imageNote": "Photos of The Library Lagos from a Lagos places directory, a nightlife guide and a restaurant listing; all are credited below, none is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1742,6 +1903,8 @@
       "https://nevadahotelsandsuites.com/wp-content/uploads/2025/06/Cubana-Club-1024x512.webp"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
     "imageNote": "Photos of Cubana Lagos from Lagos nightlife write-ups; both are credited below and neither is a cleared venue asset. The first is an older frame, so the venue may look different now.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1765,6 +1928,8 @@
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/08/7e/28/bar.jpg?w=1200&h=1200&s=1"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
     "imageNote": "Traveller photos of Rhapsody's from Tripadvisor; credited below and neither is a cleared venue asset. They show one branch, not all three.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1789,6 +1954,8 @@
       "https://slaylebrity.com/wp-content/uploads/2023/10/228A1AB3-3F9F-48CE-89B8-9A4670E74D40.jpeg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
     "imageNote": "Photos of The Good Beach published by a Lagos hotel and a lifestyle site; credited below, neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1813,6 +1980,8 @@
       "https://tourafricamag.com/wp-content/uploads/2026/02/atican-beach-resort-1024x683.png"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
     "imageNote": "Photos of Atican Beach Resort from a Lagos places directory and a travel magazine; credited below, neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1837,6 +2006,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/a/a3/2011_ElekoBeach_Lagos_Nigeria_5501501209.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "Openly licensed photographs taken at Eleko Beach and credited below (Wikimedia Commons, CC BY-SA 4.0 and CC BY 2.0).",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1860,6 +2030,8 @@
       "https://media.hotels.ng/img/h46718/whispering-palms-resort-46718-52.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
+    "verifiedAt": null,
     "imageNote": "Photos from the Hotels.ng listing for Whispering Palms Resort; credited below, not a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1876,24 +2048,27 @@
     "category": "eats",
     "area": "Victoria Island",
     "tagline": "French bakery and brunch on Adetokunbo Ademola",
-    "note": "Maison Eric Kayser's Lagos bakery-cafe, on Adetokunbo Ademola Street — sourdough, viennoiseries, pastries and a sit-down breakfast and brunch menu. It is a proper bakery counter as well as a cafe, so you can buy bread to take away. Phone 0813 223 3772 as listed. Details come from the Lagos listing that carries it, not from a venue statement, so confirm hours before you go.",
+    "note": "Eric Kayser's Victoria Island bakery is at 864A Bishop Aboyade Cole Street, per Maison Kayser's own page and Google; the second branch is 9 Osborne Road in Ikoyi. The Adetokunbo Ademola address this entry used to print is not one any source shows.",
     "price": "₦₦",
-    "address": "1411 Adetokunbo Ademola Street, Victoria Island, Lagos",
+    "address": "864A Bishop Aboyade Cole Street, Victoria Island, Lagos",
     "gallery": [
       "https://italawa.com.ng/wp-content/uploads/2025/08/Maison-Kayser-Nigeria-1024x1024.jpg",
       "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/4a/80/27/eric-kayser.jpg"
     ],
-    "checkedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "listedAt": "2026-11-28",
     "imageNote": "Photos of Eric Kayser Lagos from a Lagos listing and Tripadvisor; credited below, neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
       "listing": "https://italawa.com.ng/place/eric-kayser-lagos",
       "maps": "https://www.google.com/maps/search/Eric+Kayser+Lagos",
-      "instagram": "https://www.instagram.com/maisonkayser_ng/"
+      "instagram": "https://www.instagram.com/maisonkayser_ng/",
+      "site": "https://maison-kayser.com/en/boulangerie/victoria-island/"
     },
     "nights": [],
     "nightsSource": null,
-    "nightsCheckedAt": null
+    "nightsCheckedAt": null,
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "thompson-23",
@@ -1909,6 +2084,7 @@
       "https://pbs.twimg.com/media/G7U8BbkWAAAc-Jn.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "A listing image for Thompson 23 and a photo posted publicly about it; credited below, neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1937,6 +2113,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-yNrCcxCF5dJiClg5D6bWhIAJQtQ1N719DjRA4YLFL9jN267wVbc8ZYPE5nZqXteHu5R2VeN4C4CWekBqCNAQzGcQqfv9yuCrYxxAAja4vcn3EMHy_0lbh4Ym7WsN0jyCaGsTq3IvumdL=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "Google Maps listing photos for this venue, supplied by the guide's owner — taken from its Google Maps place page, which is where the pictures come from. Not verified reusable venue assets; swap for a venue-owned photo with a clear reuse basis when one is available.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1962,6 +2139,7 @@
       "https://blog.krent.space/wp-content/uploads/2025/09/leisure-park.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "Photos of Leisure Sports Park from a Lagos property blog; credited below, neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -1985,6 +2163,7 @@
       "https://news.unitednetwork.earth/wp-content/uploads/2024/06/Nigeria-Green-Fingers-Wildlife-Sanctuary-Nigeria-Wildlife-Conservation-Efforts.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "A photograph published with coverage of Greenfingers' conservation work; credited below, not a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -2009,6 +2188,7 @@
       "https://wakaabuja.com/wp-content/uploads/2025/07/Vintage-Africana-Lagos-.webp"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "A photograph of the Vintage Africana Museum from a Nigerian travel guide; credited below, not a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -2034,6 +2214,7 @@
       "https://cimages.timbu.com/guides/2017/08/apapa8.jpg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "Photos of Apapa Amusement Park from Lagos guides; credited below, neither is a cleared venue asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -2058,6 +2239,7 @@
       "https://transnationalarchitecture.group/wp-content/uploads/2024/01/img_1575.jpeg"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "A Google-hosted photo of the UNILAG campus republished by a travel site, plus a photograph from an architecture research blog. Credited below; neither is a cleared university asset.",
     "sourceUrls": {
       "list": "https://www.tiktok.com/@todolagos",
@@ -2086,6 +2268,7 @@
       "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwtiiJgftWwONRFFXR-e6RI-Uc8eF2HmwuO_Ha4UKZ6nCfeKSeU3jojzv8RS_Qfcpgcav4bYerwaaQVbIJo0Wv09aybu9Oef__GZ4ONirkUpYmKWKhie9GqAjDWCYRtWgFzlUJuyattVkM=s1360-w1360-h1020-rw"
     ],
     "checkedAt": "2026-11-27",
+    "listedAt": "2026-11-27",
     "imageNote": "Google Maps listing photos for the Upside Down House, supplied by the guide's owner — taken from its Google Maps place page. Not verified reusable venue assets; swap for a venue-owned photo with a clear reuse basis when one is available.",
     "sourceUrls": {
       "maps": "https://www.google.com/maps/search/Landmark+Upside+Down+House+Lagos",

@@ -30,10 +30,10 @@ export const scenes: Scene[] = [
   {
     id: "city",
     head: ["Welcome", "to Lagos"],
-    kicker: "Detty December",
+    kicker: "The Lagos guide",
     label: "Discover Lagos",
     description:
-      "Thirty days of music, food and traffic. A guide for people who have never done this city before.",
+      "Music, food and traffic, month after month. A guide for people who have never done this city before.",
     photo: "photo-1682944856348-0665d4b8d81c",
     credit: "Illustrative stock photograph",
   },

@@ -8,12 +8,22 @@ export type SectionHeading = {
 };
 
 export const sections: Record<
-  "places" | "dishes" | "shows" | "transport" | "tonight",
+  | "places"
+  | "eat"
+  | "dishes"
+  | "shows"
+  | "transport"
+  | "tonight"
+  | "parties",
   SectionHeading
 > = {
   places: {
     eyebrow: "Where to go",
-    title: "The places that make December",
+    title: "The places that make Lagos",
+  },
+  eat: {
+    eyebrow: "Where to eat",
+    title: "Where we would book a table",
   },
   dishes: {
     eyebrow: "What to eat",
@@ -29,5 +39,9 @@ export const sections: Record<
   },
   tonight: {
     title: "Tonight and this week",
+  },
+  parties: {
+    eyebrow: "Raves and cheap nights",
+    title: "Parties and raves this week",
   },
 };

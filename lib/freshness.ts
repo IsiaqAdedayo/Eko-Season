@@ -4,7 +4,13 @@ import { showsUpdatedAt } from "./shows";
 /**
  * How old is a data set, in words? The guide sells itself on being current, so
  * every listing page has to be able to say when it was last refreshed — and
- * admit when that was a while ago.
+ * admit honestly when it has been a while.
+ *
+ * The page-level stale flag is deliberately longer than the scraper cadence:
+ * shows and movies are re-read weekly, but the public line should keep saying
+ * "current for this week" through most of that week, not flip to a loud stale
+ * banner on day eight. The real calendar-end signal lives in check:health and
+ * in the DataStamp copy for movies, not in this shared threshold.
  */
 export type Freshness = {
   iso: string;
@@ -15,8 +21,8 @@ export type Freshness = {
 
 const DAY_MS = 86_400_000;
 
-/** A week is the point at which a December listing should be re-read. */
-export const STALE_AFTER_DAYS = 7;
+/** When a feed has gone stale enough to stop pretending it is current. */
+export const STALE_AFTER_DAYS = 14;
 
 export function freshness(
   iso: string,

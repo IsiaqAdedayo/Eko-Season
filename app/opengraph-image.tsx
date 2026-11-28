@@ -1,11 +1,12 @@
 import { ImageResponse } from "next/og";
 import { allPlaces } from "../lib/place";
 import { showEvents } from "../lib/shows";
+import { seasonLabel } from "../lib/season";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt =
-  "Èkó Season — the Detty December guide to Lagos: places, shows and how to get around";
+  "Èkó Season — the Lagos guide: places, shows and how to get around";
 
 /**
  * The site-wide share card, in the same ink-and-gold language as the per-show
@@ -49,7 +50,7 @@ export default function Image() {
               color: "rgba(255,247,236,0.45)",
             }}
           >
-            DETTY DECEMBER 2026
+            {seasonLabel().toUpperCase()}
           </div>
         </div>
 
@@ -79,7 +80,7 @@ export default function Image() {
               maxWidth: 980,
             }}
           >
-            The December guide to Lagos
+            The Lagos guide, all year
           </div>
 
           <div
@@ -107,7 +108,7 @@ export default function Image() {
           }}
         >
           <div>{stats}</div>
-          <div style={{ color: "#f2a03d" }}>ekoseason · the December guide</div>
+          <div style={{ color: "#f2a03d" }}>ekoseason · the Lagos guide</div>
         </div>
       </div>
     ),

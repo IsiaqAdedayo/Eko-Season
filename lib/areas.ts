@@ -8,7 +8,7 @@ export const CORRIDORS: Record<CorridorId, { label: string; title: string; copy:
     title: "Lekki",
     copy: "lekki",
     arrive: "Lekki-Epe Expressway is the road in. From VI it is the long way round; from the mainland it is the usual way out.",
-    description: "Lekki is the long peninsula southeast of Victoria Island — beaches, malls, art, arcades and the calmer end of the city. Most of the beach scene lives here, and so does a lot of the December crowd.",
+    description: "Lekki is the long peninsula southeast of Victoria Island — beaches, malls, art, arcades and the calmer end of the city. Most of the beach scene lives here, and so does a lot of the holiday crowd.",
     neighbourhoods: ["Lekki Phase 1", "Lekki", "Oniru", "Eleko", "Chevron Drive"],
     knownFor: "Beaches, malls and the quieter end of the city",
   },

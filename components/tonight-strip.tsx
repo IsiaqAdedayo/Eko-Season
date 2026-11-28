@@ -2,11 +2,20 @@ import Link from "next/link";
 import { sections } from "../data/sections";
 import {
   addDays,
+  partiesBetween,
   planDay,
   shortDay,
   todayInLagos,
   weekdayLong,
 } from "../lib/schedule";
+import { isParty, priceLabel, type ShowEvent } from "../lib/shows";
+
+/** A party is labelled as one: the word is the reason people open this strip. */
+const kindOf = (event: ShowEvent) => (isParty(event) ? "Party" : "Show");
+
+/** The card's price line, or nothing at all when no price is published. */
+const priceOf = (event: ShowEvent) =>
+  event.priceFrom == null && !event.freeTicket ? null : priceLabel(event);
 
 /**
  * "Tonight and this week": today plus the next two days, so the home page
@@ -18,6 +27,7 @@ export function TonightStrip() {
   const days = Array.from({ length: 3 }, (_, offset) =>
     planDay(addDays(today, offset)),
   );
+  const parties = partiesBetween(today, 7);
 
   return (
     <section className="border-y border-ink/10 bg-sand px-6 py-10 sm:px-10 sm:py-12">
@@ -41,13 +51,15 @@ export function TonightStrip() {
                 key: `show-${event.id}`,
                 label: event.title,
                 href: `/shows/${event.id}`,
-                kind: "Show" as const,
+                meta: [kindOf(event), priceOf(event)].filter(Boolean).join(" · "),
+                party: isParty(event),
               })),
               ...day.clubs.map((place) => ({
                 key: `place-${place.id}`,
                 label: place.name,
                 href: `/places/${place.id}`,
-                kind: "Night" as const,
+                meta: "Night",
+                party: false,
               })),
             ];
             const shown = items.slice(0, 3);
@@ -71,14 +83,25 @@ export function TonightStrip() {
                   <ul className="mt-3 space-y-1.5 text-sm">
                     {shown.map((item) => (
                       <li key={item.key} className="flex gap-2">
-                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember/60" aria-hidden />
-                        <Link
-                          href={item.href}
-                          className="text-ink/85 underline-offset-4 transition hover:text-ember hover:underline"
-                        >
-                          {item.label}
-                          <span className="sr-only"> ({item.kind})</span>
-                        </Link>
+                        <span
+                          className={`mt-1.5 h-1 w-1 shrink-0 rounded-full ${
+                            item.party ? "bg-ember" : "bg-ember/60"
+                          }`}
+                          aria-hidden
+                        />
+                        <span className="min-w-0">
+                          <Link
+                            href={item.href}
+                            className="text-ink/85 underline-offset-4 transition hover:text-ember hover:underline"
+                          >
+                            {item.label}
+                          </Link>
+                          {item.meta && (
+                            <span className="ml-1.5 whitespace-nowrap text-[11px] text-muted">
+                              {item.meta}
+                            </span>
+                          )}
+                        </span>
                       </li>
                     ))}
                     {extra > 0 && (
@@ -97,6 +120,18 @@ export function TonightStrip() {
             );
           })}
         </div>
+
+        {parties.length > 0 && (
+          <p className="mt-4 text-xs text-ink/70">
+            <Link
+              href="/tonight#parties"
+              className="underline decoration-ink/25 underline-offset-4 transition hover:text-ember hover:decoration-ember"
+            >
+              {parties.length} parties and raves in the next seven days
+            </Link>
+            {" "}— soonest first, island and mainland.
+          </p>
+        )}
       </div>
     </section>
   );

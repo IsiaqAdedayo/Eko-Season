@@ -10,12 +10,17 @@
     "scrape:movies": "node scripts/scrape-movies.mjs",
     "scrape:all": "node scripts/scrape-shows.mjs && node scripts/scrape-movies.mjs",
     "refresh": "bash scripts/refresh-all.sh",
+    "refresh:schedule": "node scripts/refresh-schedule.mjs",
     "check:data": "node scripts/validate-data.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:parsers": "node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs",
     "check:routes": "node scripts/smoke-routes.mjs",
-    "test": "node scripts/validate-data.mjs && node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs",
-    "check:health": "node scripts/check-health.mjs"
+    "test:health": "node scripts/test-health.mjs",
+    "test": "node scripts/validate-data.mjs && node scripts/test-movie-parsers.mjs && node scripts/test-show-parsers.mjs && node scripts/test-health.mjs",
+    "check:health": "node scripts/check-health.mjs",
+    "audit:places": "node scripts/place-audit.mjs",
+    "audit:photos": "node scripts/photo-audit.mjs",
+    "slate:probe": "node scripts/probe-slate.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.43.0",

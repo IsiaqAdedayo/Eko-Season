@@ -34,6 +34,8 @@ const DRY_RUN = process.argv.includes("--dry-run");
 const ALLOW_DROP = process.argv.includes("--allow-drop");
 /** Losing more than this in one run is treated as a bad scrape, not news. */
 const MAX_DROPPED = 3;
+/** How far ahead a listing is kept: a year covers anything announced early. */
+const WINDOW_DAYS = 366;
 const UA = "LagosGuideShowsBot/1.0 (event listing refresher for Eko Season)";
 const REQUEST_TIMEOUT_MS = 25_000;
 const MAX_ATTEMPTS = 2;
@@ -41,15 +43,22 @@ const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 const today = () => new Date().toISOString().slice(0, 10);
 
+const addDays = (iso, days) => {
+  const date = new Date(`${iso}T12:00:00Z`);
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+};
+
 /* ------------------------------------------------------------------ utils */
 
 const isClientError = (error) => /^4\d\d /.test(String(error?.message ?? ""));
 
-/** One retry for timeouts and 5xx; 4xx is final. */
-async function fetchText(url, attempt = 1) {
+/** One retry for timeouts and 5xx; 4xx is final. `ua` is per-site: Eventbrite
+ *  answers its own bot UA with a wall, so it gets a browser one. */
+async function fetchText(url, ua = UA, attempt = 1) {
   try {
     const res = await fetch(url, {
-      headers: { "user-agent": UA, accept: "text/html,application/json" },
+      headers: { "user-agent": ua, accept: "text/html,application/json" },
       redirect: "follow",
       signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
     });
@@ -58,7 +67,7 @@ async function fetchText(url, attempt = 1) {
   } catch (error) {
     if (attempt >= MAX_ATTEMPTS || isClientError(error)) throw error;
     await sleep(600 * attempt);
-    return fetchText(url, attempt + 1);
+    return fetchText(url, ua, attempt + 1);
   }
 }
 
@@ -135,10 +144,46 @@ const distinctive = (value) => tokens(value).filter((word) => !GENERIC_WORDS.has
 const NOISE_TITLE =
   /^(home|events?|calendar|program(me)?|what'?s on|tickets?|menu|shop|news|about( us)?|contact)$/i;
 
+/**
+ * Two vocabularies, and nothing between them: one names a party, the other
+ * names any night out. Separating them is what stops a concert being filed as a
+ * rave; keeping each as a single list is what stops them drifting apart.
+ *
+ * Bare "club" is deliberately absent: a book club, polo club or rotary club is
+ * a club by name, not a night out. Only the night-club forms count.
+ */
+const PARTY_WORDS =
+  /\b(party|parties|rave|after ?party|day ?party|night ?clubs?|club night|turn ?up|all[ -]?white|all[ -]?black|block party|beach party|pool party|disco|boat (cruise|ride|party)|nightlife|shutdown|vibes?)\b/i;
+
+/** Live music and dancing: a night out, not necessarily a party. */
+const NIGHT_OUT_WORDS =
+  /\b(dj|dance|music|concert|afrobeats|amapiano|edm|karaoke|live band)\b/i;
+
+const PARTY_TAG_RE = /party|nightlife|social gathering/i;
+
+/**
+ * Listings that are not a night out whatever they are tagged: a private
+ * wedding, a trade expo, a book club. The party pages carry these because
+ * organisers tag loosely, and a section that promises parties cannot pad
+ * itself with them.
+ */
+const NOT_AN_EVENT_RE =
+  /\b(wedding|graduation|conference|summit|expo|workshop|seminar|training|church|service|exhibition|book club|reading|things to do in lagos)\b/i;
+
+/**
+ * Words that describe a meal, not a night out: a restaurant advert, a potluck.
+ * A platform tag cannot rescue these — Eventbrite happily files a grill's promo
+ * under "Party or Social Gathering" — so the title has to name a party itself.
+ * "Beach BBQ Party" survives; "the best Grilled & Barbeque spot" does not.
+ */
+const FOOD_ONLY_RE = /\b(picnic|potluck|barbeque|bbq|grill|restaurant)\b/i;
+
 const isShowRow = (event) =>
   Boolean(event?.title) &&
   event.title.trim().length > 2 &&
-  !NOISE_TITLE.test(event.title.trim());
+  !NOISE_TITLE.test(event.title.trim()) &&
+  !NOT_AN_EVENT_RE.test(event.title) &&
+  !(FOOD_ONLY_RE.test(event.title) && !PARTY_WORDS.test(event.title));
 
 /** Venue/area/city, shared by both adapters. */
 const locationOf = (node) => ({
@@ -181,10 +226,10 @@ const slug = (value) =>
   String(value)
     .toLowerCase()
     .normalize("NFKD")
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-")
-    .slice(0, 70);
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 70)
+    .replace(/-+$/, "");
 
 /** Two titles can slugify to the same string; ids must stay unique. */
 function uniqueId(title, taken) {
@@ -213,6 +258,245 @@ const tiersFrom = (offers) =>
       soldOut: String(offer.availability ?? "").includes("SoldOut"),
     }))
     .filter((tier) => Number.isFinite(tier.price));
+
+/* ------------------------------------------------- Eventbrite destination */
+
+/**
+ * Eventbrite answers its own bot UA with a wall, so its pages get a browser UA.
+ * Nothing else about the request changes; the data read is the same HTML a
+ * visitor's browser receives.
+ */
+const EVENTBRITE_UA =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
+
+/**
+ * Eventbrite ships a destination page's whole result set as one JS object in
+ * the HTML (window.__SERVER_DATA__ = {...}). It is not JSON-LD and not an API
+ * response, so find the opening brace and walk to its matching close rather
+ * than trying to match a 150 KB object with a regex.
+ */
+function serverData(html) {
+  const marker = html.indexOf("__SERVER_DATA__");
+  if (marker < 0) return null;
+  const open = html.indexOf("{", marker);
+  if (open < 0) return null;
+
+  let depth = 0;
+  let end = -1;
+  let inString = false;
+  let escaped = false;
+
+  for (let i = open; i < html.length; i += 1) {
+    const char = html[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (char === "\\") escaped = true;
+      else if (char === '"') inString = false;
+      continue;
+    }
+    if (char === '"') inString = true;
+    else if (char === "{") depth += 1;
+    else if (char === "}") {
+      depth -= 1;
+      if (depth === 0) {
+        end = i;
+        break;
+      }
+    }
+  }
+
+  if (end < 0) return null;
+  try {
+    return JSON.parse(html.slice(open, end + 1));
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Which side of town a venue is on, from whatever address text the platform
+ * gives us. Order matters: "Lekki Phase 1" must be read before "Lekki", and
+ * Landmark's Water Corporation Drive is Oniru, not a bare suburb name.
+ * A venue we cannot place returns null and stays on the citywide list.
+ */
+const AREA_HINTS = [
+  ["Oniru", /oniru|landmark|water corporation|ozumba/i],
+  ["Lekki Phase 1", /lekki phase ?1|admiralty way/i],
+  ["Chevron Drive", /chevron/i],
+  ["Eleko", /eleko/i],
+  ["Ajah", /ajah/i],
+  ["Ibeju-Lekki", /ibeju/i],
+  ["Sangotedo", /sangotedo/i],
+  ["Ikoyi", /ikoyi|banana island|parkview/i],
+  ["Victoria Island", /victoria island|\bvi\b/i],
+  ["Onikan", /onikan|muson/i],
+  ["Lagos Island", /lagos island|marina|\btbs\b/i],
+  ["Ikeja", /ikeja|opebi|alausa|allen avenue|agidingbi/i],
+  ["Ojota", /ojota/i],
+  ["Maryland", /maryland/i],
+  ["Yaba", /yaba/i],
+  ["Ebute Metta", /ebute[- ]metta/i],
+  ["Surulere", /surulere/i],
+  ["Apapa", /apapa/i],
+  ["Agege", /agege/i],
+  ["Ikorodu", /ikorodu/i],
+  ["Gbagada", /gbagada/i],
+  ["Ogudu", /ogudu/i],
+  ["Magodo", /magodo/i],
+  ["Ketu", /ketu/i],
+  ["Oshodi", /oshodi/i],
+  ["Mushin", /mushin/i],
+  ["Festac", /festac/i],
+  ["Amuwo-Odofin", /amuwo/i],
+  ["Ilupeju", /ilupeju/i],
+  ["Anthony", /anthony village/i],
+  ["Ojodu", /ojodu|berger/i],
+  ["Badagry", /badagry/i],
+  ["Epe", /\bepe\b/i],
+  ["Lekki", /lekki/i],
+];
+
+function inferArea(...parts) {
+  const text = parts.filter(Boolean).join(" ");
+  if (!text.trim()) return null;
+  const hit = AREA_HINTS.find(([, pattern]) => pattern.test(text));
+  return hit ? hit[0] : null;
+}
+
+/**
+ * The free-events feed is mostly not nightlife: crypto seminars, embassy
+ * sessions, church programmes. A party list padded with those is worse than
+ * short, so a free listing has to name a night out before it is kept.
+ */
+const isNightlifeRow = (title, tags) =>
+  [title, ...tags].some(
+    (text) => PARTY_WORDS.test(text) || NIGHT_OUT_WORDS.test(text),
+  );
+
+/**
+ * A party is not a concert with a different poster: it is the thing readers
+ * ask for by name, and it gets its own section. The platform's own tags win;
+ * the title decides only when they say nothing.
+ */
+function classifyKind(sourceKind, title, tags) {
+  if (tags.some((tag) => PARTY_TAG_RE.test(tag)) || PARTY_WORDS.test(title)) {
+    return "party";
+  }
+  return sourceKind === "party" ? "party" : "show";
+}
+
+/**
+ * Eventbrite destination listings: name, date, venue, ticket link, tags. No
+ * prices — the JSON-LD offer on an event page comes back priced in USD, so a
+ * naira figure taken from it would be a guess dressed as a fact. Those events
+ * carry no price and the card says the price is unpublished.
+ */
+/**
+ * One page-data row as the calendar's event shape, or null when the row is not
+ * a listing this site should carry. Every per-row rule lives here — skipping an
+ * online or cancelled listing, the free feed's nightlife gate and the mapping
+ * itself — so the paging loop stays about paging.
+ */
+function eventbriteRow(row, source) {
+  const address = row.primary_venue?.address ?? {};
+  const tags = (row.tags ?? []).map((tag) => tag.display_name).filter(Boolean);
+
+  if (source.free && !isNightlifeRow(row.name, tags)) return null;
+
+  return {
+    title: decodeEntities(row.name).trim(),
+    artists: [],
+    date: isoDate(row.start_date),
+    endDate: isoDate(row.end_date),
+    venue: row.primary_venue?.name ?? "Lagos",
+    // Title first: organiser addresses are often just "Lagos" while the name
+    // says Oshodi or Magodo, and the area filter needs the side of town.
+    area: inferArea(
+      row.name,
+      address.localized_area_display,
+      address.address_1,
+      address.address_2,
+      row.primary_venue?.name,
+    ),
+    city: "Lagos",
+    // No price from Eventbrite: its ticket JSON-LD is priced in USD, and a
+    // free-events listing only proves a free ticket exists — a free tier can be
+    // an early window, an RSVP list or one of several ticket types. That fact is
+    // recorded separately, never as a ₦0 entry price.
+    priceFrom: null,
+    currency: "NGN",
+    // Only the free feed can speak for free tickets: a paid page listing the
+    // same show is not evidence its free tier is gone, so it says nothing and
+    // merge leaves an existing flag alone.
+    ...(source.free ? { freeTicket: true } : {}),
+    tiers: [],
+    ticketUrl: row.url ?? null,
+    source: source.name,
+    sourceUrl: source.url,
+    kind: classifyKind(source.eventKind, row.name, tags),
+    // Every tag is kept: the party decision has to stay auditable, and a cut
+    // list could drop the very tag that made it a party.
+    tags,
+    note: row.summary ? decodeEntities(row.summary).slice(0, 220) : null,
+    // Enrichment reads a ticket page for naira prices; Eventbrite's are USD.
+    noEnrich: true,
+  };
+}
+
+/** Page 2+: `?page=2`, or `&page=2` when the listing URL already has a query. */
+const eventbritePageUrl = (base, page) =>
+  page === 1 ? base : `${base}${base.includes("?") ? "&" : "?"}page=${page}`;
+
+/**
+ * `saved` replays pages instead of fetching: page-one HTML as a string, or a
+ * Map of URL -> HTML when more than one page is needed. A page missing from the
+ * map is an empty page, never a network call.
+ */
+async function eventbriteEvents(source, saved = null) {
+  const events = [];
+  const seen = new Set();
+  const maxPages = source.maxPages ?? 1;
+  const replaying = saved != null;
+
+  for (let page = 1; page <= maxPages; page += 1) {
+    const url = eventbritePageUrl(source.url, page);
+    const body = !replaying
+      ? await fetchText(url, EVENTBRITE_UA)
+      : typeof saved === "string"
+        ? page === 1
+          ? saved
+          : ""
+        : (saved.get(url) ?? "");
+    const data = serverData(body);
+    const listing = data?.search_data?.events;
+    const results = listing?.results ?? [];
+    if (results.length === 0) {
+      console.warn(`  ! ${source.name} page ${page}: no results in page data`);
+      break;
+    }
+
+    if (!replaying) {
+      console.log(
+        `  ${source.name} page ${page}: ${results.length} of ${listing.pagination?.object_count ?? "?"}`,
+      );
+    }
+
+    for (const row of results) {
+      if (!row?.name || row.is_online_event || row.is_cancelled) continue;
+      if (seen.has(row.eid)) continue;
+      seen.add(row.eid);
+
+      const event = eventbriteRow(row, source);
+      if (event) events.push(event);
+    }
+
+    const pageCount = listing.pagination?.page_count ?? page;
+    if (page >= pageCount) break;
+    await sleep(400);
+  }
+
+  return events;
+}
 
 /* --------------------------------------------------------------- adapters */
 
@@ -266,6 +550,7 @@ async function dettyEvents(source, ticketMap, html = null) {
           ticketUrl: ticketMap.get(titleKey(event.name)) ?? null,
           source: source.name,
           sourceUrl: source.url,
+          kind: PARTY_WORDS.test(event.name) ? "party" : "show",
           note: event.description?.slice(0, 220) ?? null,
         });
       }
@@ -297,6 +582,7 @@ async function jsonLdEvents(source, html = null) {
       ticketUrl: offers[0]?.url ?? null,
       source: source.name,
       sourceUrl: source.url,
+      kind: PARTY_WORDS.test(node.name) ? "party" : "show",
       note: null,
     });
   }
@@ -370,8 +656,12 @@ async function ticketLinkStatus(url) {
 
     return MISSING_RE.test(text) ? "dead" : "ok";
   } catch (error) {
-    if (error?.name === "TimeoutError") return null;
-    return "dead"; // DNS failure or refused connection: the page is not there
+    // Only a host that does not resolve proves the page is gone. A timeout or
+    // a dropped connection says nothing about the event, and a flaky network
+    // must not mark half the parties as cancelled.
+    const code = error?.cause?.code ?? error?.code ?? "";
+    if (code === "ENOTFOUND") return "dead";
+    return null;
   }
 }
 
@@ -398,13 +688,34 @@ function mergeEvents(existing, incoming) {
 
     const before = JSON.stringify(current);
     // Scraped facts win; hand-written fields (artists, notes) are preserved.
-    for (const field of ["date", "endDate", "venue", "area", "city", "ticketUrl", "sourceUrl", "source"]) {
+    for (const field of [
+      "date",
+      "endDate",
+      "venue",
+      "area",
+      "city",
+      "ticketUrl",
+      "sourceUrl",
+      "source",
+      "kind",
+      "tags",
+    ]) {
       if (fresh[field]) current[field] = fresh[field];
     }
     if (fresh.tiers.length) {
       current.tiers = fresh.tiers;
       current.priceFrom = fresh.priceFrom;
       current.currency = fresh.currency;
+    } else if (fresh.priceFrom != null && current.priceFrom == null) {
+      // A source that states a price can fill one we did not have.
+      current.priceFrom = fresh.priceFrom;
+      current.currency = fresh.currency;
+    }
+    // The free-events feed answers for itself: a free ticket exists only while
+    // a listing carries one, so a removed free tier does not linger.
+    if ("freeTicket" in fresh) {
+      if (fresh.freeTicket) current.freeTicket = true;
+      else delete current.freeTicket;
     }
     if (JSON.stringify(current) !== before) updated.push(current);
   }
@@ -433,11 +744,12 @@ function assertWritable(events) {
 async function main() {
   const sources = JSON.parse(await readFile(SOURCES_FILE, "utf8"));
   const data = JSON.parse(await readFile(DATA_FILE, "utf8"));
-  // The window moves with the calendar. Pinning it to the season in the data
-  // file would mean a January run silently discarding the next December.
-  const windowEnd = `${today().slice(0, 4)}-12-31`;
+  // The window moves with the calendar. Pinned to a calendar year it would cut
+  // off anything announced for January, and pinned to December it would throw
+  // away every other month, so it rolls forward from today instead.
+  const windowEnd = addDays(today(), WINDOW_DAYS);
 
-  console.log(`Refreshing shows, window ends ${windowEnd}`);
+  console.log(`Refreshing shows, keeping dates through ${windowEnd}`);
 
   const feedSources = sources.sources ?? [];
   const watchlist = sources.watchlist ?? [];
@@ -452,7 +764,9 @@ async function main() {
       const events =
         source.kind === "detty"
           ? await dettyEvents(source, await dettyTicketMap(source))
-          : await jsonLdEvents(source);
+          : source.kind === "eventbrite"
+            ? await eventbriteEvents(source)
+            : await jsonLdEvents(source);
       const usable = events.filter(isShowRow);
       console.log(`  ${source.name}: ${usable.length} event(s)`);
       health.push({ name: source.name, ok: true, events: usable.length, error: null });
@@ -508,6 +822,11 @@ async function main() {
 
   const enriched = [];
   for (const event of scraped) {
+    if (event.noEnrich) {
+      const { noEnrich, ...rest } = event;
+      enriched.push(rest);
+      continue;
+    }
     enriched.push(await enrichFromTicket(event));
     await sleep(120);
   }
@@ -519,6 +838,8 @@ async function main() {
   const kept = events
     .filter((event) => (event.endDate ?? event.date) >= cutoff)
     .filter((event) => event.date <= windowEnd)
+    // Also clears non-parties a previous run let in, e.g. a wedding listing.
+    .filter(isShowRow)
     .sort((a, b) => a.date.localeCompare(b.date));
 
   const dropped = events.length - kept.length;
@@ -597,7 +918,19 @@ async function main() {
   console.log(`Wrote ${verified.length} events to data/shows.json`);
 }
 
-export { dettyEvents, isShowRow, jsonLdEvents, locationOf, mergeEvents };
+export {
+  classifyKind,
+  dettyEvents,
+  eventbriteEvents,
+  eventbritePageUrl,
+  inferArea,
+  isNightlifeRow,
+  isShowRow,
+  jsonLdEvents,
+  locationOf,
+  mergeEvents,
+  serverData,
+};
 
 const isDirectRun =
   Boolean(process.argv[1]) &&

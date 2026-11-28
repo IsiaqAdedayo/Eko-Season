@@ -18,10 +18,11 @@ import {
   getPlace,
   hasSourcedNights,
   mapUrl,
+  placeProvenance,
   nightsLabel,
   type Place,
 } from "../../../lib/place";
-import { SITE_URL, formatChecked } from "../../../lib/site";
+import { SITE_URL, formatChecked, SOCIAL_IMAGE } from "../../../lib/site";
 import { ReportLink } from "../../../components/report-link";
 
 type Props = { params: Promise<{ id: string }> };
@@ -159,6 +160,10 @@ export default async function PlacePage({ params }: Props) {
       : {}),
   };
 
+  // Which date this card can show, and what it stands for. "Listed" is not a
+  // softer "verified": it says the row was read from a source, nothing more.
+  const provenance = placeProvenance(place);
+
   return (
     <main className="bg-cream text-ink">
       <JsonLd data={placeJsonLd} />
@@ -251,7 +256,12 @@ export default async function PlacePage({ params }: Props) {
                 ...(hasSourcedNights(place)
                   ? [["Regular nights", nightsLabel(place.nights) ?? ""]]
                   : []),
-                ["Checked", formatChecked(place.checkedAt)],
+                [
+                  provenance.verified ? "Verified" : "Listed",
+                  provenance.verified
+                    ? formatChecked(provenance.date)
+                    : `${formatChecked(provenance.date)} · details not independently confirmed`,
+                ],
               ].map(([label, value]) => (
                 <div key={label} className="flex justify-between gap-6 py-3">
                   <dt className="text-muted">{label}</dt>
@@ -259,6 +269,14 @@ export default async function PlacePage({ params }: Props) {
                 </div>
               ))}
             </dl>
+            <p className="mt-3 text-xs text-muted">
+              <Link
+                href="/sources"
+                className="underline decoration-ink/20 underline-offset-4 hover:text-ink"
+              >
+                What “listed” and “verified” mean
+              </Link>
+            </p>
 
             {place.nightsSource && place.nightsCheckedAt && (
               <p className="mt-3 text-[11px] leading-relaxed text-muted">

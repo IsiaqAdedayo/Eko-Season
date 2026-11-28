@@ -1,48 +1,45 @@
-import { addDays } from "../lib/schedule";
+import { addDays, monthEnd, monthLabel, monthStart } from "../lib/schedule";
 import type { ShowEvent } from "../lib/shows";
 
 /**
- * December at a glance: which nights are crowded and which weekends are worth
- * planning around. Cards below answer "what is it"; this answers "when is it".
+ * The calendar at a glance: which nights are crowded and which weekends are
+ * worth planning around. Cards below answer "what is it"; this answers "when".
+ *
+ * One grid per month that has a night on it, so a listing that runs from
+ * November into January is not silently cut off at the first month.
  */
 
 const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+/** Three months is what anyone plans across; beyond that the list is better. */
+const MAX_MONTHS = 3;
 
-const monthLabel = (iso: string) =>
-  new Intl.DateTimeFormat("en-GB", {
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(new Date(`${iso}T12:00:00Z`));
+const coversDay = (event: ShowEvent, date: string) =>
+  event.date <= date && (event.endDate ?? event.date) >= date;
 
-export function ShowCalendar({ events }: { events: ShowEvent[] }) {
-  if (events.length === 0) return null;
+function MonthGrid({ from, events }: { from: string; events: ShowEvent[] }) {
+  const to = monthEnd(from);
+  const leading = (new Date(`${from}T00:00:00Z`).getUTCDay() + 6) % 7;
+  const length = Number(to.slice(8, 10));
 
-  // The grid covers the month the first listed show falls in.
-  const monthStart = `${events.map((e) => e.date).sort()[0].slice(0, 7)}-01`;
-  const [year, month] = monthStart.split("-").map(Number);
-  const daysInMonth = new Date(Date.UTC(year, month, 0)).getUTCDate();
-  const leading = (new Date(`${monthStart}T00:00:00Z`).getUTCDay() + 6) % 7;
+  const onThisMonth = events.filter(
+    (event) => event.date <= to && (event.endDate ?? event.date) >= from,
+  );
 
-  const days = Array.from({ length: daysInMonth }, (_, index) => {
-    const date = addDays(monthStart, index);
+  const days = Array.from({ length }, (_, index) => {
+    const date = addDays(from, index);
     return {
       date,
       day: index + 1,
-      events: events.filter(
-        (event) => event.date <= date && (event.endDate ?? event.date) >= date,
-      ),
+      events: events.filter((event) => coversDay(event, date)),
     };
   });
 
   return (
-    <section className="mt-10" aria-labelledby="show-calendar-heading">
+    <div>
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 id="show-calendar-heading" className="font-display text-2xl text-cream">
-          {monthLabel(monthStart)}
-        </h2>
+        <h2 className="font-display text-2xl text-cream">{monthLabel(from)}</h2>
         <p className="text-[11px] uppercase tracking-[0.2em] text-cream/40">
-          {events.length} show{events.length === 1 ? "" : "s"}
+          {onThisMonth.length} show{onThisMonth.length === 1 ? "" : "s"}
         </p>
       </div>
 
@@ -83,6 +80,34 @@ export function ShowCalendar({ events }: { events: ShowEvent[] }) {
               </>
             )}
           </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function ShowCalendar({ events }: { events: ShowEvent[] }) {
+  if (events.length === 0) return null;
+
+  // Both ends of a run, so a show that spills into the next month gets a grid
+  // for that month too.
+  const months = [
+    ...new Set(
+      events.flatMap((event) => [
+        event.date.slice(0, 7),
+        (event.endDate ?? event.date).slice(0, 7),
+      ]),
+    ),
+  ]
+    .sort()
+    .slice(0, MAX_MONTHS)
+    .map((month) => monthStart(`${month}-01`));
+
+  return (
+    <section className="mt-10" aria-label="Shows by month">
+      <div className="space-y-10">
+        {months.map((from) => (
+          <MonthGrid key={from} from={from} events={events} />
         ))}
       </div>
 

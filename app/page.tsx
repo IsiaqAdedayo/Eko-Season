@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Hero } from "../components/hero";
 import { SeasonNotice } from "../components/season-notice";
 import { TonightStrip } from "../components/tonight-strip";
+import { EatSection } from "../components/eat-section";
 import { PlacesSection } from "../components/places-section";
 import { Dishes } from "../components/dishes";
 import { BigShows } from "../components/big-shows";
@@ -36,6 +37,7 @@ export default async function Home() {
       <SeasonNotice className="mx-auto mt-8 max-w-7xl px-6 sm:px-10" />
       <TonightStrip />
       <PlacesSection />
+      <EatSection />
       <Dishes />
       <BigShows
         events={shows.slice(0, HOME_SHOWS)}

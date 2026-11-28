@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lagos parties — Eventbrite</title>
+  </head>
+  <body>
+    <h1>Parties in Lagos</h1>
+    <!--
+      Trimmed copy of the page-data object Eventbrite ships inside a destination
+      listing. Kept as a real inline assignment rather than a bare JSON file so
+      the brace walk in serverData() is exercised the way production is.
+      Rows deliberately include: an entity-encoded title, an area only in the
+      title, an area only in the address, an online event, a cancelled event, a
+      duplicate id, a seminar and a wedding (both filtered before writing).
+    -->
+    <script>
+      window.__SERVER_DATA__ = {
+        "search_data": {
+          "events": {
+            "pagination": { "object_count": 7, "page_count": 1 },
+            "results": [
+              {
+                "eid": "1001",
+                "name": "Turning Up Oshodi Nights &amp; The Adar Experience",
+                "start_date": "2026-12-04T20:00:00+01:00",
+                "end_date": "2026-12-04T23:59:00+01:00",
+                "is_online_event": false,
+                "is_cancelled": false,
+                "url": "https://www.eventbrite.com/e/turning-up-oshodi-nights-tickets-1001",
+                "summary": "Friday nights in Oshodi with live performances.",
+                "primary_venue": {
+                  "name": "Adar Experience Hotel",
+                  "address": {
+                    "localized_area_display": "Lagos",
+                    "address_1": "8 Boladale St",
+                    "address_2": null
+                  }
+                },
+                "tags": [
+                  { "display_name": "Party or Social Gathering" },
+                  { "display_name": "Nightlife" },
+                  { "display_name": "Music" },
+                  { "display_name": "Lagos" },
+                  { "display_name": "Friday" },
+                  { "display_name": "Live Music" },
+                  { "display_name": "Drinks" },
+                  { "display_name": "18+" }
+                ]
+              },
+              {
+                "eid": "1002",
+                "name": "Magodo Sunday Rooftop Sessions",
+                "start_date": "2026-12-06T17:00:00+01:00",
+                "end_date": "2026-12-06T22:00:00+01:00",
+                "is_online_event": false,
+                "is_cancelled": false,
+                "url": "https://www.eventbrite.com/e/magodo-sunday-rooftop-sessions-tickets-1002",
+                "summary": null,
+                "primary_venue": {
+                  "name": "The Nest Rooftop",
+                  "address": {
+                    "localized_area_display": "Magodo GRA Phase 2",
+                    "address_1": "7 CMD Road",
+                    "address_2": null
+                  }
+                },
+                "tags": [{ "display_name": "Music" }]
+              },
+              {
+                "eid": "1003",
+                "name": "Lekki Phase 1 Afrobeats Listening",
+                "start_date": "2026-12-08T19:00:00+01:00",
+                "end_date": "2026-12-08T21:00:00+01:00",
+                "is_online_event": true,
+                "is_cancelled": false,
+                "url": "https://www.eventbrite.com/e/lekki-phase-1-afrobeats-listening-tickets-1003",
+                "summary": "Streamed online.",
+                "primary_venue": { "name": null, "address": {} },
+                "tags": [{ "display_name": "Music" }]
+              },
+              {
+                "eid": "1004",
+                "name": "All Black Everything — Ikoyi",
+                "start_date": "2026-12-12T21:00:00+01:00",
+                "end_date": "2026-12-13T04:00:00+01:00",
+                "is_online_event": false,
+                "is_cancelled": true,
+                "url": "https://www.eventbrite.com/e/all-black-everything-tickets-1004",
+                "summary": "Cancelled by the organiser.",
+                "primary_venue": {
+                  "name": "Ikoyi Club",
+                  "address": { "localized_area_display": "Ikoyi" }
+                },
+                "tags": [{ "display_name": "Nightlife" }]
+              },
+              {
+                "eid": "1001",
+                "name": "Duplicate Listing That Must Not Appear",
+                "start_date": "2026-12-04T20:00:00+01:00",
+                "end_date": "2026-12-04T23:59:00+01:00",
+                "is_online_event": false,
+                "is_cancelled": false,
+                "url": "https://www.eventbrite.com/e/duplicate-tickets-1001",
+                "summary": null,
+                "primary_venue": {
+                  "name": "Adar Experience Hotel",
+                  "address": {}
+                },
+                "tags": []
+              },
+              {
+                "eid": "1005",
+                "name": "Crypto Breakfast Seminar",
+                "start_date": "2026-12-09T08:00:00+01:00",
+                "end_date": "2026-12-09T10:00:00+01:00",
+                "is_online_event": false,
+                "is_cancelled": false,
+                "url": "https://www.eventbrite.com/e/crypto-breakfast-seminar-tickets-1005",
+                "summary": "A networking breakfast.",
+                "primary_venue": {
+                  "name": "Radisson Blu",
+                  "address": { "localized_area_display": "Victoria Island" }
+                },
+                "tags": [{ "display_name": "Business" }]
+              },
+              {
+                "eid": "1006",
+                "name": "Intimate Wedding Reception",
+                "start_date": "2026-12-19T15:00:00+01:00",
+                "end_date": "2026-12-19T22:00:00+01:00",
+                "is_online_event": false,
+                "is_cancelled": false,
+                "url": "https://www.eventbrite.com/e/intimate-wedding-reception-tickets-1006",
+                "summary": null,
+                "primary_venue": {
+                  "name": "The Event Centre",
+                  "address": { "localized_area_display": "Ikeja GRA" }
+                },
+                "tags": [{ "display_name": "Food & Drink" }]
+              }
+            ]
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

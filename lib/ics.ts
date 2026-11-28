@@ -1,14 +1,14 @@
 import type { ShowEvent } from "./shows";
 
 /**
- * A calendar feed for the December shows.
+ * A calendar feed for the shows currently listed, whatever month they fall in.
  *
  * Dates in data/shows.json are calendar dates without a published start time,
  * so every event is exported as an all-day entry. Inventing an 8pm start would
  * put people at a venue hours before the doors open.
  */
 
-const PRODID = "-//Eko Season//Lagos December Guide//EN";
+const PRODID = "-//Eko Season//Lagos Guide//EN";
 
 /** RFC 5545: backslash, semicolon, comma and newlines need escaping. */
 const escapeText = (value: string) =>
@@ -54,7 +54,7 @@ const compactDate = (iso: string) => iso.replace(/-/g, "");
 
 export function showsToIcs(
   events: ShowEvent[],
-  calendarName = "Èkó Season — Lagos December shows",
+  calendarName = "Èkó Season — Lagos shows",
 ) {
   const stamp = new Date()
     .toISOString()
