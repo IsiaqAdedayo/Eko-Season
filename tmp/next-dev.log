@@ -3,11 +3,11 @@
  We detected multiple lockfiles and selected the directory of /Users/adedayo/yarn.lock as the root directory.
  To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
    See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
- Detected additional lockfiles: 
+ Detected additional lockfiles:
    * /Users/adedayo/Eko-season/package-lock.json
 
    ▲ Next.js 15.5.29
-   - Local:        http://localhost:3000
+   - Local:        https://eko-season.vercel.app
    - Network:      http://192.168.1.100:3000
 
  ✓ Starting...

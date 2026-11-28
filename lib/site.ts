@@ -3,7 +3,7 @@ import { imageUrl } from "./media";
 type NavLink = { href: string; label: string };
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000"
+  process.env.NEXT_PUBLIC_SITE_URL ?? process.env.NEXT_PUBLIC_BASE_URL ?? "https://eko-season.vercel.app"
 ).replace(/\/$/, "");
 
 /** Lead social image for places pages that still need a single static fallback
